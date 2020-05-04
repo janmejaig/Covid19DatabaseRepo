@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  
+  
+  
+ <listeners>
+		<listener class-name="com.covid.qa.ExtentReport.ExtentReporterNG" />
+</listeners>
+  
+  
+  <test  name="Test">
+    <classes>
+      <class name="com.covid19.qa.HomePageTestcases.CovidHomePageTestCase"/>
+      <class name="com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase"/>
+     <class name="com.covid19.qa.HomePageTestcases.AdvanceSearchFunction"/>
+      
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
