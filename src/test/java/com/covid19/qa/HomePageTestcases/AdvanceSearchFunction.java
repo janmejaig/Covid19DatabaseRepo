@@ -1,7 +1,10 @@
 package com.covid19.qa.HomePageTestcases;
 
+import org.openqa.selenium.By;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -19,7 +22,7 @@ public class AdvanceSearchFunction extends TestBase {
 		super();
 	}
 
-	@BeforeMethod
+	@BeforeClass
 	public void setUp(){
 		initialization();
 		AdvanceSearchHomePageObject = new AdvanceSearchHomePage();	
@@ -30,7 +33,7 @@ public class AdvanceSearchFunction extends TestBase {
 	public void AdvanceSearch_function() throws InterruptedException {
 	
     
- //Advance Search 
+ //Advance Search title
        
       String ButtonTitle =  AdvanceSearchHomePageObject.AdvnaceSearchButtonTitle();
        
@@ -40,64 +43,352 @@ public class AdvanceSearchFunction extends TestBase {
        
        AdvanceSearchHomePageObject.AdvnaceSearchExpandButton();
        
-//       HomePage_primarySearchObject.AdvanceSectionBody();
-//       
+      
+//       String PaitentIDTitle = AdvanceSearchHomePageObject.VerifypaitentIDTitle();
+//       System.out.println(">>>>>>>>this is  paitnet ID title" +PaitentIDTitle);
+//  
        
-      // String PaitentIDLabelVisible = AdvanceSearchHomePageObject.PaitentIDLabelVisible();
-      // Assert.assertEquals(PaitentIDLabelVisible, expected);
+       Wait.Pause(500);
+
+	
+	}
+	
+	
+	
+	
+	@Test(priority=2)
+	public void VerifypaitentIDequaltoPlaceholdertext() throws InterruptedException {
+	
+		
+ String VerifypaitentIDequaltoPlaceholdertext =  AdvanceSearchHomePageObject.VerifypaitentIDequaltoPlaceholdertext();
+      
+      System.out.println(VerifypaitentIDequaltoPlaceholdertext);       
+     Assert.assertEquals(VerifypaitentIDequaltoPlaceholdertext, "Is equal to");
        
-       //System.out.println("the Apitent id label visible:"+ PaitentIDLabelVisible);
+       
+     Wait.Pause(500);
+
+       
+	}
+       
+      @Test(priority=3)
+  	public void VerifyPaitentIDPLaceholderText_function() throws InterruptedException {
+//   	
+     String VerifyPaitentIDPLaceholderText =  AdvanceSearchHomePageObject.VerifyPaitentIDPLaceholderText();
+     
+    // String placeholder= driver.findElement(By.xpath("//input[@placeholder='Patient ID']")).getAttribute("placeholder");
+     System.out.println("VerifyPaitentIDPLaceholderText for textfield2 of paitentID" + VerifyPaitentIDPLaceholderText);
+     
+     
+     
+     Assert.assertEquals(VerifyPaitentIDPLaceholderText, "Patient ID");
+     
+     Wait.Pause(500);
        
        AdvanceSearchHomePageObject.PaitentIDSelectEqualtoOperator();
        
-       Wait.Pause(2000);
-
-
+      
 
       AdvanceSearchHomePageObject.InputPaitentID();
+      
+      
+  }
+      
+    
+      
+      @Test(priority=4)
+     	public void VerifyStatePatientIDTitle() throws InterruptedException {
+    	 
+      
+      String VerifyStatePatientIDTitle =  AdvanceSearchHomePageObject.VerifyStatePatientIDTitle();
+      
+      System.out.println(VerifyStatePatientIDTitle);
+      
+      Assert.assertEquals(VerifyStatePatientIDTitle, "State Patient ID");
+      
+      Wait.Pause(500);
+
+      
+      }
+      
+      
+    //VerifyStatePatientIDPlace holder text
+      
+      @Test(priority=5)
+  	public void VerifyStatePatientIDPlaceHoldertext() throws InterruptedException {
+      
+      
+      String VerifyStatePatientIDPlaceHoldertext =  AdvanceSearchHomePageObject.VerifyStatePatientIDPlaceHoldertext();
+ 
+    
+////String   PatientIDPlaceHoldertext =  driver.findElement(By.xpath("//input[@placeholder ='State Patient ID']")).getAttribute("State Patient ID");
+    
+   System.out.println(VerifyStatePatientIDPlaceHoldertext);
+    
+   Assert.assertEquals(VerifyStatePatientIDPlaceHoldertext, "State Patient ID");
+
+AdvanceSearchHomePageObject.StatePatientNumberInput();
+
+   
+Wait.Pause(500);
+
+      }
+      
+      //District title
+
+      @Test(priority=6)
+  	public void VerifyDistrictTitle() throws InterruptedException {
+  
        
-      AdvanceSearchHomePageObject.StatePatientNumberInput();
+      
+      
+      String DistrictTitle =  AdvanceSearchHomePageObject.VerifyDistrictTitle();
+      
+      System.out.println("this is district title name "+ DistrictTitle);
+      
+     Assert.assertEquals(DistrictTitle, "District");
+      
+      
+     Wait.Pause(500);
+
+    
+      //District title place holder text
+
+         
+        
+      String VerifyDistrictPlaceHolderText =  AdvanceSearchHomePageObject.VerifyDistrictPlaceHolderText();
+      
+      System.out.println(VerifyDistrictPlaceHolderText);
+      
+   Assert.assertEquals(VerifyDistrictPlaceHolderText, "District");
+      
+    AdvanceSearchHomePageObject.InputDistrictName();
+
        
-       AdvanceSearchHomePageObject.InputDistrictName();
+    Wait.Pause(500);
+
+    
+      }
        
+
+      @Test(priority=7)
+    	public void VerifyCityTitle() throws InterruptedException {
+       
+     String VerifyCityTitle =  AdvanceSearchHomePageObject.VerifyCityTitle();
+     
+     System.out.println(VerifyCityTitle);
+     
+   Assert.assertEquals(VerifyCityTitle, "City");
+    
+   Wait.Pause(500);
+ 
+      }
+   
+      @Test(priority=8)
+  	public void VerifyCityPlaceHolderText() throws InterruptedException {
+  
+   
+   String   VerifyCityPlaceHolderText = AdvanceSearchHomePageObject.VerifyCityPlaceHolderText();
+   
+   System.out.println(VerifyCityPlaceHolderText);
+   
+   Assert.assertEquals(VerifyCityPlaceHolderText, "City");
+    
+      
        
       AdvanceSearchHomePageObject.InputCityName();
       
+      }  
+      
+      @Test(priority=9)
+    	public void VerifyZipcodeTitle() throws InterruptedException {
+    
+      String   VerifyZipcodeTitle = AdvanceSearchHomePageObject.VerifyZipcodeTitle();
+      
+      System.out.println(VerifyZipcodeTitle);
+      
+      Assert.assertEquals(VerifyZipcodeTitle, "Zip Code");
+      }  
+      
+      @Test(priority=10)
+  	public void VerifyZipcodePlaceholderText() throws InterruptedException {
+  
+ String   VerifyZipcodePlaceholderText = AdvanceSearchHomePageObject.VerifyZipcodePlaceholderText();
+      
+      System.out.println(VerifyZipcodePlaceholderText);
+      
+      Assert.assertEquals(VerifyZipcodePlaceholderText, "Zip Code");
+     
+      
+      Wait.Pause(500);
+      
+      }
+
+      
+      
+      @Test(priority=11)
+   	public void VerifyAgeEqualToPlaceholderText() throws InterruptedException {
+    
+       String   VerifyAgeEqualToPlaceholderText = AdvanceSearchHomePageObject.VerifyAgeEqualToPlaceholderText();
+      
+      System.out.println(VerifyAgeEqualToPlaceholderText);
+      
+      Assert.assertEquals(VerifyAgeEqualToPlaceholderText, "Is equal to");
+ 
+
+      
+
+      
       AdvanceSearchHomePageObject.SelectAgeEqualtoOperator();
       
-      Wait.Pause(200);
+      Wait.Pause(500);
+
+      
+      }
+      
+      @Test(priority=12)
+     	public void VerifyInputTextfieldPlaceholderText() throws InterruptedException {
+      
+         String   VerifyInputTextfieldPlaceholderText = AdvanceSearchHomePageObject.VerifyInputTextfieldPlaceholderText();
+        
+        System.out.println(VerifyInputTextfieldPlaceholderText);
+        
+        Assert.assertEquals(VerifyInputTextfieldPlaceholderText, "Age");
+   
+      
+      
+      
 
 
       
       AdvanceSearchHomePageObject.InputAge();
       
-      Wait.Pause(200);
+      Wait.Pause(500);
 
-
+      
+      }
+      
        
       //AdvanceSearchHomePageObject.InputZipCode();
 
      // Wait.Pause(2000);
+      
+      @Test(priority=13)
+   	public void VerifyDateAnnouncedequaltoPlaceholderText() throws InterruptedException {
+    
+       String   VerifyDateAnnouncedequaltoPlaceholderText = AdvanceSearchHomePageObject.VerifyDateAnnouncedequaltoPlaceholderText();
+      
+      System.out.println(VerifyDateAnnouncedequaltoPlaceholderText);
+      
+      Assert.assertEquals(VerifyDateAnnouncedequaltoPlaceholderText, "Is equal to");
+ 
+      
+      
+      
 
       AdvanceSearchHomePageObject.DateAnnouncedEqualtoOperator(); 
+      
+      Wait.Pause(500);
+
+      
+      }
+      
+      
+      @Test(priority=14)
+     	public void VerifyDateAnnouncedInputFieldPlaceholderText() throws InterruptedException {
+      
+         String   VerifyDateAnnouncedInputFieldPlaceholderText = AdvanceSearchHomePageObject.VerifyDateAnnouncedInputFieldPlaceholderText();
+        
+        System.out.println(VerifyDateAnnouncedInputFieldPlaceholderText);
+        
+        Assert.assertEquals(VerifyDateAnnouncedInputFieldPlaceholderText, "Date Announced ");
+   
+      
+      
+      
        
       AdvanceSearchHomePageObject.DateAnnounced();
        
        
-       Wait.Pause(2000);
+      Wait.Pause(500);
        
+      }
+      
+      
        
+       @Test(priority=15)
+    	public void VerifyStatusChangeDatePlaceholderText() throws InterruptedException {
+     
+        String   VerifyStatusChangeDatePlaceholderText = AdvanceSearchHomePageObject.VerifyStatusChangeDatePlaceholderText();
+       
+       System.out.println(VerifyStatusChangeDatePlaceholderText);
+       
+       Assert.assertEquals(VerifyStatusChangeDatePlaceholderText, "Is equal to");
+  
+       Wait.Pause(500);
+
+       } 
+       
+       @Test(priority=16)
+   	public void VerifyStatusChangeDateInputTextFieldPlaceholderText() throws InterruptedException {
+    
+       String   VerifyStatusChangeDateInputTextFieldPlaceholderText = AdvanceSearchHomePageObject.VerifyStatusChangeDateInputTextFieldPlaceholderText();
+      
+      System.out.println(VerifyStatusChangeDateInputTextFieldPlaceholderText);
+      
+      Assert.assertEquals(VerifyStatusChangeDateInputTextFieldPlaceholderText, "Status Change Date");
+ 
+       
+       String   VerifySearchButton = AdvanceSearchHomePageObject.VerifySearchButton();
+      
+      System.out.println(VerifySearchButton);
+      
+      Assert.assertEquals(VerifySearchButton, "Search");
+ 
        
        
       AdvanceSearchHomePageObject.clickSearch();
        
        
-      Wait.Pause(2000);
+      Wait.Pause(5000);
 //
 //       
        AdvanceSearchHomePageObject.AdvnaceSearchExpandButton();
        
+       Wait.Pause(500);
+
+       
        AdvanceSearchHomePageObject.PaitentIDIsBetweenOperator();
+       
+       Wait.Pause(500);
+
+       
+       }
+       
+       @Test(priority=17)
+      	public void VerifyPaitentIDMinPLaceholderText() throws InterruptedException {
+       
+          String   VerifyPaitentIDMinPLaceholderText = AdvanceSearchHomePageObject.VerifyPaitentIDMinPLaceholderText();
+         
+         System.out.println(VerifyPaitentIDMinPLaceholderText);
+         
+         Assert.assertEquals(VerifyPaitentIDMinPLaceholderText, "Patient ID");
+         
+         Wait.Pause(500);
+
+    
+       }
+         
+       
+         @Test(priority=18)
+       	public void VerifyPaitentIDMaxPLaceholderText() throws InterruptedException {
+        
+           String   VerifyPaitentIDMaxPLaceholderText = AdvanceSearchHomePageObject.VerifyPaitentIDMaxPLaceholderText();
+          
+          System.out.println(VerifyPaitentIDMaxPLaceholderText);
+          
+          Assert.assertEquals(VerifyPaitentIDMaxPLaceholderText, "Patient ID");
+     
        
        AdvanceSearchHomePageObject.InputPaitentIDMinimumValue();
        
@@ -105,14 +396,143 @@ public class AdvanceSearchFunction extends TestBase {
        
        AdvanceSearchHomePageObject.SelectAgeBetweenOperator();
        
-       AdvanceSearchHomePageObject.InputAgeMinimumValue();
-       AdvanceSearchHomePageObject.InputAgeMaximumValue();
-//       
-       Wait.Pause(200);
-//       
-//
+       
+       Wait.Pause(500);
 
        
+         }
+       
+       @Test(priority=19)
+      	public void VerifyAgeMinInputFieldPlaceholderText() throws InterruptedException {
+       
+          String   VerifyAgeMinInputFieldPlaceholderText = AdvanceSearchHomePageObject.VerifyAgeMinInputFieldPlaceholderText();
+         
+         System.out.println(VerifyAgeMinInputFieldPlaceholderText);
+         
+         Assert.assertEquals(VerifyAgeMinInputFieldPlaceholderText, "Age Min");
+         
+         
+         Wait.Pause(500);
+
+    
+       }
+         @Test(priority=20)
+       	public void VerifyAgeMaxInputFieldPlaceholderText() throws InterruptedException {
+        
+           String   VerifyAgeMaxInputFieldPlaceholderText = AdvanceSearchHomePageObject.VerifyAgeMaxInputFieldPlaceholderText();
+          
+          System.out.println(VerifyAgeMaxInputFieldPlaceholderText);
+          
+          Assert.assertEquals(VerifyAgeMaxInputFieldPlaceholderText, "Age Max");
+     
+       
+       AdvanceSearchHomePageObject.InputAgeMinimumValue();
+       AdvanceSearchHomePageObject.InputAgeMaximumValue();
+       
+       Wait.Pause(500);
+    
+       
+         }
+       @Test(priority=21)
+      	public void VerifyDateAnnouncedMinInputFieldPlaceholderText() throws InterruptedException {
+    	   
+    	   
+           AdvanceSearchHomePageObject.SelectDateAnnouncedIsbetweenOperator();
+
+       
+          String   VerifyDateAnnouncedMinInputFieldPlaceholderText = AdvanceSearchHomePageObject.VerifyDateAnnouncedMinInputFieldPlaceholderText();
+         
+         System.out.println(VerifyDateAnnouncedMinInputFieldPlaceholderText);
+         
+         Assert.assertEquals(VerifyDateAnnouncedMinInputFieldPlaceholderText, "Date Announced ");
+       }
+         @Test(priority=22)
+       	public void VerifyDateAnnouncedMaxInputFieldPlaceholderText() throws InterruptedException {
+     	   
+     	   
+          //  AdvanceSearchHomePageObject.VerifyDateAnnouncedMaxInputFieldPlaceholderText();
+
+        
+           String   VerifyDateAnnouncedMaxInputFieldPlaceholderText = AdvanceSearchHomePageObject.VerifyDateAnnouncedMaxInputFieldPlaceholderText();
+          
+          System.out.println(VerifyDateAnnouncedMaxInputFieldPlaceholderText);
+          
+          Assert.assertEquals(VerifyDateAnnouncedMaxInputFieldPlaceholderText, "Date Announced ");
+
+          
+         }   
+
+     
+         
+         @Test(priority=23)
+         	public void VerifyStatusChangeDateMinInputtextfieldPlaceholderText() throws InterruptedException {
+       	   
+             
+           //  Wait.Pause(5000);
+             
+             driver.findElement(By.xpath("//select[@name='field_status_change_date_value_op'][1]//option[2]")).click();
+
+        	 
+           //   AdvanceSearchHomePageObject.SelectIsBetweenStatusChangeDate();
+              
+              Wait.Pause(50);
+
+
+        }
+             
+         @Test(priority=24)
+      	public void VerifyStatusChangeDateMinInputtextfieldPlaceholderText1() throws InterruptedException {
+    	   
+          
+
+     	 
+             Wait.Pause(5000);
+          
+      
+
+              
+             String   VerifyStatusChangeDateMinInputtextfieldPlaceholderText = AdvanceSearchHomePageObject.VerifyStatusChangeDateMinInputtextfieldPlaceholderText();
+            
+            System.out.println(VerifyStatusChangeDateMinInputtextfieldPlaceholderText);
+            
+            Assert.assertEquals(VerifyStatusChangeDateMinInputtextfieldPlaceholderText, "Status Change Date");
+
+            Wait.Pause(5000);
+     
+         }
+            
+            @Test(priority=25)
+          	public void VerifyStatusChangeDateMaxInputtextfieldPlaceholderText() throws InterruptedException {
+        	   
+                 Wait.Pause(5000);
+                                
+                 String   VerifyStatusChangeDateMaxInputtextfieldPlaceholderText = AdvanceSearchHomePageObject.VerifyStatusChangeDateMaxInputtextfieldPlaceholderText();
+                
+                System.out.println(VerifyStatusChangeDateMaxInputtextfieldPlaceholderText);
+                
+                Assert.assertEquals(VerifyStatusChangeDateMaxInputtextfieldPlaceholderText, "Status Change Date");
+
+                Wait.Pause(5000);
+
+        
+            
+                String   VerifySearchButton = AdvanceSearchHomePageObject.VerifySearchButton();
+                
+                System.out.println(VerifySearchButton);
+                
+                Assert.assertEquals(VerifySearchButton, "Search");
+                
+                
+           
+             String   VerifyResetButton = AdvanceSearchHomePageObject.VerifyResetButton();
+                
+                System.out.println(VerifyResetButton);
+                
+                Assert.assertEquals(VerifyResetButton, "Reset");
+           
+                
+           
+     
        AdvanceSearchHomePageObject.clickSearch();
 
        
@@ -120,7 +540,7 @@ public class AdvanceSearchFunction extends TestBase {
      // AdvanceSearchHomePageObject.clickRangeSearchButton();
 
 
-       Wait.Pause(2000);
+       Wait.Pause(5000);
 
 
        String title = AdvanceSearchHomePageObject.PaitentIDVisible();
@@ -201,12 +621,16 @@ public class AdvanceSearchFunction extends TestBase {
        
        
       
-       Wait.Pause(20);
-       
-	}
+        Wait.Pause(5000);
+      }  
 	
-	@AfterMethod
-	public void tearDown(){
+	
+	@AfterClass
+	public void tearDown() throws InterruptedException{
+		
+		Wait.Pause(5000);
+
+		
 		driver.quit();
 	}}
 	

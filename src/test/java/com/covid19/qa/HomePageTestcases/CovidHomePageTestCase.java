@@ -41,45 +41,56 @@ public class CovidHomePageTestCase extends TestBase{
 		
 		Assert.assertEquals(title, "Home");
 		
-		Wait.Pause(200);
+		Wait.Pause(500);
 		
 		}
 	
 	
 	@Test(priority=2)
-	public void ValidateCovidHomePageURL(){
+	public void ValidateCovidHomePageURL() throws InterruptedException{
 		
 		String URL = HomePageCovidDatabaseobject.covidHomePageUrl();
 		System.out.println("This is the URl for the Page:"+ URL);
 		Assert.assertEquals(URL, "https://covid19database.srijan.net/");
+		
+		Wait.Pause(500);
+
 	}
 	
 	
 	
 	@Test(priority=3)
-	public void ValidateCovidPaitenDataHeading(){
+	public void ValidateCovidPaitenDataHeading() throws InterruptedException{
 		
 		String URL = HomePageCovidDatabaseobject.CovidPaitenDataHeading();
 		System.out.println("This is the URl for the Page:"+ URL);
 		Assert.assertEquals(URL, "COVID Patient Data");
+		
+		Wait.Pause(500);
+
 	}
 	
 	
 	@Test(priority=4)
-	public void ValidatePatientsHeading(){
+	public void ValidatePatientsHeading() throws InterruptedException{
 		
 		String URL = HomePageCovidDatabaseobject.PatientsHeading();
 		System.out.println("This is the URl for the PatientsHeading:"+ URL);
 		Assert.assertEquals(URL, "Patients");
+		Wait.Pause(500);
+
 	}
 	
 	
 	@Test(priority=5)
-	public void ValidateGridView(){
+	public void ValidateGridView() throws InterruptedException{
 		
 		String URL = HomePageCovidDatabaseobject.GridView();
 		System.out.println("This is the URl for the GridView:"+ URL);
 		Assert.assertEquals(URL, prop.getProperty("GridUrl"));
+		
+		Wait.Pause(500);
+
 	}
 	
 	
@@ -87,30 +98,39 @@ public class CovidHomePageTestCase extends TestBase{
 	
 	
 	@Test(priority=6)
-	public void ValidateTableView(){
+	public void ValidateTableView() throws InterruptedException{
 		
 		String URL = HomePageCovidDatabaseobject.TableView();
 		System.out.println("This is the URl for the TableView:"+ URL);
 		Assert.assertEquals(URL, prop.getProperty("TableUrl"));
+		
+		Wait.Pause(500);
+
 	}
 	
 	
 
 	@Test(priority=7)
-	public void ValidateDiplayingText(){
+	public void ValidateDiplayingText() throws InterruptedException{
 		
 		String URL = HomePageCovidDatabaseobject.DiplayingText();
 		System.out.println("This is the DiplayingText:"+ URL);
 		Assert.assertTrue(true);
+		
+		Wait.Pause(50);
+
 	}
 	
 	
 	@Test(priority=8)
-	public void ValidateLastUpdatedText(){
+	public void ValidateLastUpdatedText() throws InterruptedException{
 		
 		String URL = HomePageCovidDatabaseobject.LastUpdatedText();
 		System.out.println("This is the LastUpdatedText:"+ URL);
 		Assert.assertTrue(true);
+		
+		Wait.Pause(500);
+
 		
 	}
 	
@@ -121,18 +141,21 @@ public class CovidHomePageTestCase extends TestBase{
 		
 		System.out.println("This is  HowSearchWorks text:"+ URL);
 		Assert.assertEquals(URL,"How search works?");
+		Wait.Pause(500);
+
 	}
 	
 	
 	@Test(priority=10)
-	public void ValidateButtonRedirect(){
+	public void ValidateButtonRedirect() throws InterruptedException{
 		
 		String URL = HomePageCovidDatabaseobject.ButtonRedirect();
 		System.out.println("This is  ButtonRedirect text:"+ URL);
 		Assert.assertEquals(URL,prop.getProperty("RedirectUrl"));
 		HomePageCovidDatabaseobject.navigateback();
 		
-		
+		Wait.Pause(50);
+
 	}
 	
 	
@@ -144,7 +167,10 @@ public class CovidHomePageTestCase extends TestBase{
 	
 	
 	@AfterClass
-	public void tearDown(){
+	public void tearDown() throws InterruptedException{
+		
+		Wait.Pause(500);
+
 		driver.quit();
 	}
 	

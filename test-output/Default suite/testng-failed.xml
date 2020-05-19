@@ -3,31 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase">
+      <class name="com.covid19.qa.HomePageTestcases.APIsPageTestCases">
         <methods>
-          <include name="VerifyDropdownValuesGenderLabel"/>
-          <include name="VerifyAllvaluesCurrentStatus"/>
-          <include name="VerifydropdownvaluesTransmission_Type"/>
-          <include name="VerifyStateDropdownvalues"/>
-          <include name="tearDown"/>
-          <include name="VerifyPlaceholdertextTransmission_Type"/>
-          <include name="VerifyNationalityLabel"/>
-          <include name="VerifyPlaceholderTextNationalityLabel"/>
-          <include name="VerifyGenderLabel"/>
-          <include name="VerifyPrimarySearchLabel"/>
-          <include name="VerifyclustersLabelName"/>
-          <include name="VerifyclustersPlaceholderText"/>
-          <include name="VerifyclustersDropdownvalues"/>
-          <include name="VerifyPlaceholdertextGenderLabel"/>
-          <include name="VerifyPlaceholdertextCurrentStatus"/>
-          <include name="PrimarySearch_function"/>
-          <include name="VerifylabelTransmission_Type"/>
-          <include name="VerifyStateLabel"/>
-          <include name="VerifyDRopdownvaluesNationalityLabel"/>
-          <include name="VerifyStatePlaceholderText"/>
           <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="VerifyCOVID19PatientDatabaseAPIHeading"/>
         </methods>
-      </class> <!-- com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase -->
+      </class> <!-- com.covid19.qa.HomePageTestcases.APIsPageTestCases -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

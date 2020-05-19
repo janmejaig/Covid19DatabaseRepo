@@ -6,13 +6,18 @@
   </listeners>
   <test name="Test(failed)">
     <classes>
-      <class name="com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase">
+      <class name="com.covid19.qa.HomePageTestcases.AdvanceSearchFunction">
         <methods>
-          <include name="tearDown"/>
-          <include name="PrimarySearch_function"/>
+          <include name="VerifyStatusChangeDateMaxInputtextfieldPlaceholderText"/>
           <include name="setUp"/>
+          <include name="VerifyDateAnnouncedMinInputFieldPlaceholderText"/>
+          <include name="tearDown"/>
+          <include name="VerifyStatusChangeDateMinInputtextfieldPlaceholderText"/>
+          <include name="VerifyAgeMaxInputFieldPlaceholderText"/>
+          <include name="VerifyDateAnnouncedMaxInputFieldPlaceholderText"/>
+          <include name="VerifyStatusChangeDateMinInputtextfieldPlaceholderText1"/>
         </methods>
-      </class> <!-- com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase -->
+      </class> <!-- com.covid19.qa.HomePageTestcases.AdvanceSearchFunction -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

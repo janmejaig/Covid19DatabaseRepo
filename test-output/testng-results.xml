@@ -1,61 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
+<testng-results skipped="0" failed="0" ignored="0" total="13" passed="13">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9296" started-at="2020-05-01T14:56:37Z" finished-at="2020-05-01T14:56:47Z">
+  <suite name="Default suite" duration-ms="29126" started-at="2020-05-19T05:44:36Z" finished-at="2020-05-19T05:45:05Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="9296" started-at="2020-05-01T14:56:37Z" finished-at="2020-05-01T14:56:47Z">
-      <class name="com.covid19.qa.HomePageTestcases.CovidHomePageTestCase">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.covid19.qa.HomePageTestcases.CovidHomePageTestCase@75c072cb]" name="setUp" is-config="true" duration-ms="4084" started-at="2020-05-01T20:26:37Z" finished-at="2020-05-01T20:26:41Z">
+    <test name="Default test" duration-ms="29126" started-at="2020-05-19T05:44:36Z" finished-at="2020-05-19T05:45:05Z">
+      <class name="com.covid19.qa.HomePageTestcases.APIsPageTestCases">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.covid19.qa.HomePageTestcases.APIsPageTestCases@75c072cb]" name="setUp" is-config="true" duration-ms="6310" started-at="2020-05-19T11:14:36Z" finished-at="2020-05-19T11:14:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="ValidateCovidHomePageTitle()[pri:1, instance:com.covid19.qa.HomePageTestcases.CovidHomePageTestCase@75c072cb]" name="ValidateCovidHomePageTitle" duration-ms="235" started-at="2020-05-01T20:26:41Z" finished-at="2020-05-01T20:26:42Z">
+        <test-method status="PASS" signature="APIsPageNavigation()[pri:1, instance:com.covid19.qa.HomePageTestcases.APIsPageTestCases@75c072cb]" name="APIsPageNavigation" duration-ms="1020" started-at="2020-05-19T11:14:42Z" finished-at="2020-05-19T11:14:43Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValidateCovidHomePageTitle -->
-        <test-method status="PASS" signature="ValidateCovidHomePageURL()[pri:2, instance:com.covid19.qa.HomePageTestcases.CovidHomePageTestCase@75c072cb]" name="ValidateCovidHomePageURL" duration-ms="1026" started-at="2020-05-01T20:26:42Z" finished-at="2020-05-01T20:26:43Z">
+        </test-method> <!-- APIsPageNavigation -->
+        <test-method status="PASS" signature="VerifyAPIsLinkUrl()[pri:2, instance:com.covid19.qa.HomePageTestcases.APIsPageTestCases@75c072cb]" name="VerifyAPIsLinkUrl" duration-ms="635" started-at="2020-05-19T11:14:43Z" finished-at="2020-05-19T11:14:44Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValidateCovidHomePageURL -->
-        <test-method status="PASS" signature="ValidateCovidPaitenDataHeading()[pri:3, instance:com.covid19.qa.HomePageTestcases.CovidHomePageTestCase@75c072cb]" name="ValidateCovidPaitenDataHeading" duration-ms="25" started-at="2020-05-01T20:26:43Z" finished-at="2020-05-01T20:26:43Z">
+        </test-method> <!-- VerifyAPIsLinkUrl -->
+        <test-method status="PASS" signature="VerifyAPIListingHeading()[pri:3, instance:com.covid19.qa.HomePageTestcases.APIsPageTestCases@75c072cb]" name="VerifyAPIListingHeading" duration-ms="529" started-at="2020-05-19T11:14:44Z" finished-at="2020-05-19T11:14:45Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValidateCovidPaitenDataHeading -->
-        <test-method status="PASS" signature="ValidatePatientsHeading()[pri:4, instance:com.covid19.qa.HomePageTestcases.CovidHomePageTestCase@75c072cb]" name="ValidatePatientsHeading" duration-ms="22" started-at="2020-05-01T20:26:43Z" finished-at="2020-05-01T20:26:43Z">
+        </test-method> <!-- VerifyAPIListingHeading -->
+        <test-method status="PASS" signature="VerifyCOvid19APIHeading()[pri:4, instance:com.covid19.qa.HomePageTestcases.APIsPageTestCases@75c072cb]" name="VerifyCOvid19APIHeading" duration-ms="536" started-at="2020-05-19T11:14:45Z" finished-at="2020-05-19T11:14:45Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValidatePatientsHeading -->
-        <test-method status="PASS" signature="ValidateGridView()[pri:5, instance:com.covid19.qa.HomePageTestcases.CovidHomePageTestCase@75c072cb]" name="ValidateGridView" duration-ms="598" started-at="2020-05-01T20:26:43Z" finished-at="2020-05-01T20:26:43Z">
+        </test-method> <!-- VerifyCOvid19APIHeading -->
+        <test-method status="PASS" signature="ClickCOvid19APIViewDocumentastion()[pri:5, instance:com.covid19.qa.HomePageTestcases.APIsPageTestCases@75c072cb]" name="ClickCOvid19APIViewDocumentastion" duration-ms="4704" started-at="2020-05-19T11:14:45Z" finished-at="2020-05-19T11:14:50Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValidateGridView -->
-        <test-method status="PASS" signature="ValidateTableView()[pri:6, instance:com.covid19.qa.HomePageTestcases.CovidHomePageTestCase@75c072cb]" name="ValidateTableView" duration-ms="1080" started-at="2020-05-01T20:26:43Z" finished-at="2020-05-01T20:26:44Z">
+        </test-method> <!-- ClickCOvid19APIViewDocumentastion -->
+        <test-method status="PASS" signature="Covid19OauthAPIHeading()[pri:6, instance:com.covid19.qa.HomePageTestcases.APIsPageTestCases@75c072cb]" name="Covid19OauthAPIHeading" duration-ms="540" started-at="2020-05-19T11:14:50Z" finished-at="2020-05-19T11:14:50Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValidateTableView -->
-        <test-method status="PASS" signature="ValidateDiplayingText()[pri:7, instance:com.covid19.qa.HomePageTestcases.CovidHomePageTestCase@75c072cb]" name="ValidateDiplayingText" duration-ms="29" started-at="2020-05-01T20:26:44Z" finished-at="2020-05-01T20:26:44Z">
+        </test-method> <!-- Covid19OauthAPIHeading -->
+        <test-method status="PASS" signature="Covid19OauthAPIclickViewDocumentation()[pri:7, instance:com.covid19.qa.HomePageTestcases.APIsPageTestCases@75c072cb]" name="Covid19OauthAPIclickViewDocumentation" duration-ms="2396" started-at="2020-05-19T11:14:50Z" finished-at="2020-05-19T11:14:53Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValidateDiplayingText -->
-        <test-method status="PASS" signature="ValidateLastUpdatedText()[pri:8, instance:com.covid19.qa.HomePageTestcases.CovidHomePageTestCase@75c072cb]" name="ValidateLastUpdatedText" duration-ms="21" started-at="2020-05-01T20:26:44Z" finished-at="2020-05-01T20:26:44Z">
+        </test-method> <!-- Covid19OauthAPIclickViewDocumentation -->
+        <test-method status="PASS" signature="VerifyCOVID19PatientDatabaseAPIHeading()[pri:8, instance:com.covid19.qa.HomePageTestcases.APIsPageTestCases@75c072cb]" name="VerifyCOVID19PatientDatabaseAPIHeading" duration-ms="537" started-at="2020-05-19T11:14:53Z" finished-at="2020-05-19T11:14:53Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValidateLastUpdatedText -->
-        <test-method status="PASS" signature="ValidateHowSearchWorks()[pri:9, instance:com.covid19.qa.HomePageTestcases.CovidHomePageTestCase@75c072cb]" name="ValidateHowSearchWorks" duration-ms="702" started-at="2020-05-01T20:26:44Z" finished-at="2020-05-01T20:26:45Z">
+        </test-method> <!-- VerifyCOVID19PatientDatabaseAPIHeading -->
+        <test-method status="PASS" signature="clickviewdocumentationunderCOVID19PatientDatabaseAPI()[pri:9, instance:com.covid19.qa.HomePageTestcases.APIsPageTestCases@75c072cb]" name="clickviewdocumentationunderCOVID19PatientDatabaseAPI" duration-ms="2289" started-at="2020-05-19T11:14:53Z" finished-at="2020-05-19T11:14:56Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValidateHowSearchWorks -->
-        <test-method status="PASS" signature="ValidateButtonRedirect()[pri:10, instance:com.covid19.qa.HomePageTestcases.CovidHomePageTestCase@75c072cb]" name="ValidateButtonRedirect" duration-ms="1362" started-at="2020-05-01T20:26:45Z" finished-at="2020-05-01T20:26:47Z">
+        </test-method> <!-- clickviewdocumentationunderCOVID19PatientDatabaseAPI -->
+        <test-method status="PASS" signature="VerifyREQUESTACCESSTOAPIsHeading()[pri:10, instance:com.covid19.qa.HomePageTestcases.APIsPageTestCases@75c072cb]" name="VerifyREQUESTACCESSTOAPIsHeading" duration-ms="538" started-at="2020-05-19T11:14:56Z" finished-at="2020-05-19T11:14:56Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValidateButtonRedirect -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.covid19.qa.HomePageTestcases.CovidHomePageTestCase@75c072cb]" name="tearDown" is-config="true" duration-ms="89" started-at="2020-05-01T20:26:47Z" finished-at="2020-05-01T20:26:47Z">
+        </test-method> <!-- VerifyREQUESTACCESSTOAPIsHeading -->
+        <test-method status="PASS" signature="clickREQUESTACCESS()[pri:11, instance:com.covid19.qa.HomePageTestcases.APIsPageTestCases@75c072cb]" name="clickREQUESTACCESS" duration-ms="6112" started-at="2020-05-19T11:14:56Z" finished-at="2020-05-19T11:15:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickREQUESTACCESS -->
+        <test-method status="PASS" signature="verifyHowToGetStartedHeading()[pri:12, instance:com.covid19.qa.HomePageTestcases.APIsPageTestCases@75c072cb]" name="verifyHowToGetStartedHeading" duration-ms="537" started-at="2020-05-19T11:15:02Z" finished-at="2020-05-19T11:15:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHowToGetStartedHeading -->
+        <test-method status="PASS" signature="clickHowToGetStartedbutton()[pri:13, instance:com.covid19.qa.HomePageTestcases.APIsPageTestCases@75c072cb]" name="clickHowToGetStartedbutton" duration-ms="1777" started-at="2020-05-19T11:15:03Z" finished-at="2020-05-19T11:15:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickHowToGetStartedbutton -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.covid19.qa.HomePageTestcases.APIsPageTestCases@75c072cb]" name="tearDown" is-config="true" duration-ms="621" started-at="2020-05-19T11:15:04Z" finished-at="2020-05-19T11:15:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.covid19.qa.HomePageTestcases.CovidHomePageTestCase -->
+      </class> <!-- com.covid19.qa.HomePageTestcases.APIsPageTestCases -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

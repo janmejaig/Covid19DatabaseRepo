@@ -199,6 +199,11 @@ WebElement ViewLink ;
 WebElement ResetButton ;
 
 
+@FindBy(xpath="//span[@class='icon glyphicon glyphicon-trash']")
+
+WebElement VerifyResetButton ;
+
+
 
 @FindBy(xpath="//table[@class='table table-hover table-striped']//tbody")
 
@@ -650,6 +655,11 @@ public String  ActionsHeadingVisible() {
 
 
 
+public String VerifyResetButton() {
+	
+	return VerifyResetButton.getText();
+	
+}
 
 
 

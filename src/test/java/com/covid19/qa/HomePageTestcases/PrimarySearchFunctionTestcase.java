@@ -34,24 +34,28 @@ public class PrimarySearchFunctionTestcase extends TestBase {
 	
 	
 	@Test(priority=1)
-	public void VerifyPrimarySearchLabel()  {
+	public void VerifyPrimarySearchLabel() throws InterruptedException  {
 		
 		String LabelCurrentStatus = HomePage_primarySearchObject.VerifyCurrentStatusLabel();
 		
         System.out.println("This is the label name "+ LabelCurrentStatus);
         Assert.assertEquals(LabelCurrentStatus, "Current Status");
+		Wait.Pause(500);
+
         
 
 }
 	
 	
 	@Test(priority=2)
-	public void VerifyPlaceholdertextCurrentStatus()  {
+	public void VerifyPlaceholdertextCurrentStatus() throws InterruptedException  {
 		
 		String VerifyPlaceholdertextCurrentStatus = HomePage_primarySearchObject.VerifyPlaceholdertextCurrentStatus();
 		
         System.out.println("This is the  PlaceholdertextCurrentStatus "+ VerifyPlaceholdertextCurrentStatus);
        Assert.assertEquals(VerifyPlaceholdertextCurrentStatus, "- Any -");
+		Wait.Pause(500);
+
         
 	}
 	
@@ -59,12 +63,15 @@ public class PrimarySearchFunctionTestcase extends TestBase {
 	
 
 	@Test(priority=3)
-	public void VerifyAllvaluesCurrentStatus()  {
+	public void VerifyAllvaluesCurrentStatus() throws InterruptedException  {
 		
 		String VerifyAllvaluesCurrentStatus = HomePage_primarySearchObject.VerifyAllvaluesCurrentStatus();
 		
         System.out.println("This is the  VerifyAllvaluesCurrentStatus "+ VerifyAllvaluesCurrentStatus);
        Assert.assertTrue(true);
+       
+		Wait.Pause(500);
+
         
 	}
 	
@@ -73,7 +80,7 @@ public class PrimarySearchFunctionTestcase extends TestBase {
 	
 	
 	@Test(priority=4)
-	public void VerifylabelTransmission_Type()  {
+	public void VerifylabelTransmission_Type() throws InterruptedException  {
 		
 		String VerifylabelTransmission_Type = HomePage_primarySearchObject.VerifylabelTransmission_Type();
 		
@@ -81,11 +88,14 @@ public class PrimarySearchFunctionTestcase extends TestBase {
        
         Assert.assertEquals(VerifylabelTransmission_Type, "Transmission Type");
         
+		Wait.Pause(500);
+
+        
 	}
 
 	
 	@Test(priority=5)
-	public void VerifyPlaceholdertextTransmission_Type()  {
+	public void VerifyPlaceholdertextTransmission_Type() throws InterruptedException  {
 		
 		String VerifyPlaceholdertextTransmission_Type = HomePage_primarySearchObject.VerifyPlaceholdertextTransmission_Type();
 		
@@ -93,12 +103,15 @@ public class PrimarySearchFunctionTestcase extends TestBase {
        
         Assert.assertEquals(VerifyPlaceholdertextTransmission_Type, "- Any -");
         
+		Wait.Pause(500);
+
+        
 	}
 
 	
 	
 	@Test(priority=6)
-	public void VerifydropdownvaluesTransmission_Type()  {
+	public void VerifydropdownvaluesTransmission_Type() throws InterruptedException  {
 		
 		String VerifydropdownvaluesTransmission_Type = HomePage_primarySearchObject.VerifydropdownvaluesTransmission_Type();
 		
@@ -106,11 +119,14 @@ public class PrimarySearchFunctionTestcase extends TestBase {
        
         Assert.assertTrue(true);
         
+		Wait.Pause(500);
+
+        
 	}
 
 	
 	@Test(priority=7)
-	public void VerifyStateLabel()  {
+	public void VerifyStateLabel() throws InterruptedException  {
 		
 		String VerifyStateLabel = HomePage_primarySearchObject.VerifyStateLabel();
 		
@@ -118,12 +134,15 @@ public class PrimarySearchFunctionTestcase extends TestBase {
        
         Assert.assertEquals(VerifyStateLabel,"State" );
         
+		Wait.Pause(500);
+
+        
 	}
 
 	
 	
 	@Test(priority=8)
-	public void VerifyStatePlaceholderText()  {
+	public void VerifyStatePlaceholderText() throws InterruptedException  {
 		
 		String VerifyStatePlaceholderText = HomePage_primarySearchObject.VerifyStatePlaceholderText();
 		
@@ -131,11 +150,14 @@ public class PrimarySearchFunctionTestcase extends TestBase {
        
         Assert.assertEquals(VerifyStatePlaceholderText, "- Any -" );
         
+		Wait.Pause(500);
+
+        
 	}
 
 	
 	@Test(priority=9)
-	public void VerifyStateDropdownvalues()  {
+	public void VerifyStateDropdownvalues() throws InterruptedException  {
 		
 		String VerifyStateDropdownvalues = HomePage_primarySearchObject.VerifyStateDropdownvalues();
 		
@@ -143,10 +165,13 @@ public class PrimarySearchFunctionTestcase extends TestBase {
        
         Assert.assertTrue(true);
         
+		Wait.Pause(500);
+
+        
 	}
 
 	@Test(priority=10)
-	public void VerifyclustersLabelName()  {
+	public void VerifyclustersLabelName() throws InterruptedException  {
 		
 		String VerifyclustersLabelName = HomePage_primarySearchObject.VerifyclustersLabelName();
 		
@@ -154,12 +179,15 @@ public class PrimarySearchFunctionTestcase extends TestBase {
        
         Assert.assertEquals(VerifyclustersLabelName, "Clusters" );
         
+		Wait.Pause(500);
+
+        
 	}
 
 	
 	
 	@Test(priority=11)
-	public void VerifyclustersPlaceholderText()  {
+	public void VerifyclustersPlaceholderText() throws InterruptedException  {
 		
 		String VerifyclustersPlaceholderText = HomePage_primarySearchObject.VerifyclustersPlaceholderText();
 		
@@ -167,11 +195,14 @@ public class PrimarySearchFunctionTestcase extends TestBase {
        
         Assert.assertEquals(VerifyclustersPlaceholderText, "- Any -" );
         
+		Wait.Pause(500);
+
+        
 	}
 	
 	
 	@Test(priority=12)
-	public void VerifyclustersDropdownvalues()  {
+	public void VerifyclustersDropdownvalues() throws InterruptedException  {
 		
 		String VerifyclustersDropdownvalues = HomePage_primarySearchObject.VerifyclustersDropdownvalues();
 		
@@ -179,11 +210,14 @@ public class PrimarySearchFunctionTestcase extends TestBase {
        
         Assert.assertTrue(true);
         
+		Wait.Pause(500);
+
+        
 	}
 
 
 	@Test(priority=13)
-	public void VerifyNationalityLabel()  {
+	public void VerifyNationalityLabel() throws InterruptedException  {
 		
 		String VerifyNationalityLabel = HomePage_primarySearchObject.VerifyNationalityLabel();
 		
@@ -194,14 +228,15 @@ public class PrimarySearchFunctionTestcase extends TestBase {
         Assert.assertEquals(VerifyNationalityLabel , "Nationality");
 
        
-        
+		Wait.Pause(500);
+
 	}
 
 	
 	
 	
 	@Test(priority=14)
-	public void VerifyPlaceholderTextNationalityLabel()  {
+	public void VerifyPlaceholderTextNationalityLabel() throws InterruptedException  {
 		
 		String VerifyPlaceholderTextNationalityLabel = HomePage_primarySearchObject.VerifyPlaceholderTextNationalityLabel();
 		
@@ -210,18 +245,23 @@ public class PrimarySearchFunctionTestcase extends TestBase {
         
         
         Assert.assertEquals(VerifyPlaceholderTextNationalityLabel , "- Any -");
+        
+		Wait.Pause(500);
+
 
        
   }
 
 	@Test(priority=15)
-	public void VerifyDRopdownvaluesNationalityLabel()  {
+	public void VerifyDRopdownvaluesNationalityLabel() throws InterruptedException  {
 		
 		String VerifyDRopdownvaluesNationalityLabel = HomePage_primarySearchObject.VerifyDRopdownvaluesNationalityLabel();
 		
         System.out.println("This is verifying VerifyPlaceholderTextNationalityLabel "+ VerifyDRopdownvaluesNationalityLabel);
        
         Assert.assertTrue(true);
+		Wait.Pause(500);
+
 
        
   }
@@ -232,7 +272,7 @@ public class PrimarySearchFunctionTestcase extends TestBase {
 	
 	
 	@Test(priority=16)
-	public void VerifyGenderLabel()  {
+	public void VerifyGenderLabel() throws InterruptedException  {
 		
 		String VerifyGenderLabel = HomePage_primarySearchObject.VerifyGenderLabel();
 		
@@ -240,10 +280,13 @@ public class PrimarySearchFunctionTestcase extends TestBase {
        
         Assert.assertEquals(VerifyGenderLabel, "Gender");
         
+		Wait.Pause(500);
+
+        
 	}
 	
 	@Test(priority=17)
-	public void VerifyPlaceholdertextGenderLabel()  {
+	public void VerifyPlaceholdertextGenderLabel() throws InterruptedException  {
 		
 		String VerifyPlaceholdertextGenderLabel = HomePage_primarySearchObject.VerifyPlaceholdertextGenderLabel();
 		
@@ -251,18 +294,24 @@ public class PrimarySearchFunctionTestcase extends TestBase {
        
         Assert.assertEquals(VerifyPlaceholdertextGenderLabel, "- Any -");
         
+		Wait.Pause(500);
+
+        
 	}
 	
 
 	
 	@Test(priority=18)
-	public void VerifyDropdownValuesGenderLabel()  {
+	public void VerifyDropdownValuesGenderLabel() throws InterruptedException  {
 		
 		String VerifyDropdownValuesGenderLabel = HomePage_primarySearchObject.VerifyDropdownValuesGenderLabel();
 		
         System.out.println("This is the  VerifyPlaceholdertextGenderLabel "+ VerifyDropdownValuesGenderLabel);
        
         Assert.assertTrue(true);
+        
+		Wait.Pause(500);
+
         
 	}
 	
@@ -412,7 +461,7 @@ public class PrimarySearchFunctionTestcase extends TestBase {
      HomePage_primarySearchObject.Reset_click();
          
         
-       Wait.Pause(200);
+		Wait.Pause(500);
  
 
 		
@@ -428,7 +477,10 @@ public class PrimarySearchFunctionTestcase extends TestBase {
 	
 	
 	@AfterClass
-	public void tearDown(){
+	public void tearDown() throws InterruptedException{
+		
+		Wait.Pause(500);
+
 		driver.quit();
 	}
 	

@@ -11,10 +11,12 @@
   
   <test  name="Test">
     <classes>
-      <class name="com.covid19.qa.HomePageTestcases.CovidHomePageTestCase"/>
-      <class name="com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase"/>
+<!--       <class name="com.covid19.qa.HomePageTestcases.CovidHomePageTestCase"/>
+ -->       <class name="com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase"/>
      <class name="com.covid19.qa.HomePageTestcases.AdvanceSearchFunction"/>
-      
+         <!-- <class name="com.covid19.qa.HomePageTestcases.AboutUsPageTaseCase"/>
+         <class name="com.covid19.qa.HomePageTestcases.SignUPFormTestCase"/>
+       -->
       
     </classes>
   </test> <!-- Test -->
