@@ -295,6 +295,7 @@ WebElement ActionsHeading ;
 
 public String VerifyCurrentStatusLabel() 
 {
+	Wait.visibiltyOfElement(driver, 300, VerifyCurrentStatusLabel);
 	return VerifyCurrentStatusLabel.getText();
 }
 
@@ -310,6 +311,8 @@ public String VerifyPlaceholdertextCurrentStatus()
 public String VerifyAllvaluesCurrentStatus() 
 
 {
+	
+	Wait.visibiltyOfElement(driver, 300, VerifyAllvaluesCurrentStatus);
 	VerifyAllvaluesCurrentStatus.getTagName();
 	
 	
@@ -667,6 +670,8 @@ public String VerifyResetButton() {
 
 
 public void Reset_click() {
+	
+	Wait.visibiltyOfElement(driver, 500, ResetButton);
 	
 	ResetButton.click();
 	

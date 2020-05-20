@@ -215,7 +215,9 @@ WebElement VerifypaitentIDequaltoPlaceholdertext ;
 
 
 
-	@FindBy(xpath="//input[@name='field_patient_number_value[value]']")
+	//@FindBy(xpath="//input[@name='field_patient_number_value[value]']")
+	
+	@FindBy(xpath="//input[@id='edit-field-patient-number-value-value']")
 	WebElement InputPaitentID ;
 	
 	@FindBy(xpath="	//label[@for='edit-field-patient-number-value-op--clXcJmNYcG0']")
@@ -474,6 +476,7 @@ WebElement VerifypaitentIDequaltoPlaceholdertext ;
 	public String  VerifypaitentIDequaltoPlaceholdertext() 
 
 	{
+		Wait.visibiltyOfElement(driver, 500, VerifypaitentIDequaltoPlaceholdertext);
 		return VerifypaitentIDequaltoPlaceholdertext.getText();
 	}
 
@@ -484,6 +487,7 @@ WebElement VerifypaitentIDequaltoPlaceholdertext ;
 	public String  VerifyPaitentIDPLaceholderText() 
 
 	{
+		//Wait.visibiltyOfElement(driver, 500, InputPaitentID);
 		return InputPaitentID.getAttribute("placeholder");
 	}
 
@@ -595,13 +599,17 @@ WebElement VerifypaitentIDequaltoPlaceholdertext ;
 	
 	
 	public String  VerifyAgeMinInputFieldPlaceholderText() 
+	
 	{	
+		
+		Wait.visibiltyOfElement(driver, 500, VerifyAgeMinInputFieldPlaceholderText);
 	return	VerifyAgeMinInputFieldPlaceholderText.getAttribute("placeholder");
 				
 	}
 	
 	public String  VerifyAgeMaxInputFieldPlaceholderText() 
 	{	
+		Wait.visibiltyOfElement(driver, 500, VerifyAgeMaxInputFieldPlaceholderText);
 	return	VerifyAgeMaxInputFieldPlaceholderText.getAttribute("placeholder");
 				
 	}
@@ -636,6 +644,7 @@ WebElement VerifypaitentIDequaltoPlaceholdertext ;
 	
 	public String  VerifyDateAnnouncedMaxInputFieldPlaceholderText() 
 	{	
+		Wait.visibiltyOfElement(driver, 500, VerifyDateAnnouncedMaxInputFieldPlaceholderText);
 	return	VerifyDateAnnouncedMaxInputFieldPlaceholderText.getAttribute("placeholder");
 				
 	}
@@ -664,6 +673,8 @@ WebElement VerifypaitentIDequaltoPlaceholdertext ;
 	
 	{	
 		//VerifyStatusChangeDateMinInputtextfieldPlaceholderText.click();
+		
+		Wait.visibiltyOfElement(driver, 5000, VerifyStatusChangeDateMinInputtextfieldPlaceholderText);
 	return	VerifyStatusChangeDateMinInputtextfieldPlaceholderText.getAttribute("placeholder");
 				
 	}
@@ -672,6 +683,8 @@ WebElement VerifypaitentIDequaltoPlaceholdertext ;
 public String  VerifyStatusChangeDateMaxInputtextfieldPlaceholderText() 
 	
 	{	
+	
+	Wait.visibiltyOfElement(driver, 5000, VerifyStatusChangeDateMaxInputtextfieldPlaceholderText);
 		//VerifyStatusChangeDateMinInputtextfieldPlaceholderText.click();
 	return	VerifyStatusChangeDateMaxInputtextfieldPlaceholderText.getAttribute("placeholder");
 				
@@ -711,6 +724,7 @@ public String  VerifyStatusChangeDateMaxInputtextfieldPlaceholderText()
 	public void  PaitentIDSelectEqualtoOperator() 
 
 	{
+		Wait.visibiltyOfElement(driver, 500, SelectEqualto);
 		SelectEqualto.click();
 		 SelectEqualto.sendKeys("Is equal to");
 	}
@@ -726,6 +740,7 @@ public String  VerifyStatusChangeDateMaxInputtextfieldPlaceholderText()
 	public void  InputPaitentIDMinimumValue() 
 
 	{
+		Wait.visibiltyOfElement(driver, 500, InputMinimumPatientID);
 		InputMinimumPatientID.sendKeys("0");
 	}
 
@@ -733,6 +748,8 @@ public String  VerifyStatusChangeDateMaxInputtextfieldPlaceholderText()
 	public void  InputPaitentIDMaximumValue() 
 
 	{
+		Wait.visibiltyOfElement(driver, 500, InputMaximumPatientID);
+
 		InputMaximumPatientID.sendKeys("196");
 	}
 
@@ -740,12 +757,15 @@ public String  VerifyStatusChangeDateMaxInputtextfieldPlaceholderText()
 	public void  InputAgeMinimumValue() 
 
 	{
+		Wait.visibiltyOfElement(driver, 500, InputAgeMinimumValue);
+
 		InputAgeMinimumValue.sendKeys("10");
 	}
  
 	public void  InputAgeMaximumValue() 
 
 	{
+		Wait.visibiltyOfElement(driver, 500, InputAgeMaximumValue);
 		InputAgeMaximumValue.sendKeys("90");
 	}
 
@@ -765,6 +785,7 @@ public String  VerifyStatusChangeDateMaxInputtextfieldPlaceholderText()
 	public void  SelectAgeBetweenOperator() 
 
 	{
+		Wait.visibiltyOfElement(driver, 500, AgeEqualtoOperator);
 		AgeEqualtoOperator.click();
 		AgeEqualtoOperator.sendKeys("Is between");
 	}
@@ -781,6 +802,7 @@ public String  VerifyStatusChangeDateMaxInputtextfieldPlaceholderText()
 	public void  SelectDateAnnouncedIsbetweenOperator() 
 
 	{
+		Wait.visibiltyOfElement(driver, 500, DateAnnouncedEqualtoOperator);
 		DateAnnouncedEqualtoOperator.click();
 		DateAnnouncedEqualtoOperator.sendKeys("Is between");
 	}
@@ -790,6 +812,7 @@ public String  VerifyStatusChangeDateMaxInputtextfieldPlaceholderText()
 	public void  SelectIsBetweenStatusChangeDate() 
 
 	{
+		Wait.visibiltyOfElement(driver, 500, SelectIsBetweenStatusChangeDate);
 		SelectIsBetweenStatusChangeDate.click();
 		SelectIsBetweenStatusChangeDate.sendKeys("Is between");
 		
@@ -811,6 +834,8 @@ public String  VerifyStatusChangeDateMaxInputtextfieldPlaceholderText()
 	public void   AdvnaceSearchExpandButton() 
 
 	{
+		
+		Wait.visibiltyOfElement(driver, 500, AdavceSerachButton);
 		 AdavceSerachButton.click();
 	}
 
@@ -823,6 +848,8 @@ public String  VerifyStatusChangeDateMaxInputtextfieldPlaceholderText()
 
 	public void InputPaitentID() 
 	{
+		
+		//Wait.visibiltyOfElement(driver, 500, InputPaitentID);
 		InputPaitentID.sendKeys("196");
 	}
 	
@@ -965,6 +992,7 @@ public String  PaitentIDLabelVisible() {
 	
 public String VerifyResetButton() 
 {
+	Wait.visibiltyOfElement(driver, 5000, VerifyResetButton);
 	return VerifyResetButton.getAttribute("value");
 	
 	
@@ -973,7 +1001,9 @@ public String VerifyResetButton()
 
 	
 	public void clickSearch() 
+
 	{
+		Wait.visibiltyOfElement(driver, 500, SearchButton);
 		SearchButton.click();
 		
 		
@@ -981,6 +1011,7 @@ public String VerifyResetButton()
 	
 	public String VerifySearchButton() 
 	{
+		Wait.visibiltyOfElement(driver, 5000, SearchButton);
 		return SearchButton.getText();
 		
 }

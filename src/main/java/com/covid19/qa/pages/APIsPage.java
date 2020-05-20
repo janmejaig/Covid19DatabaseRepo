@@ -193,6 +193,7 @@ public class APIsPage extends TestBase {
 	public String   Covid19OauthAPIclickViewDocumentation() 
 
 	{
+		//Wait.visibiltyOfElement(driver, 500, Covid19OauthAPIclickViewDocumentation);
 		Covid19OauthAPIclickViewDocumentation.click();
 		
 		driver.navigate().back();
@@ -212,6 +213,7 @@ public class APIsPage extends TestBase {
 	public String   Covid19OauthAPIHeading() 
 
 	{
+		Wait.visibiltyOfElement(driver, 500, Covid19OauthAPIHeading);
 		
 		return Covid19OauthAPIHeading.getText();
 	}
@@ -223,9 +225,11 @@ public class APIsPage extends TestBase {
 	public String   ClickCOvid19APIViewDocumentastion() 
 
 	{
+		Wait.visibiltyOfElement(driver, 500, ClickCOvid19APIViewDocumentastion);
 		ClickCOvid19APIViewDocumentastion.click();
 		
-		
+		//Wait.visibiltyOfElement(driver, 500, ClickCOvid19APIViewDocumentastion);
+
 		//assert.assertEquals(ClickCOvid19APIViewDocumentastion, "https://covid19database-dev.srijan.net/node/19461");
 		
 		driver.navigate().back();
@@ -242,6 +246,8 @@ public class APIsPage extends TestBase {
 	{
 		//APIsLinkClick.click();
 		
+		Wait.visibiltyOfElement(driver, 500, COvid19APIHeading);
+		
 		return COvid19APIHeading.getText();
 	}
 
@@ -254,6 +260,8 @@ public class APIsPage extends TestBase {
 
 	{
 		//APIsLinkClick.click();
+		
+		Wait.visibiltyOfElement(driver, 500, APIListingHeading);
 		
 		return APIListingHeading.getText();
 	}
@@ -268,8 +276,13 @@ public class APIsPage extends TestBase {
 	public String  VerifyAPIsLinkClick() 
 
 	{
+		
+		Wait.visibiltyOfElement(driver, 500, APIsLinkClick);
 		APIsLinkClick.click();
 		
+		
+		Wait.visibiltyOfElement(driver, 500, APIsLinkClick);
+	
 		return APIsLinkClick.getText();
 	}
 
@@ -277,7 +290,13 @@ public class APIsPage extends TestBase {
 	public String  VerifyAPIsLinkUrl() 
 
 	{
+		Wait.visibiltyOfElement(driver, 500, APIsLinkClick);
+
+		
 		APIsLinkClick.click();
+		
+		Wait.visibiltyOfElement(driver, 500, APIsLinkClick);
+
 		
 		return driver.getCurrentUrl();
 	}

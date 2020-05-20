@@ -116,11 +116,16 @@ WebElement ButtonRedirect ;
        
        public String TableView(){
     	   
+    	   Wait.visibiltyOfElement(driver, 400, TableView);
+    	   
     	   TableView.click();
      		return driver.getCurrentUrl();
   		}
   
        public String DiplayingText(){
+    	   
+    	   Wait.visibiltyOfElement(driver, 400, DiplayingText);
+
     	   
      		return DiplayingText.getText();
   		}
@@ -128,10 +133,15 @@ WebElement ButtonRedirect ;
        
        public String LastUpdatedText(){
     	   
+    	   Wait.visibiltyOfElement(driver, 400, LastUpdatedText);
+
+    	   
      		return LastUpdatedText.getText();
   		}
   
        public String HowSearchWorks() throws InterruptedException{
+    	   
+    	   Wait.visibiltyOfElement(driver, 500, HowSearchWorks);
     	   
    		TestUtil.mouseHover(HowSearchWorks);
    		TestUtil.drawBorder(HowSearchWorks, driver);
@@ -158,6 +168,7 @@ WebElement ButtonRedirect ;
 
        public String ButtonRedirect(){
     	   
+    	   Wait.visibiltyOfElement(driver, 400, ButtonRedirect);
      	   ButtonRedirect.click();
      	   driver.getCurrentUrl();
      	 return  driver.getCurrentUrl();

@@ -39,7 +39,7 @@ public class AdvanceSearchFunction extends TestBase {
        
        System.out.println(ButtonTitle);
        
-       Assert.assertEquals(ButtonTitle, "Advanced Search");
+       Assert.assertEquals(ButtonTitle, prop.getProperty("ButtonTitle"));
        
        AdvanceSearchHomePageObject.AdvnaceSearchExpandButton();
        
@@ -48,7 +48,7 @@ public class AdvanceSearchFunction extends TestBase {
 //       System.out.println(">>>>>>>>this is  paitnet ID title" +PaitentIDTitle);
 //  
        
-       Wait.Pause(500);
+      // Wait.Pause(500);
 
 	
 	}
@@ -63,7 +63,7 @@ public class AdvanceSearchFunction extends TestBase {
  String VerifypaitentIDequaltoPlaceholdertext =  AdvanceSearchHomePageObject.VerifypaitentIDequaltoPlaceholdertext();
       
       System.out.println(VerifypaitentIDequaltoPlaceholdertext);       
-     Assert.assertEquals(VerifypaitentIDequaltoPlaceholdertext, "Is equal to");
+     Assert.assertEquals(VerifypaitentIDequaltoPlaceholdertext, prop.getProperty("VerifypaitentIDequaltoPlaceholdertext"));
        
        
      Wait.Pause(500);
@@ -81,9 +81,9 @@ public class AdvanceSearchFunction extends TestBase {
      
      
      
-     Assert.assertEquals(VerifyPaitentIDPLaceholderText, "Patient ID");
+     Assert.assertEquals(VerifyPaitentIDPLaceholderText,prop.getProperty("PaitentID"));
      
-     Wait.Pause(500);
+     //Wait.Pause(500);
        
        AdvanceSearchHomePageObject.PaitentIDSelectEqualtoOperator();
        
@@ -104,9 +104,9 @@ public class AdvanceSearchFunction extends TestBase {
       
       System.out.println(VerifyStatePatientIDTitle);
       
-      Assert.assertEquals(VerifyStatePatientIDTitle, "State Patient ID");
+      Assert.assertEquals(VerifyStatePatientIDTitle, prop.getProperty("StatePatientID"));
       
-      Wait.Pause(500);
+      //Wait.Pause(500);
 
       
       }
@@ -125,12 +125,12 @@ public class AdvanceSearchFunction extends TestBase {
     
    System.out.println(VerifyStatePatientIDPlaceHoldertext);
     
-   Assert.assertEquals(VerifyStatePatientIDPlaceHoldertext, "State Patient ID");
+   Assert.assertEquals(VerifyStatePatientIDPlaceHoldertext, prop.getProperty("StatePatientID"));
 
 AdvanceSearchHomePageObject.StatePatientNumberInput();
 
    
-Wait.Pause(500);
+//Wait.Pause(500);
 
       }
       
@@ -146,10 +146,10 @@ Wait.Pause(500);
       
       System.out.println("this is district title name "+ DistrictTitle);
       
-     Assert.assertEquals(DistrictTitle, "District");
+     Assert.assertEquals(DistrictTitle, prop.getProperty("DistrictTitle"));
       
       
-     Wait.Pause(500);
+    // Wait.Pause(500);
 
     
       //District title place holder text
@@ -160,12 +160,12 @@ Wait.Pause(500);
       
       System.out.println(VerifyDistrictPlaceHolderText);
       
-   Assert.assertEquals(VerifyDistrictPlaceHolderText, "District");
+   Assert.assertEquals(VerifyDistrictPlaceHolderText, prop.getProperty("DistrictTitle"));
       
     AdvanceSearchHomePageObject.InputDistrictName();
 
        
-    Wait.Pause(500);
+   // Wait.Pause(500);
 
     
       }
@@ -178,9 +178,9 @@ Wait.Pause(500);
      
      System.out.println(VerifyCityTitle);
      
-   Assert.assertEquals(VerifyCityTitle, "City");
+   Assert.assertEquals(VerifyCityTitle, prop.getProperty("CityTitle"));
     
-   Wait.Pause(500);
+   //Wait.Pause(500);
  
       }
    
@@ -192,7 +192,7 @@ Wait.Pause(500);
    
    System.out.println(VerifyCityPlaceHolderText);
    
-   Assert.assertEquals(VerifyCityPlaceHolderText, "City");
+   Assert.assertEquals(VerifyCityPlaceHolderText, prop.getProperty("CityTitle"));
     
       
        
@@ -207,7 +207,7 @@ Wait.Pause(500);
       
       System.out.println(VerifyZipcodeTitle);
       
-      Assert.assertEquals(VerifyZipcodeTitle, "Zip Code");
+      Assert.assertEquals(VerifyZipcodeTitle, prop.getProperty("Zipcode"));
       }  
       
       @Test(priority=10)
@@ -217,10 +217,10 @@ Wait.Pause(500);
       
       System.out.println(VerifyZipcodePlaceholderText);
       
-      Assert.assertEquals(VerifyZipcodePlaceholderText, "Zip Code");
+      Assert.assertEquals(VerifyZipcodePlaceholderText, prop.getProperty("Zipcode"));
      
       
-      Wait.Pause(500);
+     // Wait.Pause(500);
       
       }
 
@@ -233,7 +233,7 @@ Wait.Pause(500);
       
       System.out.println(VerifyAgeEqualToPlaceholderText);
       
-      Assert.assertEquals(VerifyAgeEqualToPlaceholderText, "Is equal to");
+      Assert.assertEquals(VerifyAgeEqualToPlaceholderText, prop.getProperty("VerifypaitentIDequaltoPlaceholdertext"));
  
 
       
@@ -241,7 +241,7 @@ Wait.Pause(500);
       
       AdvanceSearchHomePageObject.SelectAgeEqualtoOperator();
       
-      Wait.Pause(500);
+     // Wait.Pause(500);
 
       
       }
@@ -253,7 +253,7 @@ Wait.Pause(500);
         
         System.out.println(VerifyInputTextfieldPlaceholderText);
         
-        Assert.assertEquals(VerifyInputTextfieldPlaceholderText, "Age");
+        Assert.assertEquals(VerifyInputTextfieldPlaceholderText, prop.getProperty("age"));
    
       
       
@@ -263,7 +263,7 @@ Wait.Pause(500);
       
       AdvanceSearchHomePageObject.InputAge();
       
-      Wait.Pause(500);
+     // Wait.Pause(500);
 
       
       }
@@ -280,7 +280,7 @@ Wait.Pause(500);
       
       System.out.println(VerifyDateAnnouncedequaltoPlaceholderText);
       
-      Assert.assertEquals(VerifyDateAnnouncedequaltoPlaceholderText, "Is equal to");
+      Assert.assertEquals(VerifyDateAnnouncedequaltoPlaceholderText, prop.getProperty("verifyequalto"));
  
       
       
@@ -288,7 +288,7 @@ Wait.Pause(500);
 
       AdvanceSearchHomePageObject.DateAnnouncedEqualtoOperator(); 
       
-      Wait.Pause(500);
+     // Wait.Pause(500);
 
       
       }
@@ -301,7 +301,7 @@ Wait.Pause(500);
         
         System.out.println(VerifyDateAnnouncedInputFieldPlaceholderText);
         
-        Assert.assertEquals(VerifyDateAnnouncedInputFieldPlaceholderText, "Date Announced ");
+        Assert.assertEquals(VerifyDateAnnouncedInputFieldPlaceholderText, prop.getProperty("verifydateannounce"));
    
       
       
@@ -310,7 +310,7 @@ Wait.Pause(500);
       AdvanceSearchHomePageObject.DateAnnounced();
        
        
-      Wait.Pause(500);
+     // Wait.Pause(500);
        
       }
       
@@ -323,9 +323,9 @@ Wait.Pause(500);
        
        System.out.println(VerifyStatusChangeDatePlaceholderText);
        
-       Assert.assertEquals(VerifyStatusChangeDatePlaceholderText, "Is equal to");
+       Assert.assertEquals(VerifyStatusChangeDatePlaceholderText, prop.getProperty("verifyequalto"));
   
-       Wait.Pause(500);
+      // Wait.Pause(500);
 
        } 
        
@@ -343,7 +343,7 @@ Wait.Pause(500);
       
       System.out.println(VerifySearchButton);
       
-      Assert.assertEquals(VerifySearchButton, "Search");
+      Assert.assertEquals(VerifySearchButton, prop.getProperty("verifySearch"));
  
        
        
@@ -372,9 +372,9 @@ Wait.Pause(500);
          
          System.out.println(VerifyPaitentIDMinPLaceholderText);
          
-         Assert.assertEquals(VerifyPaitentIDMinPLaceholderText, "Patient ID");
+         Assert.assertEquals(VerifyPaitentIDMinPLaceholderText, prop.getProperty("PaitentID"));
          
-         Wait.Pause(500);
+       //  Wait.Pause(500);
 
     
        }
@@ -387,7 +387,7 @@ Wait.Pause(500);
           
           System.out.println(VerifyPaitentIDMaxPLaceholderText);
           
-          Assert.assertEquals(VerifyPaitentIDMaxPLaceholderText, "Patient ID");
+          Assert.assertEquals(VerifyPaitentIDMaxPLaceholderText, prop.getProperty("PaitentID"));
      
        
        AdvanceSearchHomePageObject.InputPaitentIDMinimumValue();
@@ -397,7 +397,7 @@ Wait.Pause(500);
        AdvanceSearchHomePageObject.SelectAgeBetweenOperator();
        
        
-       Wait.Pause(500);
+       //Wait.Pause(500);
 
        
          }
@@ -409,10 +409,10 @@ Wait.Pause(500);
          
          System.out.println(VerifyAgeMinInputFieldPlaceholderText);
          
-         Assert.assertEquals(VerifyAgeMinInputFieldPlaceholderText, "Age Min");
+         Assert.assertEquals(VerifyAgeMinInputFieldPlaceholderText, prop.getProperty("minage"));
          
          
-         Wait.Pause(500);
+       //  Wait.Pause(500);
 
     
        }
@@ -423,13 +423,13 @@ Wait.Pause(500);
           
           System.out.println(VerifyAgeMaxInputFieldPlaceholderText);
           
-          Assert.assertEquals(VerifyAgeMaxInputFieldPlaceholderText, "Age Max");
+          Assert.assertEquals(VerifyAgeMaxInputFieldPlaceholderText, prop.getProperty("maxage"));
      
        
        AdvanceSearchHomePageObject.InputAgeMinimumValue();
        AdvanceSearchHomePageObject.InputAgeMaximumValue();
        
-       Wait.Pause(500);
+      // Wait.Pause(500);
     
        
          }
@@ -444,7 +444,7 @@ Wait.Pause(500);
          
          System.out.println(VerifyDateAnnouncedMinInputFieldPlaceholderText);
          
-         Assert.assertEquals(VerifyDateAnnouncedMinInputFieldPlaceholderText, "Date Announced ");
+         Assert.assertEquals(VerifyDateAnnouncedMinInputFieldPlaceholderText, prop.getProperty("verifydateannounce"));
        }
          @Test(priority=22)
        	public void VerifyDateAnnouncedMaxInputFieldPlaceholderText() throws InterruptedException {
@@ -457,7 +457,7 @@ Wait.Pause(500);
           
           System.out.println(VerifyDateAnnouncedMaxInputFieldPlaceholderText);
           
-          Assert.assertEquals(VerifyDateAnnouncedMaxInputFieldPlaceholderText, "Date Announced ");
+          Assert.assertEquals(VerifyDateAnnouncedMaxInputFieldPlaceholderText, prop.getProperty("verifydateannounce"));
 
           
          }   
@@ -486,7 +486,7 @@ Wait.Pause(500);
           
 
      	 
-             Wait.Pause(5000);
+            // Wait.Pause(5000);
           
       
 
@@ -495,24 +495,24 @@ Wait.Pause(500);
             
             System.out.println(VerifyStatusChangeDateMinInputtextfieldPlaceholderText);
             
-            Assert.assertEquals(VerifyStatusChangeDateMinInputtextfieldPlaceholderText, "Status Change Date");
+            Assert.assertEquals(VerifyStatusChangeDateMinInputtextfieldPlaceholderText, prop.getProperty("statuschange"));
 
-            Wait.Pause(5000);
+           // Wait.Pause(5000);
      
          }
             
             @Test(priority=25)
           	public void VerifyStatusChangeDateMaxInputtextfieldPlaceholderText() throws InterruptedException {
         	   
-                 Wait.Pause(5000);
+               //  Wait.Pause(5000);
                                 
                  String   VerifyStatusChangeDateMaxInputtextfieldPlaceholderText = AdvanceSearchHomePageObject.VerifyStatusChangeDateMaxInputtextfieldPlaceholderText();
                 
                 System.out.println(VerifyStatusChangeDateMaxInputtextfieldPlaceholderText);
                 
-                Assert.assertEquals(VerifyStatusChangeDateMaxInputtextfieldPlaceholderText, "Status Change Date");
+                Assert.assertEquals(VerifyStatusChangeDateMaxInputtextfieldPlaceholderText, prop.getProperty("statuschange"));
 
-                Wait.Pause(5000);
+               // Wait.Pause(5000);
 
         
             
@@ -540,7 +540,7 @@ Wait.Pause(500);
      // AdvanceSearchHomePageObject.clickRangeSearchButton();
 
 
-       Wait.Pause(5000);
+     //  Wait.implicitWait(5000);
 
 
        String title = AdvanceSearchHomePageObject.PaitentIDVisible();
@@ -621,14 +621,14 @@ Wait.Pause(500);
        
        
       
-        Wait.Pause(5000);
+        //Wait.implicitWait(5000);
       }  
 	
 	
 	@AfterClass
 	public void tearDown() throws InterruptedException{
 		
-		Wait.Pause(5000);
+		Wait.implicitWait(500);
 
 		
 		driver.quit();

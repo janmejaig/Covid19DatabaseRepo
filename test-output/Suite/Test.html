@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>38/6/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri May 08 20:28:36 IST 2020</td>
+<td>Started on:</td><td>Wed May 20 19:08:39 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>65 seconds (65783 ms)</td>
+<tr><td>Total time:</td><td>36 seconds (36335 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,67 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.covid19.qa.HomePageTestcases.AdvanceSearchFunction.tearDown()'><b>tearDown</b><br>Test class: com.covid19.qa.HomePageTestcases.AdvanceSearchFunction</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Srijan-ka-MBP-2&apos;, ip: &apos;2401:4900:44e2:bcc0:581:7cd6:d043:9e4d%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.2&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringTimeouts.implicitlyWait(EventFiringWebDriver.java:670)
+	at com.covid.qa.utils.Wait.implicitWait(Wait.java:24)
+	at com.covid19.qa.HomePageTestcases.AdvanceSearchFunction.tearDown(AdvanceSearchFunction.java:631)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace83674409", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace83674409'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Srijan-ka-MBP-2&apos;, ip: &apos;2401:4900:44e2:bcc0:581:7cd6:d043:9e4d%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.2&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringTimeouts.implicitlyWait(EventFiringWebDriver.java:670)
+	at com.covid.qa.utils.Wait.implicitWait(Wait.java:24)
+	at com.covid19.qa.HomePageTestcases.AdvanceSearchFunction.tearDown(AdvanceSearchFunction.java:631)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:212)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@2b546384</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -78,7 +139,7 @@ function toggleAllBoxes() {
 <td title='com.covid19.qa.HomePageTestcases.AdvanceSearchFunction.VerifyAgeMaxInputFieldPlaceholderText()'><b>VerifyAgeMaxInputFieldPlaceholderText</b><br>Test class: com.covid19.qa.HomePageTestcases.AdvanceSearchFunction</td>
 <td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Srijan-ka-MacBook-Pro-2.local&apos;, ip: &apos;fe80:0:0:0:4ff:a6f1:814c:e0df%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.2&apos;, java.version: &apos;1.8.0_202&apos;
+System info: host: &apos;Srijan-ka-MBP-2&apos;, ip: &apos;2401:4900:44e2:bcc0:581:7cd6:d043:9e4d%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.2&apos;, java.version: &apos;1.8.0_202&apos;
 Driver info: driver.version: EventFiringWebDriver
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
@@ -92,13 +153,19 @@ Driver info: driver.version: EventFiringWebDriver
 	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy11.getAttribute(Unknown Source)
-	at com.covid19.qa.pages.AdvanceSearchHomePage.VerifyAgeMaxInputFieldPlaceholderText(AdvanceSearchHomePage.java:605)
+	at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.covid.qa.utils.Wait.visibiltyOfElement(Wait.java:44)
+	at com.covid19.qa.pages.AdvanceSearchHomePage.VerifyAgeMaxInputFieldPlaceholderText(AdvanceSearchHomePage.java:612)
 	at com.covid19.qa.HomePageTestcases.AdvanceSearchFunction.VerifyAgeMaxInputFieldPlaceholderText(AdvanceSearchFunction.java:422)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace800497654", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace800497654'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2117193231", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2117193231'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Srijan-ka-MacBook-Pro-2.local&apos;, ip: &apos;fe80:0:0:0:4ff:a6f1:814c:e0df%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.2&apos;, java.version: &apos;1.8.0_202&apos;
+System info: host: &apos;Srijan-ka-MBP-2&apos;, ip: &apos;2401:4900:44e2:bcc0:581:7cd6:d043:9e4d%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.2&apos;, java.version: &apos;1.8.0_202&apos;
 Driver info: driver.version: EventFiringWebDriver
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
@@ -107,7 +174,7 @@ Driver info: driver.version: EventFiringWebDriver
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
@@ -115,8 +182,14 @@ Driver info: driver.version: EventFiringWebDriver
 	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy11.getAttribute(Unknown Source)
-	at com.covid19.qa.pages.AdvanceSearchHomePage.VerifyAgeMaxInputFieldPlaceholderText(AdvanceSearchHomePage.java:605)
+	at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.covid.qa.utils.Wait.visibiltyOfElement(Wait.java:44)
+	at com.covid19.qa.pages.AdvanceSearchHomePage.VerifyAgeMaxInputFieldPlaceholderText(AdvanceSearchHomePage.java:612)
 	at com.covid19.qa.HomePageTestcases.AdvanceSearchFunction.VerifyAgeMaxInputFieldPlaceholderText(AdvanceSearchFunction.java:422)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -150,7 +223,7 @@ Driver info: driver.version: EventFiringWebDriver
 <td title='com.covid19.qa.HomePageTestcases.AdvanceSearchFunction.VerifyDateAnnouncedMaxInputFieldPlaceholderText()'><b>VerifyDateAnnouncedMaxInputFieldPlaceholderText</b><br>Test class: com.covid19.qa.HomePageTestcases.AdvanceSearchFunction</td>
 <td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Srijan-ka-MacBook-Pro-2.local&apos;, ip: &apos;fe80:0:0:0:4ff:a6f1:814c:e0df%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.2&apos;, java.version: &apos;1.8.0_202&apos;
+System info: host: &apos;Srijan-ka-MBP-2&apos;, ip: &apos;2401:4900:44e2:bcc0:581:7cd6:d043:9e4d%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.2&apos;, java.version: &apos;1.8.0_202&apos;
 Driver info: driver.version: EventFiringWebDriver
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
@@ -164,13 +237,19 @@ Driver info: driver.version: EventFiringWebDriver
 	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy11.getAttribute(Unknown Source)
-	at com.covid19.qa.pages.AdvanceSearchHomePage.VerifyDateAnnouncedMaxInputFieldPlaceholderText(AdvanceSearchHomePage.java:639)
+	at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.covid.qa.utils.Wait.visibiltyOfElement(Wait.java:44)
+	at com.covid19.qa.pages.AdvanceSearchHomePage.VerifyDateAnnouncedMaxInputFieldPlaceholderText(AdvanceSearchHomePage.java:647)
 	at com.covid19.qa.HomePageTestcases.AdvanceSearchFunction.VerifyDateAnnouncedMaxInputFieldPlaceholderText(AdvanceSearchFunction.java:456)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace877363600", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace877363600'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace855501888", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace855501888'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Srijan-ka-MacBook-Pro-2.local&apos;, ip: &apos;fe80:0:0:0:4ff:a6f1:814c:e0df%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.2&apos;, java.version: &apos;1.8.0_202&apos;
+System info: host: &apos;Srijan-ka-MBP-2&apos;, ip: &apos;2401:4900:44e2:bcc0:581:7cd6:d043:9e4d%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.2&apos;, java.version: &apos;1.8.0_202&apos;
 Driver info: driver.version: EventFiringWebDriver
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
@@ -179,7 +258,7 @@ Driver info: driver.version: EventFiringWebDriver
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
@@ -187,8 +266,14 @@ Driver info: driver.version: EventFiringWebDriver
 	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy11.getAttribute(Unknown Source)
-	at com.covid19.qa.pages.AdvanceSearchHomePage.VerifyDateAnnouncedMaxInputFieldPlaceholderText(AdvanceSearchHomePage.java:639)
+	at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.covid.qa.utils.Wait.visibiltyOfElement(Wait.java:44)
+	at com.covid19.qa.pages.AdvanceSearchHomePage.VerifyDateAnnouncedMaxInputFieldPlaceholderText(AdvanceSearchHomePage.java:647)
 	at com.covid19.qa.HomePageTestcases.AdvanceSearchFunction.VerifyDateAnnouncedMaxInputFieldPlaceholderText(AdvanceSearchFunction.java:456)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -222,7 +307,7 @@ Driver info: driver.version: EventFiringWebDriver
 <td title='com.covid19.qa.HomePageTestcases.AdvanceSearchFunction.VerifyDateAnnouncedMinInputFieldPlaceholderText()'><b>VerifyDateAnnouncedMinInputFieldPlaceholderText</b><br>Test class: com.covid19.qa.HomePageTestcases.AdvanceSearchFunction</td>
 <td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Srijan-ka-MacBook-Pro-2.local&apos;, ip: &apos;fe80:0:0:0:4ff:a6f1:814c:e0df%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.2&apos;, java.version: &apos;1.8.0_202&apos;
+System info: host: &apos;Srijan-ka-MBP-2&apos;, ip: &apos;2401:4900:44e2:bcc0:581:7cd6:d043:9e4d%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.2&apos;, java.version: &apos;1.8.0_202&apos;
 Driver info: driver.version: EventFiringWebDriver
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
@@ -236,13 +321,19 @@ Driver info: driver.version: EventFiringWebDriver
 	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy11.click(Unknown Source)
-	at com.covid19.qa.pages.AdvanceSearchHomePage.SelectDateAnnouncedIsbetweenOperator(AdvanceSearchHomePage.java:784)
+	at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.covid.qa.utils.Wait.visibiltyOfElement(Wait.java:44)
+	at com.covid19.qa.pages.AdvanceSearchHomePage.SelectDateAnnouncedIsbetweenOperator(AdvanceSearchHomePage.java:805)
 	at com.covid19.qa.HomePageTestcases.AdvanceSearchFunction.VerifyDateAnnouncedMinInputFieldPlaceholderText(AdvanceSearchFunction.java:440)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2135790485", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2135790485'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace814245389", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace814245389'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Srijan-ka-MacBook-Pro-2.local&apos;, ip: &apos;fe80:0:0:0:4ff:a6f1:814c:e0df%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.2&apos;, java.version: &apos;1.8.0_202&apos;
+System info: host: &apos;Srijan-ka-MBP-2&apos;, ip: &apos;2401:4900:44e2:bcc0:581:7cd6:d043:9e4d%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.2&apos;, java.version: &apos;1.8.0_202&apos;
 Driver info: driver.version: EventFiringWebDriver
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
@@ -251,7 +342,7 @@ Driver info: driver.version: EventFiringWebDriver
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
@@ -259,8 +350,14 @@ Driver info: driver.version: EventFiringWebDriver
 	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy11.click(Unknown Source)
-	at com.covid19.qa.pages.AdvanceSearchHomePage.SelectDateAnnouncedIsbetweenOperator(AdvanceSearchHomePage.java:784)
+	at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.covid.qa.utils.Wait.visibiltyOfElement(Wait.java:44)
+	at com.covid19.qa.pages.AdvanceSearchHomePage.SelectDateAnnouncedIsbetweenOperator(AdvanceSearchHomePage.java:805)
 	at com.covid19.qa.HomePageTestcases.AdvanceSearchFunction.VerifyDateAnnouncedMinInputFieldPlaceholderText(AdvanceSearchFunction.java:440)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -294,7 +391,7 @@ Driver info: driver.version: EventFiringWebDriver
 <td title='com.covid19.qa.HomePageTestcases.AdvanceSearchFunction.VerifyStatusChangeDateMaxInputtextfieldPlaceholderText()'><b>VerifyStatusChangeDateMaxInputtextfieldPlaceholderText</b><br>Test class: com.covid19.qa.HomePageTestcases.AdvanceSearchFunction</td>
 <td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Srijan-ka-MacBook-Pro-2.local&apos;, ip: &apos;fe80:0:0:0:4ff:a6f1:814c:e0df%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.2&apos;, java.version: &apos;1.8.0_202&apos;
+System info: host: &apos;Srijan-ka-MBP-2&apos;, ip: &apos;2401:4900:44e2:bcc0:581:7cd6:d043:9e4d%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.2&apos;, java.version: &apos;1.8.0_202&apos;
 Driver info: driver.version: EventFiringWebDriver
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
@@ -308,13 +405,19 @@ Driver info: driver.version: EventFiringWebDriver
 	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy11.getAttribute(Unknown Source)
-	at com.covid19.qa.pages.AdvanceSearchHomePage.VerifyStatusChangeDateMaxInputtextfieldPlaceholderText(AdvanceSearchHomePage.java:676)
+	at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.covid.qa.utils.Wait.visibiltyOfElement(Wait.java:44)
+	at com.covid19.qa.pages.AdvanceSearchHomePage.VerifyStatusChangeDateMaxInputtextfieldPlaceholderText(AdvanceSearchHomePage.java:687)
 	at com.covid19.qa.HomePageTestcases.AdvanceSearchFunction.VerifyStatusChangeDateMaxInputtextfieldPlaceholderText(AdvanceSearchFunction.java:509)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1971283804", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1971283804'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1255445356", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1255445356'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Srijan-ka-MacBook-Pro-2.local&apos;, ip: &apos;fe80:0:0:0:4ff:a6f1:814c:e0df%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.2&apos;, java.version: &apos;1.8.0_202&apos;
+System info: host: &apos;Srijan-ka-MBP-2&apos;, ip: &apos;2401:4900:44e2:bcc0:581:7cd6:d043:9e4d%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.2&apos;, java.version: &apos;1.8.0_202&apos;
 Driver info: driver.version: EventFiringWebDriver
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
@@ -323,7 +426,7 @@ Driver info: driver.version: EventFiringWebDriver
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
@@ -331,8 +434,14 @@ Driver info: driver.version: EventFiringWebDriver
 	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy11.getAttribute(Unknown Source)
-	at com.covid19.qa.pages.AdvanceSearchHomePage.VerifyStatusChangeDateMaxInputtextfieldPlaceholderText(AdvanceSearchHomePage.java:676)
+	at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.covid.qa.utils.Wait.visibiltyOfElement(Wait.java:44)
+	at com.covid19.qa.pages.AdvanceSearchHomePage.VerifyStatusChangeDateMaxInputtextfieldPlaceholderText(AdvanceSearchHomePage.java:687)
 	at com.covid19.qa.HomePageTestcases.AdvanceSearchFunction.VerifyStatusChangeDateMaxInputtextfieldPlaceholderText(AdvanceSearchFunction.java:509)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -360,13 +469,13 @@ Driver info: driver.version: EventFiringWebDriver
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>5</td>
+<td>0</td>
 <td>com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@2b546384</td></tr>
 <tr>
 <td title='com.covid19.qa.HomePageTestcases.AdvanceSearchFunction.VerifyStatusChangeDateMinInputtextfieldPlaceholderText()'><b>VerifyStatusChangeDateMinInputtextfieldPlaceholderText</b><br>Test class: com.covid19.qa.HomePageTestcases.AdvanceSearchFunction</td>
 <td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Srijan-ka-MacBook-Pro-2.local&apos;, ip: &apos;fe80:0:0:0:4ff:a6f1:814c:e0df%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.2&apos;, java.version: &apos;1.8.0_202&apos;
+System info: host: &apos;Srijan-ka-MBP-2&apos;, ip: &apos;2401:4900:44e2:bcc0:581:7cd6:d043:9e4d%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.2&apos;, java.version: &apos;1.8.0_202&apos;
 Driver info: driver.version: EventFiringWebDriver
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
@@ -379,10 +488,10 @@ Driver info: driver.version: EventFiringWebDriver
 	at com.sun.proxy.$Proxy7.findElement(Unknown Source)
 	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
 	at com.covid19.qa.HomePageTestcases.AdvanceSearchFunction.VerifyStatusChangeDateMinInputtextfieldPlaceholderText(AdvanceSearchFunction.java:473)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2042979183", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2042979183'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace467146800", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace467146800'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Srijan-ka-MacBook-Pro-2.local&apos;, ip: &apos;fe80:0:0:0:4ff:a6f1:814c:e0df%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.2&apos;, java.version: &apos;1.8.0_202&apos;
+System info: host: &apos;Srijan-ka-MBP-2&apos;, ip: &apos;2401:4900:44e2:bcc0:581:7cd6:d043:9e4d%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.2&apos;, java.version: &apos;1.8.0_202&apos;
 Driver info: driver.version: EventFiringWebDriver
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
@@ -391,7 +500,7 @@ Driver info: driver.version: EventFiringWebDriver
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
@@ -430,7 +539,7 @@ Driver info: driver.version: EventFiringWebDriver
 <td title='com.covid19.qa.HomePageTestcases.AdvanceSearchFunction.VerifyStatusChangeDateMinInputtextfieldPlaceholderText1()'><b>VerifyStatusChangeDateMinInputtextfieldPlaceholderText1</b><br>Test class: com.covid19.qa.HomePageTestcases.AdvanceSearchFunction</td>
 <td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Srijan-ka-MacBook-Pro-2.local&apos;, ip: &apos;fe80:0:0:0:4ff:a6f1:814c:e0df%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.2&apos;, java.version: &apos;1.8.0_202&apos;
+System info: host: &apos;Srijan-ka-MBP-2&apos;, ip: &apos;2401:4900:44e2:bcc0:581:7cd6:d043:9e4d%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.2&apos;, java.version: &apos;1.8.0_202&apos;
 Driver info: driver.version: EventFiringWebDriver
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
@@ -444,13 +553,19 @@ Driver info: driver.version: EventFiringWebDriver
 	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy11.getAttribute(Unknown Source)
-	at com.covid19.qa.pages.AdvanceSearchHomePage.VerifyStatusChangeDateMinInputtextfieldPlaceholderText(AdvanceSearchHomePage.java:667)
+	at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.covid.qa.utils.Wait.visibiltyOfElement(Wait.java:44)
+	at com.covid19.qa.pages.AdvanceSearchHomePage.VerifyStatusChangeDateMinInputtextfieldPlaceholderText(AdvanceSearchHomePage.java:677)
 	at com.covid19.qa.HomePageTestcases.AdvanceSearchFunction.VerifyStatusChangeDateMinInputtextfieldPlaceholderText1(AdvanceSearchFunction.java:494)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1904609259", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1904609259'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1693003105", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1693003105'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Srijan-ka-MacBook-Pro-2.local&apos;, ip: &apos;fe80:0:0:0:4ff:a6f1:814c:e0df%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.2&apos;, java.version: &apos;1.8.0_202&apos;
+System info: host: &apos;Srijan-ka-MBP-2&apos;, ip: &apos;2401:4900:44e2:bcc0:581:7cd6:d043:9e4d%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.2&apos;, java.version: &apos;1.8.0_202&apos;
 Driver info: driver.version: EventFiringWebDriver
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
@@ -459,7 +574,7 @@ Driver info: driver.version: EventFiringWebDriver
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
@@ -467,8 +582,14 @@ Driver info: driver.version: EventFiringWebDriver
 	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy11.getAttribute(Unknown Source)
-	at com.covid19.qa.pages.AdvanceSearchHomePage.VerifyStatusChangeDateMinInputtextfieldPlaceholderText(AdvanceSearchHomePage.java:667)
+	at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.covid.qa.utils.Wait.visibiltyOfElement(Wait.java:44)
+	at com.covid19.qa.pages.AdvanceSearchHomePage.VerifyStatusChangeDateMinInputtextfieldPlaceholderText(AdvanceSearchHomePage.java:677)
 	at com.covid19.qa.HomePageTestcases.AdvanceSearchFunction.VerifyStatusChangeDateMinInputtextfieldPlaceholderText1(AdvanceSearchFunction.java:494)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -496,7 +617,7 @@ Driver info: driver.version: EventFiringWebDriver
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>5</td>
+<td>0</td>
 <td>com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@2b546384</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -514,12 +635,12 @@ Driver info: driver.version: EventFiringWebDriver
 <tr>
 <td title='com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase.PrimarySearch_function()'><b>PrimarySearch_function</b><br>Test class: com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase</td>
 <td></td>
-<td>8</td>
+<td>11</td>
 <td>com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase@25b485ba</td></tr>
 <tr>
 <td title='com.covid19.qa.HomePageTestcases.AdvanceSearchFunction.VerifyAgeEqualToPlaceholderText()'><b>VerifyAgeEqualToPlaceholderText</b><br>Test class: com.covid19.qa.HomePageTestcases.AdvanceSearchFunction</td>
 <td></td>
-<td>1</td>
+<td>0</td>
 <td>com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@2b546384</td></tr>
 <tr>
 <td title='com.covid19.qa.HomePageTestcases.AdvanceSearchFunction.VerifyAgeMinInputFieldPlaceholderText()'><b>VerifyAgeMinInputFieldPlaceholderText</b><br>Test class: com.covid19.qa.HomePageTestcases.AdvanceSearchFunction</td>
@@ -554,12 +675,12 @@ Driver info: driver.version: EventFiringWebDriver
 <tr>
 <td title='com.covid19.qa.HomePageTestcases.AdvanceSearchFunction.VerifyDateAnnouncedequaltoPlaceholderText()'><b>VerifyDateAnnouncedequaltoPlaceholderText</b><br>Test class: com.covid19.qa.HomePageTestcases.AdvanceSearchFunction</td>
 <td></td>
-<td>1</td>
+<td>0</td>
 <td>com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@2b546384</td></tr>
 <tr>
 <td title='com.covid19.qa.HomePageTestcases.AdvanceSearchFunction.VerifyDistrictTitle()'><b>VerifyDistrictTitle</b><br>Test class: com.covid19.qa.HomePageTestcases.AdvanceSearchFunction</td>
 <td></td>
-<td>1</td>
+<td>0</td>
 <td>com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@2b546384</td></tr>
 <tr>
 <td title='com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase.VerifyDropdownValuesGenderLabel()'><b>VerifyDropdownValuesGenderLabel</b><br>Test class: com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase</td>
@@ -584,7 +705,7 @@ Driver info: driver.version: EventFiringWebDriver
 <tr>
 <td title='com.covid19.qa.HomePageTestcases.AdvanceSearchFunction.VerifyPaitentIDMaxPLaceholderText()'><b>VerifyPaitentIDMaxPLaceholderText</b><br>Test class: com.covid19.qa.HomePageTestcases.AdvanceSearchFunction</td>
 <td></td>
-<td>1</td>
+<td>0</td>
 <td>com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@2b546384</td></tr>
 <tr>
 <td title='com.covid19.qa.HomePageTestcases.AdvanceSearchFunction.VerifyPaitentIDMinPLaceholderText()'><b>VerifyPaitentIDMinPLaceholderText</b><br>Test class: com.covid19.qa.HomePageTestcases.AdvanceSearchFunction</td>

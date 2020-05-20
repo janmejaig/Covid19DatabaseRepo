@@ -39,9 +39,9 @@ public class CovidHomePageTestCase extends TestBase{
 		
 		System.out.println(title);
 		
-		Assert.assertEquals(title, "Home");
+		Assert.assertEquals(title, prop.getProperty("ValidateCovidHomePageTitle"));
 		
-		Wait.Pause(500);
+		Wait.implicitWait(500);
 		
 		}
 	
@@ -51,9 +51,9 @@ public class CovidHomePageTestCase extends TestBase{
 		
 		String URL = HomePageCovidDatabaseobject.covidHomePageUrl();
 		System.out.println("This is the URl for the Page:"+ URL);
-		Assert.assertEquals(URL, "https://covid19database.srijan.net/");
+		Assert.assertEquals(URL, prop.getProperty("ValidateCovidHomePageURL"));
 		
-		Wait.Pause(500);
+		//Wait.Pause(500);
 
 	}
 	
@@ -64,9 +64,9 @@ public class CovidHomePageTestCase extends TestBase{
 		
 		String URL = HomePageCovidDatabaseobject.CovidPaitenDataHeading();
 		System.out.println("This is the URl for the Page:"+ URL);
-		Assert.assertEquals(URL, "COVID Patient Data");
+		Assert.assertEquals(URL, prop.getProperty("ValidateCovidPaitenDataHeading"));
 		
-		Wait.Pause(500);
+	//	Wait.Pause(500);
 
 	}
 	
@@ -76,8 +76,8 @@ public class CovidHomePageTestCase extends TestBase{
 		
 		String URL = HomePageCovidDatabaseobject.PatientsHeading();
 		System.out.println("This is the URl for the PatientsHeading:"+ URL);
-		Assert.assertEquals(URL, "Patients");
-		Wait.Pause(500);
+		Assert.assertEquals(URL, prop.getProperty("ValidatePatientsHeading"));
+		//Wait.Pause(500);
 
 	}
 	
@@ -89,7 +89,7 @@ public class CovidHomePageTestCase extends TestBase{
 		System.out.println("This is the URl for the GridView:"+ URL);
 		Assert.assertEquals(URL, prop.getProperty("GridUrl"));
 		
-		Wait.Pause(500);
+		//Wait.Pause(500);
 
 	}
 	
@@ -104,7 +104,7 @@ public class CovidHomePageTestCase extends TestBase{
 		System.out.println("This is the URl for the TableView:"+ URL);
 		Assert.assertEquals(URL, prop.getProperty("TableUrl"));
 		
-		Wait.Pause(500);
+		//Wait.Pause(500);
 
 	}
 	
@@ -117,7 +117,7 @@ public class CovidHomePageTestCase extends TestBase{
 		System.out.println("This is the DiplayingText:"+ URL);
 		Assert.assertTrue(true);
 		
-		Wait.Pause(50);
+	//	Wait.Pause(50);
 
 	}
 	
@@ -129,7 +129,7 @@ public class CovidHomePageTestCase extends TestBase{
 		System.out.println("This is the LastUpdatedText:"+ URL);
 		Assert.assertTrue(true);
 		
-		Wait.Pause(500);
+		//Wait.Pause(500);
 
 		
 	}
@@ -140,8 +140,8 @@ public class CovidHomePageTestCase extends TestBase{
 		String URL = HomePageCovidDatabaseobject.HowSearchWorks();
 		
 		System.out.println("This is  HowSearchWorks text:"+ URL);
-		Assert.assertEquals(URL,"How search works?");
-		Wait.Pause(500);
+		Assert.assertEquals(URL,prop.getProperty("ValidateHowSearchWorks"));
+		//Wait.Pause(500);
 
 	}
 	
@@ -154,7 +154,7 @@ public class CovidHomePageTestCase extends TestBase{
 		Assert.assertEquals(URL,prop.getProperty("RedirectUrl"));
 		HomePageCovidDatabaseobject.navigateback();
 		
-		Wait.Pause(50);
+		//Wait.Pause(50);
 
 	}
 	
@@ -169,7 +169,7 @@ public class CovidHomePageTestCase extends TestBase{
 	@AfterClass
 	public void tearDown() throws InterruptedException{
 		
-		Wait.Pause(500);
+		//Wait.Pause(500);
 
 		driver.quit();
 	}

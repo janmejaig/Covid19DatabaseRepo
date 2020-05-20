@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,8 +37,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>testng-customsuite.xml</span>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,81 +91,245 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">13 methods,   13 passed</span>
+                    <span class="method-stats">44 methods, 6 failed,   38 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.covid19.qa.HomePageTestcases.AdvanceSearchFunction" hash-for-method="VerifyAgeMaxInputFieldPlaceholderText">VerifyAgeMaxInputFieldPlaceholderText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.covid19.qa.HomePageTestcases.AdvanceSearchFunction" hash-for-method="VerifyDateAnnouncedMaxInputFieldPlaceholderText">VerifyDateAnnouncedMaxInputFieldPlaceholderText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.covid19.qa.HomePageTestcases.AdvanceSearchFunction" hash-for-method="VerifyDateAnnouncedMinInputFieldPlaceholderText">VerifyDateAnnouncedMinInputFieldPlaceholderText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.covid19.qa.HomePageTestcases.AdvanceSearchFunction" hash-for-method="VerifyStatusChangeDateMaxInputtextfieldPlaceholderText">VerifyStatusChangeDateMaxInputtextfieldPlaceholderText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.covid19.qa.HomePageTestcases.AdvanceSearchFunction" hash-for-method="VerifyStatusChangeDateMinInputtextfieldPlaceholderText">VerifyStatusChangeDateMinInputtextfieldPlaceholderText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.covid19.qa.HomePageTestcases.AdvanceSearchFunction" hash-for-method="VerifyStatusChangeDateMinInputtextfieldPlaceholderText1">VerifyStatusChangeDateMinInputtextfieldPlaceholderText1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.covid19.qa.HomePageTestcases.APIsPageTestCases" hash-for-method="APIsPageNavigation">APIsPageNavigation</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.covid19.qa.HomePageTestcases.AdvanceSearchFunction" hash-for-method="AdvanceSearch_function">AdvanceSearch_function</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.covid19.qa.HomePageTestcases.APIsPageTestCases" hash-for-method="ClickCOvid19APIViewDocumentastion">ClickCOvid19APIViewDocumentastion</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase" hash-for-method="PrimarySearch_function">PrimarySearch_function</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.covid19.qa.HomePageTestcases.APIsPageTestCases" hash-for-method="Covid19OauthAPIHeading">Covid19OauthAPIHeading</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.covid19.qa.HomePageTestcases.AdvanceSearchFunction" hash-for-method="VerifyAgeEqualToPlaceholderText">VerifyAgeEqualToPlaceholderText</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.covid19.qa.HomePageTestcases.APIsPageTestCases" hash-for-method="Covid19OauthAPIclickViewDocumentation">Covid19OauthAPIclickViewDocumentation</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.covid19.qa.HomePageTestcases.AdvanceSearchFunction" hash-for-method="VerifyAgeMinInputFieldPlaceholderText">VerifyAgeMinInputFieldPlaceholderText</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.covid19.qa.HomePageTestcases.APIsPageTestCases" hash-for-method="VerifyAPIListingHeading">VerifyAPIListingHeading</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase" hash-for-method="VerifyAllvaluesCurrentStatus">VerifyAllvaluesCurrentStatus</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.covid19.qa.HomePageTestcases.APIsPageTestCases" hash-for-method="VerifyAPIsLinkUrl">VerifyAPIsLinkUrl</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.covid19.qa.HomePageTestcases.AdvanceSearchFunction" hash-for-method="VerifyCityPlaceHolderText">VerifyCityPlaceHolderText</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.covid19.qa.HomePageTestcases.APIsPageTestCases" hash-for-method="VerifyCOVID19PatientDatabaseAPIHeading">VerifyCOVID19PatientDatabaseAPIHeading</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.covid19.qa.HomePageTestcases.AdvanceSearchFunction" hash-for-method="VerifyCityTitle">VerifyCityTitle</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.covid19.qa.HomePageTestcases.APIsPageTestCases" hash-for-method="VerifyCOvid19APIHeading">VerifyCOvid19APIHeading</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase" hash-for-method="VerifyDRopdownvaluesNationalityLabel">VerifyDRopdownvaluesNationalityLabel</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.covid19.qa.HomePageTestcases.APIsPageTestCases" hash-for-method="VerifyREQUESTACCESSTOAPIsHeading">VerifyREQUESTACCESSTOAPIsHeading</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.covid19.qa.HomePageTestcases.AdvanceSearchFunction" hash-for-method="VerifyDateAnnouncedInputFieldPlaceholderText">VerifyDateAnnouncedInputFieldPlaceholderText</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.covid19.qa.HomePageTestcases.APIsPageTestCases" hash-for-method="clickHowToGetStartedbutton">clickHowToGetStartedbutton</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.covid19.qa.HomePageTestcases.AdvanceSearchFunction" hash-for-method="VerifyDateAnnouncedequaltoPlaceholderText">VerifyDateAnnouncedequaltoPlaceholderText</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.covid19.qa.HomePageTestcases.APIsPageTestCases" hash-for-method="clickREQUESTACCESS">clickREQUESTACCESS</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.covid19.qa.HomePageTestcases.AdvanceSearchFunction" hash-for-method="VerifyDistrictTitle">VerifyDistrictTitle</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.covid19.qa.HomePageTestcases.APIsPageTestCases" hash-for-method="clickviewdocumentationunderCOVID19PatientDatabaseAPI">clickviewdocumentationunderCOVID19PatientDatabaseAPI</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase" hash-for-method="VerifyDropdownValuesGenderLabel">VerifyDropdownValuesGenderLabel</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.covid19.qa.HomePageTestcases.APIsPageTestCases" hash-for-method="verifyHowToGetStartedHeading">verifyHowToGetStartedHeading</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase" hash-for-method="VerifyGenderLabel">VerifyGenderLabel</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.covid19.qa.HomePageTestcases.AdvanceSearchFunction" hash-for-method="VerifyInputTextfieldPlaceholderText">VerifyInputTextfieldPlaceholderText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase" hash-for-method="VerifyNationalityLabel">VerifyNationalityLabel</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.covid19.qa.HomePageTestcases.AdvanceSearchFunction" hash-for-method="VerifyPaitentIDMaxPLaceholderText">VerifyPaitentIDMaxPLaceholderText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.covid19.qa.HomePageTestcases.AdvanceSearchFunction" hash-for-method="VerifyPaitentIDMinPLaceholderText">VerifyPaitentIDMinPLaceholderText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.covid19.qa.HomePageTestcases.AdvanceSearchFunction" hash-for-method="VerifyPaitentIDPLaceholderText_function">VerifyPaitentIDPLaceholderText_function</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase" hash-for-method="VerifyPlaceholderTextNationalityLabel">VerifyPlaceholderTextNationalityLabel</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase" hash-for-method="VerifyPlaceholdertextCurrentStatus">VerifyPlaceholdertextCurrentStatus</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase" hash-for-method="VerifyPlaceholdertextGenderLabel">VerifyPlaceholdertextGenderLabel</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase" hash-for-method="VerifyPlaceholdertextTransmission_Type">VerifyPlaceholdertextTransmission_Type</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase" hash-for-method="VerifyPrimarySearchLabel">VerifyPrimarySearchLabel</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase" hash-for-method="VerifyStateDropdownvalues">VerifyStateDropdownvalues</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase" hash-for-method="VerifyStateLabel">VerifyStateLabel</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.covid19.qa.HomePageTestcases.AdvanceSearchFunction" hash-for-method="VerifyStatePatientIDPlaceHoldertext">VerifyStatePatientIDPlaceHoldertext</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.covid19.qa.HomePageTestcases.AdvanceSearchFunction" hash-for-method="VerifyStatePatientIDTitle">VerifyStatePatientIDTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase" hash-for-method="VerifyStatePlaceholderText">VerifyStatePlaceholderText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.covid19.qa.HomePageTestcases.AdvanceSearchFunction" hash-for-method="VerifyStatusChangeDateInputTextFieldPlaceholderText">VerifyStatusChangeDateInputTextFieldPlaceholderText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.covid19.qa.HomePageTestcases.AdvanceSearchFunction" hash-for-method="VerifyStatusChangeDatePlaceholderText">VerifyStatusChangeDatePlaceholderText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.covid19.qa.HomePageTestcases.AdvanceSearchFunction" hash-for-method="VerifyZipcodePlaceholderText">VerifyZipcodePlaceholderText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.covid19.qa.HomePageTestcases.AdvanceSearchFunction" hash-for-method="VerifyZipcodeTitle">VerifyZipcodeTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase" hash-for-method="VerifyclustersDropdownvalues">VerifyclustersDropdownvalues</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase" hash-for-method="VerifyclustersLabelName">VerifyclustersLabelName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase" hash-for-method="VerifyclustersPlaceholderText">VerifyclustersPlaceholderText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase" hash-for-method="VerifydropdownvaluesTransmission_Type">VerifydropdownvaluesTransmission_Type</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase" hash-for-method="VerifylabelTransmission_Type">VerifylabelTransmission_Type</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.covid19.qa.HomePageTestcases.AdvanceSearchFunction" hash-for-method="VerifypaitentIDequaltoPlaceholdertext">VerifypaitentIDequaltoPlaceholdertext</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -176,301 +340,1071 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.covid19.qa.HomePageTestcases.APIsPageTestCases</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.covid19.qa.HomePageTestcases.AdvanceSearchFunction</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="APIsPageNavigation">
-                  </a> <!-- APIsPageNavigation -->
-                  <span class="method-name">APIsPageNavigation</span>
+                  <a name="VerifyAgeMaxInputFieldPlaceholderText">
+                  </a> <!-- VerifyAgeMaxInputFieldPlaceholderText -->
+                  <span class="method-name">VerifyAgeMaxInputFieldPlaceholderText</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Srijan-ka-MBP-2&apos;, ip: &apos;2401:4900:44e2:bcc0:581:7cd6:d043:9e4d%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.2&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: EventFiringWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy7.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.covid.qa.utils.Wait.visibiltyOfElement(Wait.java:44)
+	at com.covid19.qa.pages.AdvanceSearchHomePage.VerifyAgeMaxInputFieldPlaceholderText(AdvanceSearchHomePage.java:612)
+	at com.covid19.qa.HomePageTestcases.AdvanceSearchFunction.VerifyAgeMaxInputFieldPlaceholderText(AdvanceSearchFunction.java:422)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="ClickCOvid19APIViewDocumentastion">
-                  </a> <!-- ClickCOvid19APIViewDocumentastion -->
-                  <span class="method-name">ClickCOvid19APIViewDocumentastion</span>
+                  <a name="VerifyDateAnnouncedMaxInputFieldPlaceholderText">
+                  </a> <!-- VerifyDateAnnouncedMaxInputFieldPlaceholderText -->
+                  <span class="method-name">VerifyDateAnnouncedMaxInputFieldPlaceholderText</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Srijan-ka-MBP-2&apos;, ip: &apos;2401:4900:44e2:bcc0:581:7cd6:d043:9e4d%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.2&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: EventFiringWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy7.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.covid.qa.utils.Wait.visibiltyOfElement(Wait.java:44)
+	at com.covid19.qa.pages.AdvanceSearchHomePage.VerifyDateAnnouncedMaxInputFieldPlaceholderText(AdvanceSearchHomePage.java:647)
+	at com.covid19.qa.HomePageTestcases.AdvanceSearchFunction.VerifyDateAnnouncedMaxInputFieldPlaceholderText(AdvanceSearchFunction.java:456)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Covid19OauthAPIHeading">
-                  </a> <!-- Covid19OauthAPIHeading -->
-                  <span class="method-name">Covid19OauthAPIHeading</span>
+                  <a name="VerifyDateAnnouncedMinInputFieldPlaceholderText">
+                  </a> <!-- VerifyDateAnnouncedMinInputFieldPlaceholderText -->
+                  <span class="method-name">VerifyDateAnnouncedMinInputFieldPlaceholderText</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Srijan-ka-MBP-2&apos;, ip: &apos;2401:4900:44e2:bcc0:581:7cd6:d043:9e4d%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.2&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: EventFiringWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy7.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.covid.qa.utils.Wait.visibiltyOfElement(Wait.java:44)
+	at com.covid19.qa.pages.AdvanceSearchHomePage.SelectDateAnnouncedIsbetweenOperator(AdvanceSearchHomePage.java:805)
+	at com.covid19.qa.HomePageTestcases.AdvanceSearchFunction.VerifyDateAnnouncedMinInputFieldPlaceholderText(AdvanceSearchFunction.java:440)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Covid19OauthAPIclickViewDocumentation">
-                  </a> <!-- Covid19OauthAPIclickViewDocumentation -->
-                  <span class="method-name">Covid19OauthAPIclickViewDocumentation</span>
+                  <a name="VerifyStatusChangeDateMaxInputtextfieldPlaceholderText">
+                  </a> <!-- VerifyStatusChangeDateMaxInputtextfieldPlaceholderText -->
+                  <span class="method-name">VerifyStatusChangeDateMaxInputtextfieldPlaceholderText</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Srijan-ka-MBP-2&apos;, ip: &apos;2401:4900:44e2:bcc0:581:7cd6:d043:9e4d%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.2&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: EventFiringWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy7.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.covid.qa.utils.Wait.visibiltyOfElement(Wait.java:44)
+	at com.covid19.qa.pages.AdvanceSearchHomePage.VerifyStatusChangeDateMaxInputtextfieldPlaceholderText(AdvanceSearchHomePage.java:687)
+	at com.covid19.qa.HomePageTestcases.AdvanceSearchFunction.VerifyStatusChangeDateMaxInputtextfieldPlaceholderText(AdvanceSearchFunction.java:509)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="VerifyAPIListingHeading">
-                  </a> <!-- VerifyAPIListingHeading -->
-                  <span class="method-name">VerifyAPIListingHeading</span>
+                  <a name="VerifyStatusChangeDateMinInputtextfieldPlaceholderText">
+                  </a> <!-- VerifyStatusChangeDateMinInputtextfieldPlaceholderText -->
+                  <span class="method-name">VerifyStatusChangeDateMinInputtextfieldPlaceholderText</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Srijan-ka-MBP-2&apos;, ip: &apos;2401:4900:44e2:bcc0:581:7cd6:d043:9e4d%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.2&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: EventFiringWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy7.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at com.covid19.qa.HomePageTestcases.AdvanceSearchFunction.VerifyStatusChangeDateMinInputtextfieldPlaceholderText(AdvanceSearchFunction.java:473)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="VerifyAPIsLinkUrl">
-                  </a> <!-- VerifyAPIsLinkUrl -->
-                  <span class="method-name">VerifyAPIsLinkUrl</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="VerifyCOVID19PatientDatabaseAPIHeading">
-                  </a> <!-- VerifyCOVID19PatientDatabaseAPIHeading -->
-                  <span class="method-name">VerifyCOVID19PatientDatabaseAPIHeading</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="VerifyCOvid19APIHeading">
-                  </a> <!-- VerifyCOvid19APIHeading -->
-                  <span class="method-name">VerifyCOvid19APIHeading</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="VerifyREQUESTACCESSTOAPIsHeading">
-                  </a> <!-- VerifyREQUESTACCESSTOAPIsHeading -->
-                  <span class="method-name">VerifyREQUESTACCESSTOAPIsHeading</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="clickHowToGetStartedbutton">
-                  </a> <!-- clickHowToGetStartedbutton -->
-                  <span class="method-name">clickHowToGetStartedbutton</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="clickREQUESTACCESS">
-                  </a> <!-- clickREQUESTACCESS -->
-                  <span class="method-name">clickREQUESTACCESS</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="clickviewdocumentationunderCOVID19PatientDatabaseAPI">
-                  </a> <!-- clickviewdocumentationunderCOVID19PatientDatabaseAPI -->
-                  <span class="method-name">clickviewdocumentationunderCOVID19PatientDatabaseAPI</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyHowToGetStartedHeading">
-                  </a> <!-- verifyHowToGetStartedHeading -->
-                  <span class="method-name">verifyHowToGetStartedHeading</span>
+                  <a name="VerifyStatusChangeDateMinInputtextfieldPlaceholderText1">
+                  </a> <!-- VerifyStatusChangeDateMinInputtextfieldPlaceholderText1 -->
+                  <span class="method-name">VerifyStatusChangeDateMinInputtextfieldPlaceholderText1</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Srijan-ka-MBP-2&apos;, ip: &apos;2401:4900:44e2:bcc0:581:7cd6:d043:9e4d%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.2&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: driver.version: EventFiringWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy7.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.covid.qa.utils.Wait.visibiltyOfElement(Wait.java:44)
+	at com.covid19.qa.pages.AdvanceSearchHomePage.VerifyStatusChangeDateMinInputtextfieldPlaceholderText(AdvanceSearchHomePage.java:677)
+	at com.covid19.qa.HomePageTestcases.AdvanceSearchFunction.VerifyStatusChangeDateMinInputtextfieldPlaceholderText1(AdvanceSearchFunction.java:494)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="PrimarySearch_function">
+                  </a> <!-- PrimarySearch_function -->
+                  <span class="method-name">PrimarySearch_function</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyAllvaluesCurrentStatus">
+                  </a> <!-- VerifyAllvaluesCurrentStatus -->
+                  <span class="method-name">VerifyAllvaluesCurrentStatus</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyDRopdownvaluesNationalityLabel">
+                  </a> <!-- VerifyDRopdownvaluesNationalityLabel -->
+                  <span class="method-name">VerifyDRopdownvaluesNationalityLabel</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyDropdownValuesGenderLabel">
+                  </a> <!-- VerifyDropdownValuesGenderLabel -->
+                  <span class="method-name">VerifyDropdownValuesGenderLabel</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyGenderLabel">
+                  </a> <!-- VerifyGenderLabel -->
+                  <span class="method-name">VerifyGenderLabel</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyNationalityLabel">
+                  </a> <!-- VerifyNationalityLabel -->
+                  <span class="method-name">VerifyNationalityLabel</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyPlaceholderTextNationalityLabel">
+                  </a> <!-- VerifyPlaceholderTextNationalityLabel -->
+                  <span class="method-name">VerifyPlaceholderTextNationalityLabel</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyPlaceholdertextCurrentStatus">
+                  </a> <!-- VerifyPlaceholdertextCurrentStatus -->
+                  <span class="method-name">VerifyPlaceholdertextCurrentStatus</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyPlaceholdertextGenderLabel">
+                  </a> <!-- VerifyPlaceholdertextGenderLabel -->
+                  <span class="method-name">VerifyPlaceholdertextGenderLabel</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyPlaceholdertextTransmission_Type">
+                  </a> <!-- VerifyPlaceholdertextTransmission_Type -->
+                  <span class="method-name">VerifyPlaceholdertextTransmission_Type</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyPrimarySearchLabel">
+                  </a> <!-- VerifyPrimarySearchLabel -->
+                  <span class="method-name">VerifyPrimarySearchLabel</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyStateDropdownvalues">
+                  </a> <!-- VerifyStateDropdownvalues -->
+                  <span class="method-name">VerifyStateDropdownvalues</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyStateLabel">
+                  </a> <!-- VerifyStateLabel -->
+                  <span class="method-name">VerifyStateLabel</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyStatePlaceholderText">
+                  </a> <!-- VerifyStatePlaceholderText -->
+                  <span class="method-name">VerifyStatePlaceholderText</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyclustersDropdownvalues">
+                  </a> <!-- VerifyclustersDropdownvalues -->
+                  <span class="method-name">VerifyclustersDropdownvalues</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyclustersLabelName">
+                  </a> <!-- VerifyclustersLabelName -->
+                  <span class="method-name">VerifyclustersLabelName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyclustersPlaceholderText">
+                  </a> <!-- VerifyclustersPlaceholderText -->
+                  <span class="method-name">VerifyclustersPlaceholderText</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifydropdownvaluesTransmission_Type">
+                  </a> <!-- VerifydropdownvaluesTransmission_Type -->
+                  <span class="method-name">VerifydropdownvaluesTransmission_Type</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifylabelTransmission_Type">
+                  </a> <!-- VerifylabelTransmission_Type -->
+                  <span class="method-name">VerifylabelTransmission_Type</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.covid19.qa.HomePageTestcases.AdvanceSearchFunction</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AdvanceSearch_function">
+                  </a> <!-- AdvanceSearch_function -->
+                  <span class="method-name">AdvanceSearch_function</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyAgeEqualToPlaceholderText">
+                  </a> <!-- VerifyAgeEqualToPlaceholderText -->
+                  <span class="method-name">VerifyAgeEqualToPlaceholderText</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyAgeMinInputFieldPlaceholderText">
+                  </a> <!-- VerifyAgeMinInputFieldPlaceholderText -->
+                  <span class="method-name">VerifyAgeMinInputFieldPlaceholderText</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyCityPlaceHolderText">
+                  </a> <!-- VerifyCityPlaceHolderText -->
+                  <span class="method-name">VerifyCityPlaceHolderText</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyCityTitle">
+                  </a> <!-- VerifyCityTitle -->
+                  <span class="method-name">VerifyCityTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyDateAnnouncedInputFieldPlaceholderText">
+                  </a> <!-- VerifyDateAnnouncedInputFieldPlaceholderText -->
+                  <span class="method-name">VerifyDateAnnouncedInputFieldPlaceholderText</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyDateAnnouncedequaltoPlaceholderText">
+                  </a> <!-- VerifyDateAnnouncedequaltoPlaceholderText -->
+                  <span class="method-name">VerifyDateAnnouncedequaltoPlaceholderText</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyDistrictTitle">
+                  </a> <!-- VerifyDistrictTitle -->
+                  <span class="method-name">VerifyDistrictTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyInputTextfieldPlaceholderText">
+                  </a> <!-- VerifyInputTextfieldPlaceholderText -->
+                  <span class="method-name">VerifyInputTextfieldPlaceholderText</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyPaitentIDMaxPLaceholderText">
+                  </a> <!-- VerifyPaitentIDMaxPLaceholderText -->
+                  <span class="method-name">VerifyPaitentIDMaxPLaceholderText</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyPaitentIDMinPLaceholderText">
+                  </a> <!-- VerifyPaitentIDMinPLaceholderText -->
+                  <span class="method-name">VerifyPaitentIDMinPLaceholderText</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyPaitentIDPLaceholderText_function">
+                  </a> <!-- VerifyPaitentIDPLaceholderText_function -->
+                  <span class="method-name">VerifyPaitentIDPLaceholderText_function</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyStatePatientIDPlaceHoldertext">
+                  </a> <!-- VerifyStatePatientIDPlaceHoldertext -->
+                  <span class="method-name">VerifyStatePatientIDPlaceHoldertext</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyStatePatientIDTitle">
+                  </a> <!-- VerifyStatePatientIDTitle -->
+                  <span class="method-name">VerifyStatePatientIDTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyStatusChangeDateInputTextFieldPlaceholderText">
+                  </a> <!-- VerifyStatusChangeDateInputTextFieldPlaceholderText -->
+                  <span class="method-name">VerifyStatusChangeDateInputTextFieldPlaceholderText</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyStatusChangeDatePlaceholderText">
+                  </a> <!-- VerifyStatusChangeDatePlaceholderText -->
+                  <span class="method-name">VerifyStatusChangeDatePlaceholderText</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyZipcodePlaceholderText">
+                  </a> <!-- VerifyZipcodePlaceholderText -->
+                  <span class="method-name">VerifyZipcodePlaceholderText</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyZipcodeTitle">
+                  </a> <!-- VerifyZipcodeTitle -->
+                  <span class="method-name">VerifyZipcodeTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifypaitentIDequaltoPlaceholdertext">
+                  </a> <!-- VerifypaitentIDequaltoPlaceholdertext -->
+                  <span class="method-name">VerifypaitentIDequaltoPlaceholdertext</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/k7/nv0pc1h538jf8nw3p175ysqc0000gp/T/testng-eclipse-2082340586/testng-customsuite.xml</span>
+            <span class="header-content">/Users/janmejai.gupta/Documents/SeleniumRepo/Automation/Covid19Database/testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
-  &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.covid.qa.ExtentReport.ExtentReporterNG&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.covid19.qa.HomePageTestcases.APIsPageTestCases&quot;/&gt;
+      &lt;class name=&quot;com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase&quot;/&gt;
+      &lt;class name=&quot;com.covid19.qa.HomePageTestcases.AdvanceSearchFunction&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(13);
+data.addRows(44);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'clickREQUESTACCESS')
-data.setCell(0, 2, 'com.covid19.qa.HomePageTestcases.APIsPageTestCases')
-data.setCell(0, 3, 6112);
+data.setCell(0, 1, 'PrimarySearch_function')
+data.setCell(0, 2, 'com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase')
+data.setCell(0, 3, 11385);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'ClickCOvid19APIViewDocumentastion')
-data.setCell(1, 2, 'com.covid19.qa.HomePageTestcases.APIsPageTestCases')
-data.setCell(1, 3, 4704);
+data.setCell(1, 1, 'VerifyStatusChangeDateInputTextFieldPlaceholderText')
+data.setCell(1, 2, 'com.covid19.qa.HomePageTestcases.AdvanceSearchFunction')
+data.setCell(1, 3, 6622);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'Covid19OauthAPIclickViewDocumentation')
-data.setCell(2, 2, 'com.covid19.qa.HomePageTestcases.APIsPageTestCases')
-data.setCell(2, 3, 2396);
+data.setCell(2, 1, 'VerifyPaitentIDPLaceholderText_function')
+data.setCell(2, 2, 'com.covid19.qa.HomePageTestcases.AdvanceSearchFunction')
+data.setCell(2, 3, 1084);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'clickviewdocumentationunderCOVID19PatientDatabaseAPI')
-data.setCell(3, 2, 'com.covid19.qa.HomePageTestcases.APIsPageTestCases')
-data.setCell(3, 3, 2289);
+data.setCell(3, 1, 'VerifyPaitentIDMaxPLaceholderText')
+data.setCell(3, 2, 'com.covid19.qa.HomePageTestcases.AdvanceSearchFunction')
+data.setCell(3, 3, 806);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'clickHowToGetStartedbutton')
-data.setCell(4, 2, 'com.covid19.qa.HomePageTestcases.APIsPageTestCases')
-data.setCell(4, 3, 1777);
+data.setCell(4, 1, 'VerifyDateAnnouncedequaltoPlaceholderText')
+data.setCell(4, 2, 'com.covid19.qa.HomePageTestcases.AdvanceSearchFunction')
+data.setCell(4, 3, 704);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'APIsPageNavigation')
-data.setCell(5, 2, 'com.covid19.qa.HomePageTestcases.APIsPageTestCases')
-data.setCell(5, 3, 1020);
+data.setCell(5, 1, 'VerifyAgeEqualToPlaceholderText')
+data.setCell(5, 2, 'com.covid19.qa.HomePageTestcases.AdvanceSearchFunction')
+data.setCell(5, 3, 696);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'VerifyAPIsLinkUrl')
-data.setCell(6, 2, 'com.covid19.qa.HomePageTestcases.APIsPageTestCases')
-data.setCell(6, 3, 635);
+data.setCell(6, 1, 'VerifypaitentIDequaltoPlaceholdertext')
+data.setCell(6, 2, 'com.covid19.qa.HomePageTestcases.AdvanceSearchFunction')
+data.setCell(6, 3, 617);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'Covid19OauthAPIHeading')
-data.setCell(7, 2, 'com.covid19.qa.HomePageTestcases.APIsPageTestCases')
-data.setCell(7, 3, 540);
+data.setCell(7, 1, 'VerifyDateAnnouncedInputFieldPlaceholderText')
+data.setCell(7, 2, 'com.covid19.qa.HomePageTestcases.AdvanceSearchFunction')
+data.setCell(7, 3, 359);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'VerifyREQUESTACCESSTOAPIsHeading')
-data.setCell(8, 2, 'com.covid19.qa.HomePageTestcases.APIsPageTestCases')
-data.setCell(8, 3, 538);
+data.setCell(8, 1, 'VerifyInputTextfieldPlaceholderText')
+data.setCell(8, 2, 'com.covid19.qa.HomePageTestcases.AdvanceSearchFunction')
+data.setCell(8, 3, 315);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'verifyHowToGetStartedHeading')
-data.setCell(9, 2, 'com.covid19.qa.HomePageTestcases.APIsPageTestCases')
-data.setCell(9, 3, 537);
+data.setCell(9, 1, 'VerifyDistrictTitle')
+data.setCell(9, 2, 'com.covid19.qa.HomePageTestcases.AdvanceSearchFunction')
+data.setCell(9, 3, 131);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'VerifyCOVID19PatientDatabaseAPIHeading')
-data.setCell(10, 2, 'com.covid19.qa.HomePageTestcases.APIsPageTestCases')
-data.setCell(10, 3, 537);
+data.setCell(10, 1, 'VerifyStatePatientIDPlaceHoldertext')
+data.setCell(10, 2, 'com.covid19.qa.HomePageTestcases.AdvanceSearchFunction')
+data.setCell(10, 3, 97);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'VerifyCOvid19APIHeading')
-data.setCell(11, 2, 'com.covid19.qa.HomePageTestcases.APIsPageTestCases')
-data.setCell(11, 3, 536);
+data.setCell(11, 1, 'VerifyPrimarySearchLabel')
+data.setCell(11, 2, 'com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase')
+data.setCell(11, 3, 96);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'VerifyAPIListingHeading')
-data.setCell(12, 2, 'com.covid19.qa.HomePageTestcases.APIsPageTestCases')
-data.setCell(12, 3, 529);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(12, 1, 'AdvanceSearch_function')
+data.setCell(12, 2, 'com.covid19.qa.HomePageTestcases.AdvanceSearchFunction')
+data.setCell(12, 3, 94);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'VerifyCityPlaceHolderText')
+data.setCell(13, 2, 'com.covid19.qa.HomePageTestcases.AdvanceSearchFunction')
+data.setCell(13, 3, 91);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'VerifyDRopdownvaluesNationalityLabel')
+data.setCell(14, 2, 'com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase')
+data.setCell(14, 3, 80);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'VerifyAllvaluesCurrentStatus')
+data.setCell(15, 2, 'com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase')
+data.setCell(15, 3, 67);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'VerifyPlaceholdertextCurrentStatus')
+data.setCell(16, 2, 'com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase')
+data.setCell(16, 3, 52);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'VerifyPlaceholdertextGenderLabel')
+data.setCell(17, 2, 'com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase')
+data.setCell(17, 3, 35);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'VerifyStateDropdownvalues')
+data.setCell(18, 2, 'com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase')
+data.setCell(18, 3, 34);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'VerifyAgeMinInputFieldPlaceholderText')
+data.setCell(19, 2, 'com.covid19.qa.HomePageTestcases.AdvanceSearchFunction')
+data.setCell(19, 3, 31);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'VerifyNationalityLabel')
+data.setCell(20, 2, 'com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase')
+data.setCell(20, 3, 29);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'VerifyGenderLabel')
+data.setCell(21, 2, 'com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase')
+data.setCell(21, 3, 26);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'VerifydropdownvaluesTransmission_Type')
+data.setCell(22, 2, 'com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase')
+data.setCell(22, 3, 25);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'VerifyStateLabel')
+data.setCell(23, 2, 'com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase')
+data.setCell(23, 3, 24);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'VerifyclustersDropdownvalues')
+data.setCell(24, 2, 'com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase')
+data.setCell(24, 3, 24);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'VerifyPlaceholderTextNationalityLabel')
+data.setCell(25, 2, 'com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase')
+data.setCell(25, 3, 24);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'VerifylabelTransmission_Type')
+data.setCell(26, 2, 'com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase')
+data.setCell(26, 3, 23);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'VerifyPlaceholdertextTransmission_Type')
+data.setCell(27, 2, 'com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase')
+data.setCell(27, 3, 23);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'VerifyZipcodeTitle')
+data.setCell(28, 2, 'com.covid19.qa.HomePageTestcases.AdvanceSearchFunction')
+data.setCell(28, 3, 23);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'VerifyclustersLabelName')
+data.setCell(29, 2, 'com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase')
+data.setCell(29, 3, 22);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'VerifyStatusChangeDatePlaceholderText')
+data.setCell(30, 2, 'com.covid19.qa.HomePageTestcases.AdvanceSearchFunction')
+data.setCell(30, 3, 22);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'VerifyStatePatientIDTitle')
+data.setCell(31, 2, 'com.covid19.qa.HomePageTestcases.AdvanceSearchFunction')
+data.setCell(31, 3, 22);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'VerifyCityTitle')
+data.setCell(32, 2, 'com.covid19.qa.HomePageTestcases.AdvanceSearchFunction')
+data.setCell(32, 3, 22);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'VerifyDropdownValuesGenderLabel')
+data.setCell(33, 2, 'com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase')
+data.setCell(33, 3, 22);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'VerifyclustersPlaceholderText')
+data.setCell(34, 2, 'com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase')
+data.setCell(34, 3, 21);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'VerifyStatePlaceholderText')
+data.setCell(35, 2, 'com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase')
+data.setCell(35, 3, 21);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'VerifyAgeMaxInputFieldPlaceholderText')
+data.setCell(36, 2, 'com.covid19.qa.HomePageTestcases.AdvanceSearchFunction')
+data.setCell(36, 3, 17);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'VerifyZipcodePlaceholderText')
+data.setCell(37, 2, 'com.covid19.qa.HomePageTestcases.AdvanceSearchFunction')
+data.setCell(37, 3, 15);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'VerifyPaitentIDMinPLaceholderText')
+data.setCell(38, 2, 'com.covid19.qa.HomePageTestcases.AdvanceSearchFunction')
+data.setCell(38, 3, 15);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'VerifyStatusChangeDateMinInputtextfieldPlaceholderText')
+data.setCell(39, 2, 'com.covid19.qa.HomePageTestcases.AdvanceSearchFunction')
+data.setCell(39, 3, 1);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'VerifyStatusChangeDateMaxInputtextfieldPlaceholderText')
+data.setCell(40, 2, 'com.covid19.qa.HomePageTestcases.AdvanceSearchFunction')
+data.setCell(40, 3, 1);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'VerifyDateAnnouncedMaxInputFieldPlaceholderText')
+data.setCell(41, 2, 'com.covid19.qa.HomePageTestcases.AdvanceSearchFunction')
+data.setCell(41, 3, 1);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'VerifyDateAnnouncedMinInputFieldPlaceholderText')
+data.setCell(42, 2, 'com.covid19.qa.HomePageTestcases.AdvanceSearchFunction')
+data.setCell(42, 3, 0);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'VerifyStatusChangeDateMinInputtextfieldPlaceholderText1')
+data.setCell(43, 2, 'com.covid19.qa.HomePageTestcases.AdvanceSearchFunction')
+data.setCell(43, 3, 0);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 22 seconds</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 23 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.covid19.qa.HomePageTestcases.APIsPageTestCases</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">APIsPageNavigation</span>
-                <span class="method-start">6319 ms</span>
+                <span class="method-name">VerifyPrimarySearchLabel</span>
+                <span class="method-start">6997 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.covid19.qa.HomePageTestcases.AdvanceSearchFunction</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">7095 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">AdvanceSearch_function</span>
+                <span class="method-start">12458 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifyPlaceholdertextCurrentStatus</span>
+                <span class="method-start">12553 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.covid19.qa.HomePageTestcases.AdvanceSearchFunction</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifypaitentIDequaltoPlaceholdertext</span>
+                <span class="method-start">12607 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifyAllvaluesCurrentStatus</span>
+                <span class="method-start">13227 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.covid19.qa.HomePageTestcases.AdvanceSearchFunction</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifyPaitentIDPLaceholderText_function</span>
+                <span class="method-start">13295 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifylabelTransmission_Type</span>
+                <span class="method-start">14380 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.covid19.qa.HomePageTestcases.AdvanceSearchFunction</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifyStatePatientIDTitle</span>
+                <span class="method-start">14405 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifyPlaceholdertextTransmission_Type</span>
+                <span class="method-start">14427 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.covid19.qa.HomePageTestcases.AdvanceSearchFunction</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifyStatePatientIDPlaceHoldertext</span>
+                <span class="method-start">14451 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifydropdownvaluesTransmission_Type</span>
+                <span class="method-start">14548 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.covid19.qa.HomePageTestcases.AdvanceSearchFunction</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifyDistrictTitle</span>
+                <span class="method-start">14574 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifyStateLabel</span>
+                <span class="method-start">14706 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.covid19.qa.HomePageTestcases.AdvanceSearchFunction</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifyCityTitle</span>
+                <span class="method-start">14731 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifyStatePlaceholderText</span>
+                <span class="method-start">14754 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.covid19.qa.HomePageTestcases.AdvanceSearchFunction</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifyCityPlaceHolderText</span>
+                <span class="method-start">14776 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifyStateDropdownvalues</span>
+                <span class="method-start">14868 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.covid19.qa.HomePageTestcases.AdvanceSearchFunction</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifyZipcodeTitle</span>
+                <span class="method-start">14902 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifyclustersLabelName</span>
+                <span class="method-start">14925 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.covid19.qa.HomePageTestcases.AdvanceSearchFunction</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifyZipcodePlaceholderText</span>
+                <span class="method-start">14947 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifyclustersPlaceholderText</span>
+                <span class="method-start">14963 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.covid19.qa.HomePageTestcases.AdvanceSearchFunction</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifyAgeEqualToPlaceholderText</span>
+                <span class="method-start">14985 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifyclustersDropdownvalues</span>
+                <span class="method-start">15681 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.covid19.qa.HomePageTestcases.AdvanceSearchFunction</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifyInputTextfieldPlaceholderText</span>
+                <span class="method-start">15706 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifyNationalityLabel</span>
+                <span class="method-start">16022 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.covid19.qa.HomePageTestcases.AdvanceSearchFunction</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifyDateAnnouncedequaltoPlaceholderText</span>
+                <span class="method-start">16052 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifyPlaceholderTextNationalityLabel</span>
+                <span class="method-start">16756 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.covid19.qa.HomePageTestcases.AdvanceSearchFunction</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifyDateAnnouncedInputFieldPlaceholderText</span>
+                <span class="method-start">16780 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifyDRopdownvaluesNationalityLabel</span>
+                <span class="method-start">17139 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.covid19.qa.HomePageTestcases.AdvanceSearchFunction</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifyStatusChangeDatePlaceholderText</span>
+                <span class="method-start">17220 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifyGenderLabel</span>
+                <span class="method-start">17243 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.covid19.qa.HomePageTestcases.AdvanceSearchFunction</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifyStatusChangeDateInputTextFieldPlaceholderText</span>
+                <span class="method-start">17270 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifyPlaceholdertextGenderLabel</span>
+                <span class="method-start">23894 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.covid19.qa.HomePageTestcases.AdvanceSearchFunction</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifyPaitentIDMinPLaceholderText</span>
+                <span class="method-start">23929 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifyDropdownValuesGenderLabel</span>
+                <span class="method-start">23945 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.covid19.qa.HomePageTestcases.AdvanceSearchFunction</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifyPaitentIDMaxPLaceholderText</span>
+                <span class="method-start">23967 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">VerifyAPIsLinkUrl</span>
-                <span class="method-start">7341 ms</span>
+                <span class="method-name">VerifyAgeMinInputFieldPlaceholderText</span>
+                <span class="method-start">24773 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">VerifyAPIListingHeading</span>
-                <span class="method-start">7977 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">VerifyCOvid19APIHeading</span>
-                <span class="method-start">8509 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">ClickCOvid19APIViewDocumentastion</span>
-                <span class="method-start">9047 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Covid19OauthAPIHeading</span>
-                <span class="method-start">13754 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Covid19OauthAPIclickViewDocumentation</span>
-                <span class="method-start">14296 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">VerifyCOVID19PatientDatabaseAPIHeading</span>
-                <span class="method-start">16694 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">clickviewdocumentationunderCOVID19PatientDatabaseAPI</span>
-                <span class="method-start">17234 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">VerifyREQUESTACCESSTOAPIsHeading</span>
-                <span class="method-start">19525 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">clickREQUESTACCESS</span>
-                <span class="method-start">20065 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyHowToGetStartedHeading</span>
-                <span class="method-start">26179 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">clickHowToGetStartedbutton</span>
-                <span class="method-start">26718 ms</span>
+                <span class="method-name">PrimarySearch_function</span>
+                <span class="method-start">24805 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">28497 ms</span>
+                <span class="method-start">36191 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.covid19.qa.HomePageTestcases.AdvanceSearchFunction</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">VerifyAgeMaxInputFieldPlaceholderText</span>
+                <span class="method-start">36295 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">VerifyDateAnnouncedMinInputFieldPlaceholderText</span>
+                <span class="method-start">36315 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">VerifyDateAnnouncedMaxInputFieldPlaceholderText</span>
+                <span class="method-start">36316 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">VerifyStatusChangeDateMinInputtextfieldPlaceholderText</span>
+                <span class="method-start">36318 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">VerifyStatusChangeDateMinInputtextfieldPlaceholderText1</span>
+                <span class="method-start">36320 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">VerifyStatusChangeDateMaxInputtextfieldPlaceholderText</span>
+                <span class="method-start">36322 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">36324 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

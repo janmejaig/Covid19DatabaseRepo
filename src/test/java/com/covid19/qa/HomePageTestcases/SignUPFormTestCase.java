@@ -36,10 +36,10 @@ public class SignUPFormTestCase  extends TestBase{
 		
 		System.out.println("Title of the SignUPLinkPage is : " + SignUPLink);
 
-		Assert.assertEquals(SignUPLink, "SignUp");
+		Assert.assertEquals(SignUPLink, prop.getProperty("SignUPLink"));
 		
 
-		Wait.Pause(2000);
+		//Wait.Pause(2000);
 	}
 
 	
@@ -50,10 +50,10 @@ public class SignUPFormTestCase  extends TestBase{
 		
 		System.out.println("Url of the SignUPLinkPage is : " + VerifySignUPLinkUrl);
 
-		Assert.assertEquals(VerifySignUPLinkUrl, "https://covid19database.srijan.net/volunteers");
+		Assert.assertEquals(VerifySignUPLinkUrl, prop.getProperty("VerifySignUPLinkUrl"));
 		
 
-		Wait.Pause(20);
+		//Wait.Pause(20);
 	}
 
 	
@@ -64,10 +64,10 @@ public class SignUPFormTestCase  extends TestBase{
 		
 		System.out.println("Verify Heading of RegistrationForm under SignUp Page: " + VerifyHeadingRegistrationForm);
 
-		Assert.assertEquals(VerifyHeadingRegistrationForm, "Registration Form");
+		Assert.assertEquals(VerifyHeadingRegistrationForm, prop.getProperty("VerifyHeadingRegistrationForm"));
 		
 
-		Wait.Pause(20);
+		//Wait.Pause(20);
 	}
 
 	
@@ -79,10 +79,10 @@ public class SignUPFormTestCase  extends TestBase{
 		
 		System.out.println("Verify Heading of RegistrationForm under SignUp Page: " + VerifyHeadingVolunteerRegistrationForm);
 
-		Assert.assertEquals(VerifyHeadingVolunteerRegistrationForm, "Volunteer Registration Form");
+		Assert.assertEquals(VerifyHeadingVolunteerRegistrationForm, prop.getProperty("VerifyHeadingVolunteerRegistrationForm"));
 		
 
-		Wait.Pause(20);
+		//Wait.Pause(20);
 	}
 
 	
@@ -94,10 +94,10 @@ public class SignUPFormTestCase  extends TestBase{
 		
 		System.out.println("Verify Email address Heading  under SignUp Page: " + VerifyHeadingEmailaddress);
 
-		Assert.assertEquals(VerifyHeadingEmailaddress, "Email address");
+		Assert.assertEquals(VerifyHeadingEmailaddress, prop.getProperty("VerifyHeadingEmailaddress"));
 		
 
-		Wait.Pause(20);
+		//Wait.Pause(20);
 	}
 
 	
@@ -113,7 +113,7 @@ public class SignUPFormTestCase  extends TestBase{
 	//	Assert.assertEquals(EnterEmailaddress, "Email address");
 		
 
-		Wait.Pause(20);
+		//Wait.Pause(20);
 	}
 
 	
@@ -126,10 +126,10 @@ public class SignUPFormTestCase  extends TestBase{
 		
 		System.out.println("Verify Heading Username under SignUp Page: " + VerifyHeadingUsername);
 
-		Assert.assertEquals(VerifyHeadingUsername, "Username");
+		Assert.assertEquals(VerifyHeadingUsername, prop.getProperty("VerifyHeadingUsername"));
 		
 
-		Wait.Pause(20);
+		//Wait.Pause(20);
 	}
 
 	
@@ -147,7 +147,7 @@ public class SignUPFormTestCase  extends TestBase{
 		//Assert.assertEquals(VerifyHeadingUsername, "Username");
 		
 
-		Wait.Pause(20);
+		//Wait.Pause(20);
 	}
 
 
@@ -164,9 +164,9 @@ public class SignUPFormTestCase  extends TestBase{
 		
 		System.out.println("Verify Heading Username under SignUp Page: " + VerifyHeadingFirstName);
 
-		Assert.assertEquals(VerifyHeadingFirstName, "First Name");
+		Assert.assertEquals(VerifyHeadingFirstName, prop.getProperty("VerifyHeadingFirstName"));
 	
-		Wait.Pause(20);
+		//Wait.Pause(20);
 	}
 
 	@Test(priority=10)
@@ -178,7 +178,7 @@ public class SignUPFormTestCase  extends TestBase{
 
 		//Assert.assertEquals(VerifyHeadingFirstName, "First Name");
 	
-		Wait.Pause(20);
+		//Wait.Pause(20);
 	}
 
 	
@@ -193,9 +193,9 @@ public class SignUPFormTestCase  extends TestBase{
 		
 		System.out.println("Verify Heading Lastname under SignUp Page: " + VerifyHeadingLastName);
 
-		Assert.assertEquals(VerifyHeadingLastName, "Last Name");
+		Assert.assertEquals(VerifyHeadingLastName, prop.getProperty("VerifyHeadingLastName"));
 	
-		Wait.Pause(20);
+		//Wait.Pause(20);
 	}
 
 	
@@ -211,7 +211,7 @@ public class SignUPFormTestCase  extends TestBase{
 
 		//Assert.assertEquals(VerifyHeadingLastName, "Last Name");
 	
-		Wait.Pause(20);
+		//Wait.Pause(20);
 	}
 
 	
@@ -224,9 +224,9 @@ public class SignUPFormTestCase  extends TestBase{
 		
 		System.out.println("Verify Heading Lastname under SignUp Page: " + VerifyHeadingOccupation);
 
-		Assert.assertEquals(VerifyHeadingOccupation, "Occupation");
+		Assert.assertEquals(VerifyHeadingOccupation, prop.getProperty("VerifyHeadingOccupation"));
 	
-		Wait.Pause(20);
+		//Wait.Pause(20);
 	}
 
 	@Test(priority=13)
@@ -238,7 +238,7 @@ public class SignUPFormTestCase  extends TestBase{
 
 		//Assert.assertEquals(VerifyHeadingOccupation, "Occupation");
 	
-		Wait.Pause(20);
+		//Wait.Pause(20);
 	}
 
 
@@ -254,7 +254,7 @@ public class SignUPFormTestCase  extends TestBase{
 
 		//Assert.assertEquals(clickRegisterButton, "Register");
 	
-		Wait.Pause(5000);
+		//Wait.implicitWait(5000);
 	}
 	
 	
@@ -268,7 +268,7 @@ public class SignUPFormTestCase  extends TestBase{
 	@Test(priority=20)
 	public void RemoveImage() throws InterruptedException {
 		
-		Wait.Pause(500);
+		//Wait.Pause(500);
 
 		
 		String RemoveImage =SignUPFormObject.RemoveImage();
@@ -292,9 +292,9 @@ public class SignUPFormTestCase  extends TestBase{
 		
 		System.out.println("Verify RegisterButton under SignUp Page: " + clickRegisterButton);
 
-		Assert.assertEquals(clickRegisterButton, "Register");
+		Assert.assertEquals(clickRegisterButton, prop.getProperty("clickRegisterButton") );
 	
-		Wait.Pause(20);
+		//Wait.Pause(20);
 	}
 
 	
@@ -312,7 +312,7 @@ public class SignUPFormTestCase  extends TestBase{
 
 		//Assert.assertEquals(clickRegisterButton, "Register");
 	
-		Wait.Pause(500);
+		//Wait.Pause(500);
 	}
 
 	
@@ -324,7 +324,7 @@ public class SignUPFormTestCase  extends TestBase{
 	@AfterClass
 	public void tearDown() throws InterruptedException{
 		
-		Wait.Pause(500);
+		//Wait.Pause(500);
 
 		driver.quit();
 

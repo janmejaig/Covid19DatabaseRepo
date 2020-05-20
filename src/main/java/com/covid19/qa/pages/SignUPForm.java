@@ -7,6 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.covid.qa.base.TestBase;
+import com.covid.qa.utils.Wait;
 
 public class SignUPForm extends TestBase {
 	
@@ -115,6 +116,10 @@ public class SignUPForm extends TestBase {
 		
 		//SelectImage.sendKeys("/Users/janmejai.gupta/Desktop/Screenshot 2020-04-21 at 7.44.40 PM.png");
 		
+		
+		Wait.visibiltyOfElement(driver, 400, CaptureMessage);
+		
+		
 		return CaptureMessage.getText();
 		
 	}
@@ -158,6 +163,7 @@ public class SignUPForm extends TestBase {
 	public String  RemoveImage() 
 
 	{
+		Wait.visibiltyOfElement(driver, 500, RemoveImage);
 		
 		RemoveImage.click();
 		
@@ -173,10 +179,10 @@ public class SignUPForm extends TestBase {
 	public String  SelectImage() 
 
 	{
-		
+		//Wait.visibiltyOfElement(driver, 500, SelectImage);
 		SelectImage.click();
 		
-		SelectImage.sendKeys("/Users/janmejai.gupta/Desktop/Screenshot 2020-04-21 at 7.44.40 PM.png");
+		SelectImage.sendKeys("/Users/janmejai.gupta/Desktop/basicpage.jpg");
 		
 		return SelectImage.getText();
 		
@@ -203,7 +209,7 @@ public class SignUPForm extends TestBase {
 	public String  SignUPLink() 
 
 	{
-		
+		Wait.visibiltyOfElement(driver, 700, SignUPLink);
 		SignUPLink.click();
 		
 		return SignUPLink.getText();
@@ -234,6 +240,8 @@ public class SignUPForm extends TestBase {
 	public String  VerifyHeadingVolunteerRegistrationForm() 
 
 	{
+		
+		Wait.visibiltyOfElement(driver, 300, VerifyHeadingVolunteerRegistrationForm);
 			
 	return 	VerifyHeadingVolunteerRegistrationForm.getText();
 		
@@ -242,6 +250,7 @@ public class SignUPForm extends TestBase {
 	public String  VerifyHeadingEmailaddress() 
 
 	{
+		Wait.visibiltyOfElement(driver, 300, VerifyHeadingEmailaddress);
 			
 	return 	VerifyHeadingEmailaddress.getText();
 		
@@ -271,6 +280,7 @@ public class SignUPForm extends TestBase {
 	public String  EnterUsernameaddress() 
 
 	{
+		Wait.visibiltyOfElement(driver, 300, EnterUsernameaddress);
 			
 	 	EnterUsernameaddress.sendKeys("JJrwweesting");
 	 	
@@ -287,6 +297,8 @@ public class SignUPForm extends TestBase {
 	public String  VerifyHeadingFirstName() 
 
 	{
+		Wait.visibiltyOfElement(driver, 300, VerifyHeadingFirstName);
+
 			
 	return 	VerifyHeadingFirstName.getText();
 		

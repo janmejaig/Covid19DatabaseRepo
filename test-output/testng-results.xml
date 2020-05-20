@@ -1,73 +1,628 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="13" passed="13">
+<testng-results skipped="0" failed="6" ignored="0" total="44" passed="38">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="29126" started-at="2020-05-19T05:44:36Z" finished-at="2020-05-19T05:45:05Z">
+  <suite name="Suite" duration-ms="36335" started-at="2020-05-20T13:38:39Z" finished-at="2020-05-20T13:39:16Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="29126" started-at="2020-05-19T05:44:36Z" finished-at="2020-05-19T05:45:05Z">
-      <class name="com.covid19.qa.HomePageTestcases.APIsPageTestCases">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.covid19.qa.HomePageTestcases.APIsPageTestCases@75c072cb]" name="setUp" is-config="true" duration-ms="6310" started-at="2020-05-19T11:14:36Z" finished-at="2020-05-19T11:14:42Z">
+    <test name="Test" duration-ms="36335" started-at="2020-05-20T13:38:39Z" finished-at="2020-05-20T13:39:16Z">
+      <class name="com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase@25b485ba]" name="setUp" is-config="true" duration-ms="6991" started-at="2020-05-20T19:08:39Z" finished-at="2020-05-20T19:08:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="APIsPageNavigation()[pri:1, instance:com.covid19.qa.HomePageTestcases.APIsPageTestCases@75c072cb]" name="APIsPageNavigation" duration-ms="1020" started-at="2020-05-19T11:14:42Z" finished-at="2020-05-19T11:14:43Z">
+        <test-method status="PASS" signature="VerifyPrimarySearchLabel()[pri:1, instance:com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase@25b485ba]" name="VerifyPrimarySearchLabel" duration-ms="96" started-at="2020-05-20T19:08:46Z" finished-at="2020-05-20T19:08:47Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- APIsPageNavigation -->
-        <test-method status="PASS" signature="VerifyAPIsLinkUrl()[pri:2, instance:com.covid19.qa.HomePageTestcases.APIsPageTestCases@75c072cb]" name="VerifyAPIsLinkUrl" duration-ms="635" started-at="2020-05-19T11:14:43Z" finished-at="2020-05-19T11:14:44Z">
+        </test-method> <!-- VerifyPrimarySearchLabel -->
+        <test-method status="PASS" signature="VerifyPlaceholdertextCurrentStatus()[pri:2, instance:com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase@25b485ba]" name="VerifyPlaceholdertextCurrentStatus" duration-ms="52" started-at="2020-05-20T19:08:52Z" finished-at="2020-05-20T19:08:52Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyAPIsLinkUrl -->
-        <test-method status="PASS" signature="VerifyAPIListingHeading()[pri:3, instance:com.covid19.qa.HomePageTestcases.APIsPageTestCases@75c072cb]" name="VerifyAPIListingHeading" duration-ms="529" started-at="2020-05-19T11:14:44Z" finished-at="2020-05-19T11:14:45Z">
+        </test-method> <!-- VerifyPlaceholdertextCurrentStatus -->
+        <test-method status="PASS" signature="VerifyAllvaluesCurrentStatus()[pri:3, instance:com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase@25b485ba]" name="VerifyAllvaluesCurrentStatus" duration-ms="67" started-at="2020-05-20T19:08:53Z" finished-at="2020-05-20T19:08:53Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyAPIListingHeading -->
-        <test-method status="PASS" signature="VerifyCOvid19APIHeading()[pri:4, instance:com.covid19.qa.HomePageTestcases.APIsPageTestCases@75c072cb]" name="VerifyCOvid19APIHeading" duration-ms="536" started-at="2020-05-19T11:14:45Z" finished-at="2020-05-19T11:14:45Z">
+        </test-method> <!-- VerifyAllvaluesCurrentStatus -->
+        <test-method status="PASS" signature="VerifylabelTransmission_Type()[pri:4, instance:com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase@25b485ba]" name="VerifylabelTransmission_Type" duration-ms="23" started-at="2020-05-20T19:08:54Z" finished-at="2020-05-20T19:08:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyCOvid19APIHeading -->
-        <test-method status="PASS" signature="ClickCOvid19APIViewDocumentastion()[pri:5, instance:com.covid19.qa.HomePageTestcases.APIsPageTestCases@75c072cb]" name="ClickCOvid19APIViewDocumentastion" duration-ms="4704" started-at="2020-05-19T11:14:45Z" finished-at="2020-05-19T11:14:50Z">
+        </test-method> <!-- VerifylabelTransmission_Type -->
+        <test-method status="PASS" signature="VerifyPlaceholdertextTransmission_Type()[pri:5, instance:com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase@25b485ba]" name="VerifyPlaceholdertextTransmission_Type" duration-ms="23" started-at="2020-05-20T19:08:54Z" finished-at="2020-05-20T19:08:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ClickCOvid19APIViewDocumentastion -->
-        <test-method status="PASS" signature="Covid19OauthAPIHeading()[pri:6, instance:com.covid19.qa.HomePageTestcases.APIsPageTestCases@75c072cb]" name="Covid19OauthAPIHeading" duration-ms="540" started-at="2020-05-19T11:14:50Z" finished-at="2020-05-19T11:14:50Z">
+        </test-method> <!-- VerifyPlaceholdertextTransmission_Type -->
+        <test-method status="PASS" signature="VerifydropdownvaluesTransmission_Type()[pri:6, instance:com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase@25b485ba]" name="VerifydropdownvaluesTransmission_Type" duration-ms="25" started-at="2020-05-20T19:08:54Z" finished-at="2020-05-20T19:08:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Covid19OauthAPIHeading -->
-        <test-method status="PASS" signature="Covid19OauthAPIclickViewDocumentation()[pri:7, instance:com.covid19.qa.HomePageTestcases.APIsPageTestCases@75c072cb]" name="Covid19OauthAPIclickViewDocumentation" duration-ms="2396" started-at="2020-05-19T11:14:50Z" finished-at="2020-05-19T11:14:53Z">
+        </test-method> <!-- VerifydropdownvaluesTransmission_Type -->
+        <test-method status="PASS" signature="VerifyStateLabel()[pri:7, instance:com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase@25b485ba]" name="VerifyStateLabel" duration-ms="24" started-at="2020-05-20T19:08:54Z" finished-at="2020-05-20T19:08:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Covid19OauthAPIclickViewDocumentation -->
-        <test-method status="PASS" signature="VerifyCOVID19PatientDatabaseAPIHeading()[pri:8, instance:com.covid19.qa.HomePageTestcases.APIsPageTestCases@75c072cb]" name="VerifyCOVID19PatientDatabaseAPIHeading" duration-ms="537" started-at="2020-05-19T11:14:53Z" finished-at="2020-05-19T11:14:53Z">
+        </test-method> <!-- VerifyStateLabel -->
+        <test-method status="PASS" signature="VerifyStatePlaceholderText()[pri:8, instance:com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase@25b485ba]" name="VerifyStatePlaceholderText" duration-ms="21" started-at="2020-05-20T19:08:54Z" finished-at="2020-05-20T19:08:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyCOVID19PatientDatabaseAPIHeading -->
-        <test-method status="PASS" signature="clickviewdocumentationunderCOVID19PatientDatabaseAPI()[pri:9, instance:com.covid19.qa.HomePageTestcases.APIsPageTestCases@75c072cb]" name="clickviewdocumentationunderCOVID19PatientDatabaseAPI" duration-ms="2289" started-at="2020-05-19T11:14:53Z" finished-at="2020-05-19T11:14:56Z">
+        </test-method> <!-- VerifyStatePlaceholderText -->
+        <test-method status="PASS" signature="VerifyStateDropdownvalues()[pri:9, instance:com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase@25b485ba]" name="VerifyStateDropdownvalues" duration-ms="34" started-at="2020-05-20T19:08:54Z" finished-at="2020-05-20T19:08:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickviewdocumentationunderCOVID19PatientDatabaseAPI -->
-        <test-method status="PASS" signature="VerifyREQUESTACCESSTOAPIsHeading()[pri:10, instance:com.covid19.qa.HomePageTestcases.APIsPageTestCases@75c072cb]" name="VerifyREQUESTACCESSTOAPIsHeading" duration-ms="538" started-at="2020-05-19T11:14:56Z" finished-at="2020-05-19T11:14:56Z">
+        </test-method> <!-- VerifyStateDropdownvalues -->
+        <test-method status="PASS" signature="VerifyclustersLabelName()[pri:10, instance:com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase@25b485ba]" name="VerifyclustersLabelName" duration-ms="22" started-at="2020-05-20T19:08:54Z" finished-at="2020-05-20T19:08:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyREQUESTACCESSTOAPIsHeading -->
-        <test-method status="PASS" signature="clickREQUESTACCESS()[pri:11, instance:com.covid19.qa.HomePageTestcases.APIsPageTestCases@75c072cb]" name="clickREQUESTACCESS" duration-ms="6112" started-at="2020-05-19T11:14:56Z" finished-at="2020-05-19T11:15:02Z">
+        </test-method> <!-- VerifyclustersLabelName -->
+        <test-method status="PASS" signature="VerifyclustersPlaceholderText()[pri:11, instance:com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase@25b485ba]" name="VerifyclustersPlaceholderText" duration-ms="21" started-at="2020-05-20T19:08:54Z" finished-at="2020-05-20T19:08:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickREQUESTACCESS -->
-        <test-method status="PASS" signature="verifyHowToGetStartedHeading()[pri:12, instance:com.covid19.qa.HomePageTestcases.APIsPageTestCases@75c072cb]" name="verifyHowToGetStartedHeading" duration-ms="537" started-at="2020-05-19T11:15:02Z" finished-at="2020-05-19T11:15:03Z">
+        </test-method> <!-- VerifyclustersPlaceholderText -->
+        <test-method status="PASS" signature="VerifyclustersDropdownvalues()[pri:12, instance:com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase@25b485ba]" name="VerifyclustersDropdownvalues" duration-ms="24" started-at="2020-05-20T19:08:55Z" finished-at="2020-05-20T19:08:55Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyHowToGetStartedHeading -->
-        <test-method status="PASS" signature="clickHowToGetStartedbutton()[pri:13, instance:com.covid19.qa.HomePageTestcases.APIsPageTestCases@75c072cb]" name="clickHowToGetStartedbutton" duration-ms="1777" started-at="2020-05-19T11:15:03Z" finished-at="2020-05-19T11:15:04Z">
+        </test-method> <!-- VerifyclustersDropdownvalues -->
+        <test-method status="PASS" signature="VerifyNationalityLabel()[pri:13, instance:com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase@25b485ba]" name="VerifyNationalityLabel" duration-ms="29" started-at="2020-05-20T19:08:55Z" finished-at="2020-05-20T19:08:55Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickHowToGetStartedbutton -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.covid19.qa.HomePageTestcases.APIsPageTestCases@75c072cb]" name="tearDown" is-config="true" duration-ms="621" started-at="2020-05-19T11:15:04Z" finished-at="2020-05-19T11:15:05Z">
+        </test-method> <!-- VerifyNationalityLabel -->
+        <test-method status="PASS" signature="VerifyPlaceholderTextNationalityLabel()[pri:14, instance:com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase@25b485ba]" name="VerifyPlaceholderTextNationalityLabel" duration-ms="24" started-at="2020-05-20T19:08:56Z" finished-at="2020-05-20T19:08:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyPlaceholderTextNationalityLabel -->
+        <test-method status="PASS" signature="VerifyDRopdownvaluesNationalityLabel()[pri:15, instance:com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase@25b485ba]" name="VerifyDRopdownvaluesNationalityLabel" duration-ms="80" started-at="2020-05-20T19:08:57Z" finished-at="2020-05-20T19:08:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyDRopdownvaluesNationalityLabel -->
+        <test-method status="PASS" signature="VerifyGenderLabel()[pri:16, instance:com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase@25b485ba]" name="VerifyGenderLabel" duration-ms="26" started-at="2020-05-20T19:08:57Z" finished-at="2020-05-20T19:08:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyGenderLabel -->
+        <test-method status="PASS" signature="VerifyPlaceholdertextGenderLabel()[pri:17, instance:com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase@25b485ba]" name="VerifyPlaceholdertextGenderLabel" duration-ms="35" started-at="2020-05-20T19:09:03Z" finished-at="2020-05-20T19:09:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyPlaceholdertextGenderLabel -->
+        <test-method status="PASS" signature="VerifyDropdownValuesGenderLabel()[pri:18, instance:com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase@25b485ba]" name="VerifyDropdownValuesGenderLabel" duration-ms="22" started-at="2020-05-20T19:09:03Z" finished-at="2020-05-20T19:09:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyDropdownValuesGenderLabel -->
+        <test-method status="PASS" signature="PrimarySearch_function()[pri:20, instance:com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase@25b485ba]" name="PrimarySearch_function" duration-ms="11385" started-at="2020-05-20T19:09:04Z" finished-at="2020-05-20T19:09:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PrimarySearch_function -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase@25b485ba]" name="tearDown" is-config="true" duration-ms="104" started-at="2020-05-20T19:09:16Z" finished-at="2020-05-20T19:09:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.covid19.qa.HomePageTestcases.APIsPageTestCases -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase -->
+      <class name="com.covid19.qa.HomePageTestcases.AdvanceSearchFunction">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@2b546384]" name="setUp" is-config="true" duration-ms="5363" started-at="2020-05-20T19:08:47Z" finished-at="2020-05-20T19:08:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="AdvanceSearch_function()[pri:1, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@2b546384]" name="AdvanceSearch_function" duration-ms="94" started-at="2020-05-20T19:08:52Z" finished-at="2020-05-20T19:08:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AdvanceSearch_function -->
+        <test-method status="PASS" signature="VerifypaitentIDequaltoPlaceholdertext()[pri:2, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@2b546384]" name="VerifypaitentIDequaltoPlaceholdertext" duration-ms="617" started-at="2020-05-20T19:08:52Z" finished-at="2020-05-20T19:08:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifypaitentIDequaltoPlaceholdertext -->
+        <test-method status="PASS" signature="VerifyPaitentIDPLaceholderText_function()[pri:3, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@2b546384]" name="VerifyPaitentIDPLaceholderText_function" duration-ms="1084" started-at="2020-05-20T19:08:53Z" finished-at="2020-05-20T19:08:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyPaitentIDPLaceholderText_function -->
+        <test-method status="PASS" signature="VerifyStatePatientIDTitle()[pri:4, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@2b546384]" name="VerifyStatePatientIDTitle" duration-ms="22" started-at="2020-05-20T19:08:54Z" finished-at="2020-05-20T19:08:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyStatePatientIDTitle -->
+        <test-method status="PASS" signature="VerifyStatePatientIDPlaceHoldertext()[pri:5, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@2b546384]" name="VerifyStatePatientIDPlaceHoldertext" duration-ms="97" started-at="2020-05-20T19:08:54Z" finished-at="2020-05-20T19:08:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyStatePatientIDPlaceHoldertext -->
+        <test-method status="PASS" signature="VerifyDistrictTitle()[pri:6, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@2b546384]" name="VerifyDistrictTitle" duration-ms="131" started-at="2020-05-20T19:08:54Z" finished-at="2020-05-20T19:08:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyDistrictTitle -->
+        <test-method status="PASS" signature="VerifyCityTitle()[pri:7, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@2b546384]" name="VerifyCityTitle" duration-ms="22" started-at="2020-05-20T19:08:54Z" finished-at="2020-05-20T19:08:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyCityTitle -->
+        <test-method status="PASS" signature="VerifyCityPlaceHolderText()[pri:8, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@2b546384]" name="VerifyCityPlaceHolderText" duration-ms="91" started-at="2020-05-20T19:08:54Z" finished-at="2020-05-20T19:08:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyCityPlaceHolderText -->
+        <test-method status="PASS" signature="VerifyZipcodeTitle()[pri:9, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@2b546384]" name="VerifyZipcodeTitle" duration-ms="23" started-at="2020-05-20T19:08:54Z" finished-at="2020-05-20T19:08:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyZipcodeTitle -->
+        <test-method status="PASS" signature="VerifyZipcodePlaceholderText()[pri:10, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@2b546384]" name="VerifyZipcodePlaceholderText" duration-ms="15" started-at="2020-05-20T19:08:54Z" finished-at="2020-05-20T19:08:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyZipcodePlaceholderText -->
+        <test-method status="PASS" signature="VerifyAgeEqualToPlaceholderText()[pri:11, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@2b546384]" name="VerifyAgeEqualToPlaceholderText" duration-ms="696" started-at="2020-05-20T19:08:54Z" finished-at="2020-05-20T19:08:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyAgeEqualToPlaceholderText -->
+        <test-method status="PASS" signature="VerifyInputTextfieldPlaceholderText()[pri:12, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@2b546384]" name="VerifyInputTextfieldPlaceholderText" duration-ms="315" started-at="2020-05-20T19:08:55Z" finished-at="2020-05-20T19:08:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyInputTextfieldPlaceholderText -->
+        <test-method status="PASS" signature="VerifyDateAnnouncedequaltoPlaceholderText()[pri:13, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@2b546384]" name="VerifyDateAnnouncedequaltoPlaceholderText" duration-ms="704" started-at="2020-05-20T19:08:55Z" finished-at="2020-05-20T19:08:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyDateAnnouncedequaltoPlaceholderText -->
+        <test-method status="PASS" signature="VerifyDateAnnouncedInputFieldPlaceholderText()[pri:14, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@2b546384]" name="VerifyDateAnnouncedInputFieldPlaceholderText" duration-ms="359" started-at="2020-05-20T19:08:56Z" finished-at="2020-05-20T19:08:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyDateAnnouncedInputFieldPlaceholderText -->
+        <test-method status="PASS" signature="VerifyStatusChangeDatePlaceholderText()[pri:15, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@2b546384]" name="VerifyStatusChangeDatePlaceholderText" duration-ms="22" started-at="2020-05-20T19:08:57Z" finished-at="2020-05-20T19:08:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyStatusChangeDatePlaceholderText -->
+        <test-method status="PASS" signature="VerifyStatusChangeDateInputTextFieldPlaceholderText()[pri:16, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@2b546384]" name="VerifyStatusChangeDateInputTextFieldPlaceholderText" duration-ms="6622" started-at="2020-05-20T19:08:57Z" finished-at="2020-05-20T19:09:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyStatusChangeDateInputTextFieldPlaceholderText -->
+        <test-method status="PASS" signature="VerifyPaitentIDMinPLaceholderText()[pri:17, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@2b546384]" name="VerifyPaitentIDMinPLaceholderText" duration-ms="15" started-at="2020-05-20T19:09:03Z" finished-at="2020-05-20T19:09:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyPaitentIDMinPLaceholderText -->
+        <test-method status="PASS" signature="VerifyPaitentIDMaxPLaceholderText()[pri:18, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@2b546384]" name="VerifyPaitentIDMaxPLaceholderText" duration-ms="806" started-at="2020-05-20T19:09:03Z" finished-at="2020-05-20T19:09:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyPaitentIDMaxPLaceholderText -->
+        <test-method status="PASS" signature="VerifyAgeMinInputFieldPlaceholderText()[pri:19, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@2b546384]" name="VerifyAgeMinInputFieldPlaceholderText" duration-ms="31" started-at="2020-05-20T19:09:04Z" finished-at="2020-05-20T19:09:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyAgeMinInputFieldPlaceholderText -->
+        <test-method status="FAIL" signature="VerifyAgeMaxInputFieldPlaceholderText()[pri:20, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@2b546384]" name="VerifyAgeMaxInputFieldPlaceholderText" duration-ms="17" started-at="2020-05-20T19:09:16Z" finished-at="2020-05-20T19:09:16Z">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srijan-ka-MBP-2', ip: '2401:4900:44e2:bcc0:581:7cd6:d043:9e4d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.2', java.version: '1.8.0_202'
+Driver info: driver.version: EventFiringWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srijan-ka-MBP-2', ip: '2401:4900:44e2:bcc0:581:7cd6:d043:9e4d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.2', java.version: '1.8.0_202'
+Driver info: driver.version: EventFiringWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy7.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.covid.qa.utils.Wait.visibiltyOfElement(Wait.java:44)
+	at com.covid19.qa.pages.AdvanceSearchHomePage.VerifyAgeMaxInputFieldPlaceholderText(AdvanceSearchHomePage.java:612)
+	at com.covid19.qa.HomePageTestcases.AdvanceSearchFunction.VerifyAgeMaxInputFieldPlaceholderText(AdvanceSearchFunction.java:422)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyAgeMaxInputFieldPlaceholderText -->
+        <test-method status="FAIL" signature="VerifyDateAnnouncedMinInputFieldPlaceholderText()[pri:21, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@2b546384]" name="VerifyDateAnnouncedMinInputFieldPlaceholderText" duration-ms="0" started-at="2020-05-20T19:09:16Z" finished-at="2020-05-20T19:09:16Z">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srijan-ka-MBP-2', ip: '2401:4900:44e2:bcc0:581:7cd6:d043:9e4d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.2', java.version: '1.8.0_202'
+Driver info: driver.version: EventFiringWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srijan-ka-MBP-2', ip: '2401:4900:44e2:bcc0:581:7cd6:d043:9e4d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.2', java.version: '1.8.0_202'
+Driver info: driver.version: EventFiringWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy7.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.covid.qa.utils.Wait.visibiltyOfElement(Wait.java:44)
+	at com.covid19.qa.pages.AdvanceSearchHomePage.SelectDateAnnouncedIsbetweenOperator(AdvanceSearchHomePage.java:805)
+	at com.covid19.qa.HomePageTestcases.AdvanceSearchFunction.VerifyDateAnnouncedMinInputFieldPlaceholderText(AdvanceSearchFunction.java:440)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyDateAnnouncedMinInputFieldPlaceholderText -->
+        <test-method status="FAIL" signature="VerifyDateAnnouncedMaxInputFieldPlaceholderText()[pri:22, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@2b546384]" name="VerifyDateAnnouncedMaxInputFieldPlaceholderText" duration-ms="1" started-at="2020-05-20T19:09:16Z" finished-at="2020-05-20T19:09:16Z">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srijan-ka-MBP-2', ip: '2401:4900:44e2:bcc0:581:7cd6:d043:9e4d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.2', java.version: '1.8.0_202'
+Driver info: driver.version: EventFiringWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srijan-ka-MBP-2', ip: '2401:4900:44e2:bcc0:581:7cd6:d043:9e4d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.2', java.version: '1.8.0_202'
+Driver info: driver.version: EventFiringWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy7.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.covid.qa.utils.Wait.visibiltyOfElement(Wait.java:44)
+	at com.covid19.qa.pages.AdvanceSearchHomePage.VerifyDateAnnouncedMaxInputFieldPlaceholderText(AdvanceSearchHomePage.java:647)
+	at com.covid19.qa.HomePageTestcases.AdvanceSearchFunction.VerifyDateAnnouncedMaxInputFieldPlaceholderText(AdvanceSearchFunction.java:456)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyDateAnnouncedMaxInputFieldPlaceholderText -->
+        <test-method status="FAIL" signature="VerifyStatusChangeDateMinInputtextfieldPlaceholderText()[pri:23, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@2b546384]" name="VerifyStatusChangeDateMinInputtextfieldPlaceholderText" duration-ms="1" started-at="2020-05-20T19:09:16Z" finished-at="2020-05-20T19:09:16Z">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srijan-ka-MBP-2', ip: '2401:4900:44e2:bcc0:581:7cd6:d043:9e4d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.2', java.version: '1.8.0_202'
+Driver info: driver.version: EventFiringWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srijan-ka-MBP-2', ip: '2401:4900:44e2:bcc0:581:7cd6:d043:9e4d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.2', java.version: '1.8.0_202'
+Driver info: driver.version: EventFiringWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy7.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at com.covid19.qa.HomePageTestcases.AdvanceSearchFunction.VerifyStatusChangeDateMinInputtextfieldPlaceholderText(AdvanceSearchFunction.java:473)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyStatusChangeDateMinInputtextfieldPlaceholderText -->
+        <test-method status="FAIL" signature="VerifyStatusChangeDateMinInputtextfieldPlaceholderText1()[pri:24, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@2b546384]" name="VerifyStatusChangeDateMinInputtextfieldPlaceholderText1" duration-ms="0" started-at="2020-05-20T19:09:16Z" finished-at="2020-05-20T19:09:16Z">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srijan-ka-MBP-2', ip: '2401:4900:44e2:bcc0:581:7cd6:d043:9e4d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.2', java.version: '1.8.0_202'
+Driver info: driver.version: EventFiringWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srijan-ka-MBP-2', ip: '2401:4900:44e2:bcc0:581:7cd6:d043:9e4d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.2', java.version: '1.8.0_202'
+Driver info: driver.version: EventFiringWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy7.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.covid.qa.utils.Wait.visibiltyOfElement(Wait.java:44)
+	at com.covid19.qa.pages.AdvanceSearchHomePage.VerifyStatusChangeDateMinInputtextfieldPlaceholderText(AdvanceSearchHomePage.java:677)
+	at com.covid19.qa.HomePageTestcases.AdvanceSearchFunction.VerifyStatusChangeDateMinInputtextfieldPlaceholderText1(AdvanceSearchFunction.java:494)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyStatusChangeDateMinInputtextfieldPlaceholderText1 -->
+        <test-method status="FAIL" signature="VerifyStatusChangeDateMaxInputtextfieldPlaceholderText()[pri:25, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@2b546384]" name="VerifyStatusChangeDateMaxInputtextfieldPlaceholderText" duration-ms="1" started-at="2020-05-20T19:09:16Z" finished-at="2020-05-20T19:09:16Z">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srijan-ka-MBP-2', ip: '2401:4900:44e2:bcc0:581:7cd6:d043:9e4d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.2', java.version: '1.8.0_202'
+Driver info: driver.version: EventFiringWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srijan-ka-MBP-2', ip: '2401:4900:44e2:bcc0:581:7cd6:d043:9e4d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.2', java.version: '1.8.0_202'
+Driver info: driver.version: EventFiringWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy7.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.covid.qa.utils.Wait.visibiltyOfElement(Wait.java:44)
+	at com.covid19.qa.pages.AdvanceSearchHomePage.VerifyStatusChangeDateMaxInputtextfieldPlaceholderText(AdvanceSearchHomePage.java:687)
+	at com.covid19.qa.HomePageTestcases.AdvanceSearchFunction.VerifyStatusChangeDateMaxInputtextfieldPlaceholderText(AdvanceSearchFunction.java:509)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyStatusChangeDateMaxInputtextfieldPlaceholderText -->
+        <test-method status="FAIL" signature="tearDown()[pri:0, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@2b546384]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-05-20T19:09:16Z" finished-at="2020-05-20T19:09:16Z">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srijan-ka-MBP-2', ip: '2401:4900:44e2:bcc0:581:7cd6:d043:9e4d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.2', java.version: '1.8.0_202'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Srijan-ka-MBP-2', ip: '2401:4900:44e2:bcc0:581:7cd6:d043:9e4d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.2', java.version: '1.8.0_202'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringTimeouts.implicitlyWait(EventFiringWebDriver.java:670)
+	at com.covid.qa.utils.Wait.implicitWait(Wait.java:24)
+	at com.covid19.qa.HomePageTestcases.AdvanceSearchFunction.tearDown(AdvanceSearchFunction.java:631)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:212)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.covid19.qa.HomePageTestcases.AdvanceSearchFunction -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

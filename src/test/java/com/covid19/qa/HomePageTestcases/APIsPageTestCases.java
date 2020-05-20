@@ -40,7 +40,7 @@ String APIsPageTitle = APIsPageObject.VerifyAPIsLinkClick();
 		
 		System.out.println("Title of the APIs Page Title is : " +APIsPageTitle);
 
-		Wait.Pause(50);
+		//Wait.Pause(50);
 
 		}
 	
@@ -52,11 +52,14 @@ String APIsPageTitle = APIsPageObject.VerifyAPIsLinkClick();
 String VerifyAPIsLinkUrl = APIsPageObject.VerifyAPIsLinkUrl();
 		
 		
-		Assert.assertEquals(VerifyAPIsLinkUrl , "https://covid19database.srijan.net/apis");
+	//	Assert.assertEquals(VerifyAPIsLinkUrl , "https://covid19database.srijan.net/apis");
+		
+		Assert.assertEquals(VerifyAPIsLinkUrl , prop.getProperty("apisurl"));
+
 		
 		System.out.println("URL of the APIs Page is : " +VerifyAPIsLinkUrl);
 
-		Wait.Pause(50);
+	//	Wait.Pause(50);
 
 		}
 
@@ -70,11 +73,11 @@ String VerifyAPIsLinkUrl = APIsPageObject.VerifyAPIsLinkUrl();
 String VerifyAPIListingHeading = APIsPageObject.VerifyAPIListingHeading();
 		
 		
-		Assert.assertEquals(VerifyAPIListingHeading , "API Listing");
+		Assert.assertEquals(VerifyAPIListingHeading , prop.getProperty("VerifyAPIListingHeading"));
 		
 		System.out.println("API Listing Heading of the APIs Page is : " +VerifyAPIListingHeading);
 
-		Wait.Pause(500);
+	//	Wait.Pause(500);
 
 		}
 
@@ -88,9 +91,12 @@ String VerifyCOvid19APIHeading = APIsPageObject.VerifyCOvid19APIHeading();
 		Assert.assertEquals(VerifyCOvid19APIHeading , "COvid19 API\n" + 
 				"API for COVID-19 stats & patient tracing in India");
 		
+		//Assert.assertEquals(VerifyCOvid19APIHeading , prop.getProperty("VerifyCOvid19APIHeading"+"VerifyCOvid19APIHeading1" ));
+		
+		
 		System.out.println("Covid 19  Heading of the  Page is : " +VerifyCOvid19APIHeading);
 
-		Wait.Pause(500);
+		//Wait.Pause(500);
 
 		}
 
@@ -104,9 +110,10 @@ String VerifyCOvid19APIHeading = APIsPageObject.VerifyCOvid19APIHeading();
 String ClickCOvid19APIViewDocumentastion = APIsPageObject.ClickCOvid19APIViewDocumentastion();
 		
 		
-		Assert.assertEquals(ClickCOvid19APIViewDocumentastion , "https://covid19database.srijan.net/apis");
+		Assert.assertEquals(ClickCOvid19APIViewDocumentastion ,prop.getProperty("ClickCOvid19APIViewDocumentastion"));
 
-          Wait.Pause(500);
+          //Wait.Pause(500);
+		
 
 		
 		System.out.println("click view documentation on Covid 19  Page : " + ClickCOvid19APIViewDocumentastion);
@@ -125,7 +132,10 @@ String Covid19OauthAPIHeading = APIsPageObject.Covid19OauthAPIHeading();
 		Assert.assertEquals(Covid19OauthAPIHeading , "Covid19-Oauth API\n" + 
 				"This API is used to retrieve access token, authorization based on OAuth 2.0");
 
-          Wait.Pause(500);
+		//Assert.assertEquals(Covid19OauthAPIHeading , "Covid19-Oauth API This API is used to retrieve access token, authorization based on OAuth 2.0");
+
+		
+		//Wait.Pause(500);
 
 		
 		System.out.println("Covid19OauthAPI Heading   is  : " + Covid19OauthAPIHeading);
@@ -141,9 +151,14 @@ String Covid19OauthAPIHeading = APIsPageObject.Covid19OauthAPIHeading();
 String Covid19OauthAPIclickViewDocumentation = APIsPageObject.Covid19OauthAPIclickViewDocumentation();
 		
 		
-		Assert.assertEquals(Covid19OauthAPIclickViewDocumentation , "https://covid19database.srijan.net/apis");
 
-          Wait.Pause(500);
+
+		//Assert.assertEquals(Covid19OauthAPIclickViewDocumentation , "https://covid19database.srijan.net/apis");
+Assert.assertEquals(Covid19OauthAPIclickViewDocumentation ,prop.getProperty("ClickCOvid19APIViewDocumentastion") );
+
+         // Wait.Pause(500);
+
+Wait.implicitWait(500);
 
 		
 		System.out.println("click view documentation under Covid19OauthAPI Heading   : " + Covid19OauthAPIclickViewDocumentation);
@@ -162,7 +177,7 @@ String COVID19PatientDatabaseAPIHeading = APIsPageObject.COVID19PatientDatabaseA
 				"This API is used to retrieve create update and delete the covid19 patients' records respectively.\n" + 
 				"View Documentation");
 
-          Wait.Pause(500);
+         // Wait.Pause(500);
 
 		
 		System.out.println("COVID19PatientDatabaseAPI Heading is : " + COVID19PatientDatabaseAPIHeading);
@@ -180,9 +195,9 @@ String COVID19PatientDatabaseAPIHeading = APIsPageObject.COVID19PatientDatabaseA
 String clickviewdocumentationunderCOVID19PatientDatabaseAPI = APIsPageObject.clickviewdocumentationunderCOVID19PatientDatabaseAPI();
 		
 		
-		Assert.assertEquals(clickviewdocumentationunderCOVID19PatientDatabaseAPI , "https://covid19database.srijan.net/apis");
+		Assert.assertEquals(clickviewdocumentationunderCOVID19PatientDatabaseAPI , prop.getProperty("ClickCOvid19APIViewDocumentastion"));
 
-          Wait.Pause(500);
+         // Wait.Pause(500);
 
 		
 		System.out.println("clicking view documentation under COVID19PatientDatabaseAPI Heading : " + clickviewdocumentationunderCOVID19PatientDatabaseAPI);
@@ -197,9 +212,13 @@ String clickviewdocumentationunderCOVID19PatientDatabaseAPI = APIsPageObject.cli
 String VerifyREQUESTACCESSTOAPIsHeading = APIsPageObject.VerifyREQUESTACCESSTOAPIsHeading();
 		
 		
-		Assert.assertEquals(VerifyREQUESTACCESSTOAPIsHeading , "REQUEST ACCESS TO APIs");
+		//Assert.assertEquals(VerifyREQUESTACCESSTOAPIsHeading , "REQUEST ACCESS TO APIs");
 
-          Wait.Pause(500);
+
+
+Assert.assertEquals(VerifyREQUESTACCESSTOAPIsHeading ,prop.getProperty("VerifyREQUESTACCESSTOAPIsHeading"));
+
+         // Wait.Pause(500);
 
 		
 		System.out.println("verify requestaccess to api  Heading : " + VerifyREQUESTACCESSTOAPIsHeading);
@@ -215,10 +234,10 @@ String VerifyREQUESTACCESSTOAPIsHeading = APIsPageObject.VerifyREQUESTACCESSTOAP
 String clickREQUESTACCESS = APIsPageObject.clickREQUESTACCESS();
 		
 		
-	Assert.assertEquals(clickREQUESTACCESS , "https://covid19database.srijan.net/apis");
+	Assert.assertEquals(clickREQUESTACCESS , prop.getProperty("ClickCOvid19APIViewDocumentastion"));
 
 
-  Wait.Pause(500);
+  //Wait.Pause(500);
 
 		
 		System.out.println("verify requestaccess page naviagation : " + clickREQUESTACCESS);
@@ -233,10 +252,10 @@ String clickREQUESTACCESS = APIsPageObject.clickREQUESTACCESS();
 String verifyHowToGetStartedHeading = APIsPageObject.verifyHowToGetStartedHeading();
 		
 		
-		Assert.assertEquals(verifyHowToGetStartedHeading , "How To Get Started?");
+		Assert.assertEquals(verifyHowToGetStartedHeading ,prop.getProperty("verifyHowToGetStartedHeading"));
 
 
-   Wait.Pause(500);
+     Wait.implicitWait(500);
 
 		
 		System.out.println("verify how to get started  page  : " + verifyHowToGetStartedHeading);
@@ -253,10 +272,10 @@ String verifyHowToGetStartedHeading = APIsPageObject.verifyHowToGetStartedHeadin
 String clickHowToGetStartedbutton = APIsPageObject.clickHowToGetStartedbutton();
 		
 		
-		Assert.assertEquals(clickHowToGetStartedbutton , "https://covid19database.srijan.net/node/19465");
+		Assert.assertEquals(clickHowToGetStartedbutton , prop.getProperty("clickHowToGetStartedbutton"));
 
 
-   Wait.Pause(500);
+  // Wait.Pause(500);
 
 		
 		System.out.println(" click how to get start button  : " + clickHowToGetStartedbutton);
@@ -274,7 +293,7 @@ String clickHowToGetStartedbutton = APIsPageObject.clickHowToGetStartedbutton();
 	@AfterClass
 	public void tearDown() throws InterruptedException{
 		
-		Wait.Pause(500);
+		//Wait.Pause(500);
 
 		driver.quit();
 

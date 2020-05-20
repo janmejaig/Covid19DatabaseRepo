@@ -58,6 +58,8 @@ public class AboutUsPage extends TestBase {
 
 	{
 		
+		Wait.visibiltyOfElement(driver, 500, VerifyCOVIDPatientDataTitleUnderAboutUsPAge);
+		
 		return VerifyCOVIDPatientDataTitleUnderAboutUsPAge.getText();
 		 
 		  
@@ -70,6 +72,8 @@ public class AboutUsPage extends TestBase {
 	public String  VerifyCOVIDPatientDataNavigationUnderAboutUsPAge() 
 
 	{
+		Wait.visibiltyOfElement(driver, 500, VerifyCOVIDPatientDataTitleUnderAboutUsPAge);
+
 		
 		 VerifyCOVIDPatientDataTitleUnderAboutUsPAge.click();
 		 
@@ -86,7 +90,7 @@ public class AboutUsPage extends TestBase {
 	public String  VerifyFirstCovid19IndiaLink() 
 
 	{
-		
+		Wait.visibiltyOfElement(driver, 500, Covid19IndiaLinkNavigation);
 		return Covid19IndiaLinkNavigation.getText();
 	}
 
@@ -94,7 +98,8 @@ public class AboutUsPage extends TestBase {
 	public String  VerifysecondCovid19IndiaLink() 
 
 	{
-		
+		Wait.visibiltyOfElement(driver, 500, Covid19IndiaLinkNavigation2);
+
 		return Covid19IndiaLinkNavigation2.getText();
 	}
 
@@ -105,9 +110,15 @@ public class AboutUsPage extends TestBase {
 	public String  AboutUsLinkClick() 
 
 	{
+		
+		Wait.visibiltyOfElement(driver, 400, AboutUsLinkClick);
+
 		AboutUsLinkClick.click();
 		
+		
 		return AboutUsLinkClick.getText();
+		
+	
 	}
 
 	
@@ -115,16 +126,27 @@ public class AboutUsPage extends TestBase {
 
 	{
 		
+		Wait.visibiltyOfElement(driver, 500, AboutUsLinkClick);
+		
 		AboutUsLinkClick.click();
+
+		Wait.visibiltyOfElement(driver, 500, AboutUsLinkClick);
 
 		
 		return driver.getCurrentUrl();
 	}
 
+	
 	public boolean  AboutUsPageLOGO() 
 
 	{
+		Wait.visibiltyOfElement(driver, 500, AboutUsLinkClick);
+
+		
 		AboutUsLinkClick.click();
+		
+		Wait.visibiltyOfElement(driver, 500, AboutUsLinkClick);
+
 
 		return AboutUsLogo.isDisplayed();
 	}
@@ -269,6 +291,8 @@ Set<String> handler = driver.getWindowHandles();
 
 	{
 		//AboutUsLinkClick.click();
+		
+		Wait.visibiltyOfElement(driver, 500, VerifyApisLink);
 
 		return VerifyApisLink.getText();
 	}
@@ -277,7 +301,12 @@ Set<String> handler = driver.getWindowHandles();
 	public String VerifyApisLinkNavigation() 
 
 	{
+		//Wait.visibiltyOfElement(driver, 500, VerifyApisLink);
+
 		VerifyApisLink.click();
+		
+		//Wait.visibiltyOfElement(driver, 500, VerifyApisLink);
+
 
 		return driver.getCurrentUrl();
 		

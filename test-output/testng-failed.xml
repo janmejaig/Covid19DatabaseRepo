@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.covid.qa.ExtentReport.ExtentReporterNG"/>
+  </listeners>
+  <test name="Test(failed)">
     <classes>
-      <class name="com.covid19.qa.HomePageTestcases.APIsPageTestCases">
+      <class name="com.covid19.qa.HomePageTestcases.AdvanceSearchFunction">
         <methods>
+          <include name="VerifyStatusChangeDateMaxInputtextfieldPlaceholderText"/>
           <include name="setUp"/>
+          <include name="VerifyDateAnnouncedMinInputFieldPlaceholderText"/>
           <include name="tearDown"/>
-          <include name="VerifyCOVID19PatientDatabaseAPIHeading"/>
+          <include name="VerifyStatusChangeDateMinInputtextfieldPlaceholderText"/>
+          <include name="VerifyAgeMaxInputFieldPlaceholderText"/>
+          <include name="VerifyDateAnnouncedMaxInputFieldPlaceholderText"/>
+          <include name="VerifyStatusChangeDateMinInputtextfieldPlaceholderText1"/>
         </methods>
-      </class> <!-- com.covid19.qa.HomePageTestcases.APIsPageTestCases -->
+      </class> <!-- com.covid19.qa.HomePageTestcases.AdvanceSearchFunction -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

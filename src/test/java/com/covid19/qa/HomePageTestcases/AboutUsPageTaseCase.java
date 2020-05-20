@@ -42,7 +42,7 @@ public class AboutUsPageTaseCase extends TestBase{
 		
 		System.out.println("Title of the AboutUsPage is : " +TitleAboutUsPage);
 
-		Wait.Pause(500);
+		//Wait.Pause(500);
 	}
 	
 	
@@ -55,11 +55,14 @@ public class AboutUsPageTaseCase extends TestBase{
 		String TitleAboutUsPageUrl = AboutUsPageObject.AboutUsPageUrl();
 		
 		
-		Assert.assertEquals(TitleAboutUsPageUrl, "https://covid19database.srijan.net/about-us");
+	//	Assert.assertEquals(TitleAboutUsPageUrl, "https://covid19database.srijan.net/about-us");
+		
+			Assert.assertEquals(TitleAboutUsPageUrl, prop.getProperty("aboutusUrl"));
+
 		
 		System.out.println("Url of AboutUs  Page is : " + TitleAboutUsPageUrl);
 		
-		Wait.Pause(500);
+		//Wait.Pause(500);
 
 
 	}
@@ -76,7 +79,7 @@ public class AboutUsPageTaseCase extends TestBase{
 			Assert.assertTrue(flag);
 			System.out.println("AboutUs page logo is displayed");
 			
-			Wait.Pause(500);
+			//Wait.Pause(500);
 
 			
 			//prop.getProperty("url");
@@ -96,9 +99,9 @@ public class AboutUsPageTaseCase extends TestBase{
 			
 			System.out.println(VerifyFirstCovid19IndiaLink);
 
-			Assert.assertEquals(VerifyFirstCovid19IndiaLink,"www.covid19india.org");
+			Assert.assertEquals(VerifyFirstCovid19IndiaLink,prop.getProperty("covidUrl"));
 			
-			Wait.Pause(500);
+			//Wait.Pause(500);
 
 }
 	
@@ -111,9 +114,9 @@ public class AboutUsPageTaseCase extends TestBase{
 			
 			System.out.println(VerifysecondCovid19IndiaLink);
 
-			Assert.assertEquals(VerifysecondCovid19IndiaLink,"www.covid19india.org");
+			Assert.assertEquals(VerifysecondCovid19IndiaLink,prop.getProperty("covidUrl"));
 			
-			Wait.Pause(500);
+		//	Wait.Pause(500);
 
 }
 
@@ -141,7 +144,7 @@ public class AboutUsPageTaseCase extends TestBase{
 //			TestUtil.ClickbackButtonOnBrowser();
 
 			
-			Wait.Pause(500);
+		//	Wait.Pause(500);
 
 	}
 	
@@ -161,7 +164,7 @@ public class AboutUsPageTaseCase extends TestBase{
 			
 			//TestUtil.ClickbackButtonOnBrowser();
 			
-			Wait.Pause(500);
+			//Wait.Pause(500);
 
 			
 	}
@@ -179,9 +182,9 @@ public class AboutUsPageTaseCase extends TestBase{
 			
 			System.out.println(VerifyApisLink);
 
-			Assert.assertEquals(VerifyApisLink,"https://covid19database.srijan.net/apis");
+			Assert.assertEquals(VerifyApisLink,prop.getProperty("apisurl"));
 			
-			Wait.Pause(500);
+			//Wait.Pause(500);
 
 
 			}
@@ -196,15 +199,15 @@ public class AboutUsPageTaseCase extends TestBase{
 			
 			System.out.println(VerifyApisLinkNavigation);
 
-			Assert.assertEquals(VerifyApisLinkNavigation,"https://covid19database.srijan.net/apis");
+			Assert.assertEquals(VerifyApisLinkNavigation,prop.getProperty("apisurl"));
 			
-			Wait.Pause(500);
+			//Wait.Pause(500);
 			
 			TestUtil.ClickbackButtonOnBrowser();
 }
 
 
-	@Test(priority=9)
+	@Test(priority=10)
 	public void VerifyCOVIDPatientDataTitleUnderAboutUsPAge() throws InterruptedException {
 		
 		
@@ -212,15 +215,15 @@ public class AboutUsPageTaseCase extends TestBase{
 			
 			System.out.println(VerifyCOVIDPatientDataTitleUnderAboutUsPAge);
 
-			Assert.assertEquals(VerifyCOVIDPatientDataTitleUnderAboutUsPAge,"COVID Patient Data");
+			Assert.assertEquals(VerifyCOVIDPatientDataTitleUnderAboutUsPAge,prop.getProperty("COVIDPatientDataTitle"));
 			
-			Wait.Pause(500);
+		//	Wait.Pause(500);
 			
 
 	}
 
 	
-	@Test(priority=9)
+	@Test(priority=11)
 	public void VerifyCOVIDPatientDataNavigationUnderAboutUsPAge() throws InterruptedException {
 		
 		
@@ -228,9 +231,9 @@ public class AboutUsPageTaseCase extends TestBase{
 			
 			System.out.println(VerifyCOVIDPatientDataNavigationUnderAboutUsPAge);
 
-			Assert.assertEquals(VerifyCOVIDPatientDataNavigationUnderAboutUsPAge,"https://covid19database.srijan.net/");
+			Assert.assertEquals(VerifyCOVIDPatientDataNavigationUnderAboutUsPAge,prop.getProperty("COVIDPatientDataNavigationUnderAboutUsPAge"));
 			
-			Wait.Pause(500);
+			//Wait.Pause(500);
 			
 			TestUtil.ClickbackButtonOnBrowser();
 
@@ -244,16 +247,10 @@ public class AboutUsPageTaseCase extends TestBase{
    
 	
 	
-	
-	
-
-	
-	
-	
 	@AfterClass
 	public void tearDown() throws InterruptedException{
 		
-		Wait.Pause(500);
+	//	Wait.Pause(500);
 
 		driver.quit();
 

@@ -39,8 +39,8 @@ public class PrimarySearchFunctionTestcase extends TestBase {
 		String LabelCurrentStatus = HomePage_primarySearchObject.VerifyCurrentStatusLabel();
 		
         System.out.println("This is the label name "+ LabelCurrentStatus);
-        Assert.assertEquals(LabelCurrentStatus, "Current Status");
-		Wait.Pause(500);
+        Assert.assertEquals(LabelCurrentStatus, prop.getProperty("VerifyPrimarySearchLabel"));
+		//Wait.Pause(500);
 
         
 
@@ -53,8 +53,8 @@ public class PrimarySearchFunctionTestcase extends TestBase {
 		String VerifyPlaceholdertextCurrentStatus = HomePage_primarySearchObject.VerifyPlaceholdertextCurrentStatus();
 		
         System.out.println("This is the  PlaceholdertextCurrentStatus "+ VerifyPlaceholdertextCurrentStatus);
-       Assert.assertEquals(VerifyPlaceholdertextCurrentStatus, "- Any -");
-		Wait.Pause(500);
+       Assert.assertEquals(VerifyPlaceholdertextCurrentStatus, prop.getProperty("VerifyPlaceholdertextCurrentStatus"));
+		//Wait.Pause(500);
 
         
 	}
@@ -70,7 +70,7 @@ public class PrimarySearchFunctionTestcase extends TestBase {
         System.out.println("This is the  VerifyAllvaluesCurrentStatus "+ VerifyAllvaluesCurrentStatus);
        Assert.assertTrue(true);
        
-		Wait.Pause(500);
+		//Wait.Pause(500);
 
         
 	}
@@ -86,9 +86,9 @@ public class PrimarySearchFunctionTestcase extends TestBase {
 		
         System.out.println("This is the  VerifyAllvaluesCurrentStatus "+ VerifylabelTransmission_Type);
        
-        Assert.assertEquals(VerifylabelTransmission_Type, "Transmission Type");
+        Assert.assertEquals(VerifylabelTransmission_Type, prop.getProperty("VerifylabelTransmission_Type"));
         
-		Wait.Pause(500);
+	//	Wait.Pause(500);
 
         
 	}
@@ -101,9 +101,9 @@ public class PrimarySearchFunctionTestcase extends TestBase {
 		
         System.out.println("This is the  VerifyPlaceholdertextTransmission_Type "+ VerifyPlaceholdertextTransmission_Type);
        
-        Assert.assertEquals(VerifyPlaceholdertextTransmission_Type, "- Any -");
+        Assert.assertEquals(VerifyPlaceholdertextTransmission_Type, prop.getProperty("VerifyPlaceholdertextCurrentStatus"));
         
-		Wait.Pause(500);
+		//Wait.Pause(500);
 
         
 	}
@@ -119,7 +119,7 @@ public class PrimarySearchFunctionTestcase extends TestBase {
        
         Assert.assertTrue(true);
         
-		Wait.Pause(500);
+		//Wait.Pause(500);
 
         
 	}
@@ -132,9 +132,9 @@ public class PrimarySearchFunctionTestcase extends TestBase {
 		
         System.out.println("This is the  VerifyStateLabel "+ VerifyStateLabel);
        
-        Assert.assertEquals(VerifyStateLabel,"State" );
+        Assert.assertEquals(VerifyStateLabel,prop.getProperty("VerifyStateLabel"));
         
-		Wait.Pause(500);
+		//Wait.Pause(500);
 
         
 	}
@@ -148,9 +148,9 @@ public class PrimarySearchFunctionTestcase extends TestBase {
 		
         System.out.println("This is the  VerifyStatePlaceholderText "+ VerifyStatePlaceholderText);
        
-        Assert.assertEquals(VerifyStatePlaceholderText, "- Any -" );
+        Assert.assertEquals(VerifyStatePlaceholderText, prop.getProperty("VerifyPlaceholdertextCurrentStatus"));
         
-		Wait.Pause(500);
+		//Wait.Pause(500);
 
         
 	}
@@ -165,7 +165,7 @@ public class PrimarySearchFunctionTestcase extends TestBase {
        
         Assert.assertTrue(true);
         
-		Wait.Pause(500);
+		//Wait.Pause(500);
 
         
 	}
@@ -177,9 +177,9 @@ public class PrimarySearchFunctionTestcase extends TestBase {
 		
         System.out.println("This is the  VerifyclustersLabelName "+ VerifyclustersLabelName);
        
-        Assert.assertEquals(VerifyclustersLabelName, "Clusters" );
+        Assert.assertEquals(VerifyclustersLabelName, prop.getProperty("VerifyclustersLabelName") );
         
-		Wait.Pause(500);
+		//Wait.Pause(500);
 
         
 	}
@@ -193,9 +193,9 @@ public class PrimarySearchFunctionTestcase extends TestBase {
 		
         System.out.println("This is the  VerifyclustersPlaceholderText "+ VerifyclustersPlaceholderText);
        
-        Assert.assertEquals(VerifyclustersPlaceholderText, "- Any -" );
+        Assert.assertEquals(VerifyclustersPlaceholderText, prop.getProperty("VerifyPlaceholdertextCurrentStatus"));
         
-		Wait.Pause(500);
+		//Wait.Pause(500);
 
         
 	}
@@ -210,7 +210,7 @@ public class PrimarySearchFunctionTestcase extends TestBase {
        
         Assert.assertTrue(true);
         
-		Wait.Pause(500);
+		//Wait.Pause(500);
 
         
 	}
@@ -225,10 +225,10 @@ public class PrimarySearchFunctionTestcase extends TestBase {
         
         
         
-        Assert.assertEquals(VerifyNationalityLabel , "Nationality");
+        Assert.assertEquals(VerifyNationalityLabel , prop.getProperty("VerifyNationalityLabel"));
 
        
-		Wait.Pause(500);
+		//Wait.Pause(500);
 
 	}
 
@@ -244,9 +244,9 @@ public class PrimarySearchFunctionTestcase extends TestBase {
         
         
         
-        Assert.assertEquals(VerifyPlaceholderTextNationalityLabel , "- Any -");
+        Assert.assertEquals(VerifyPlaceholderTextNationalityLabel , prop.getProperty("VerifyPlaceholdertextCurrentStatus"));
         
-		Wait.Pause(500);
+		//Wait.Pause(500);
 
 
        
@@ -260,7 +260,7 @@ public class PrimarySearchFunctionTestcase extends TestBase {
         System.out.println("This is verifying VerifyPlaceholderTextNationalityLabel "+ VerifyDRopdownvaluesNationalityLabel);
        
         Assert.assertTrue(true);
-		Wait.Pause(500);
+		//Wait.Pause(500);
 
 
        
@@ -278,12 +278,11 @@ public class PrimarySearchFunctionTestcase extends TestBase {
 		
         System.out.println("This is the  GenderLabel "+ VerifyGenderLabel);
        
-        Assert.assertEquals(VerifyGenderLabel, "Gender");
+        Assert.assertEquals(VerifyGenderLabel, prop.getProperty("VerifyGenderLabel"));
         
-		Wait.Pause(500);
+		//Wait.Pause(500);
 
-        
-	}
+        }
 	
 	@Test(priority=17)
 	public void VerifyPlaceholdertextGenderLabel() throws InterruptedException  {
@@ -292,9 +291,9 @@ public class PrimarySearchFunctionTestcase extends TestBase {
 		
         System.out.println("This is the  VerifyPlaceholdertextGenderLabel "+ VerifyPlaceholdertextGenderLabel);
        
-        Assert.assertEquals(VerifyPlaceholdertextGenderLabel, "- Any -");
+        Assert.assertEquals(VerifyPlaceholdertextGenderLabel, prop.getProperty("VerifyPlaceholdertextCurrentStatus"));
         
-		Wait.Pause(500);
+		//Wait.Pause(500);
 
         
 	}
@@ -310,7 +309,7 @@ public class PrimarySearchFunctionTestcase extends TestBase {
        
         Assert.assertTrue(true);
         
-		Wait.Pause(500);
+		//Wait.Pause(500);
 
         
 	}
@@ -461,7 +460,7 @@ public class PrimarySearchFunctionTestcase extends TestBase {
      HomePage_primarySearchObject.Reset_click();
          
         
-		Wait.Pause(500);
+	//	Wait.implicitWait(500);
  
 
 		
@@ -479,7 +478,7 @@ public class PrimarySearchFunctionTestcase extends TestBase {
 	@AfterClass
 	public void tearDown() throws InterruptedException{
 		
-		Wait.Pause(500);
+		Wait.implicitWait(500);
 
 		driver.quit();
 	}
