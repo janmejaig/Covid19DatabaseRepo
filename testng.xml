@@ -7,17 +7,73 @@
  <listeners>
 		<listener class-name="com.covid.qa.ExtentReport.ExtentReporterNG" />
 </listeners>
+
+ <listeners>
+		<listener class-name="com.covid.qa.ExtentReport.TestNGListener" />
+</listeners>
   
+ 
   
   <test  name="Test">
-    <classes>
-<!--       <class name="com.covid19.qa.HomePageTestcases.CovidHomePageTestCase"/>
- -->       <class name="com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase"/>
-     <class name="com.covid19.qa.HomePageTestcases.AdvanceSearchFunction"/>
-         <!-- <class name="com.covid19.qa.HomePageTestcases.AboutUsPageTaseCase"/>
-         <class name="com.covid19.qa.HomePageTestcases.SignUPFormTestCase"/>
-       -->
-      
-    </classes>
-  </test> <!-- Test -->
+     <classes >
+         <class name="com.covid19.qa.HomePageTestcases.CovidHomePageTestCase"/>
+       </classes> 
+</test>
+
+<test  name="Test2">
+  <classes>
+        
+     <class name="com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase"/>
+     </classes>
+     </test>
+ 
+  
+  <test  name="Test3">
+  <classes>
+        
+     <class name="com.covid19.qa.HomePageTestcases.AdvanceSearchFunction"/> 
+     </classes>
+  </test>
+     
+  
+  <test  name="Test4">
+  <classes>
+        
+     <class name="com.covid19.qa.HomePageTestcases.AboutUsPageTaseCase"/>
+     </classes>
+  </test>
+  
+  
+  
+   <test  name="Test5">
+  <classes>
+        
+     <class name="com.covid19.qa.HomePageTestcases.APIsPageTestCases"/>
+     </classes>
+  </test>
+ 
+    
+     <test  name="Test6">
+  <classes>
+        
+     <class name="com.covid19.qa.HomePageTestcases.SignUPFormTestCase"/>
+     </classes>
+  </test>
+ 
+    <test  name="Test7">
+  <classes>
+        
+     <class name="com.covid19.qa.HomePageTestcases.NoResultFoundPageVerify"/>
+     </classes>
+  </test>
+ 
+        
+        
+ 
+     
+     
+  
+    
+   
+  
 </suite> <!-- Suite -->

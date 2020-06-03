@@ -2,6 +2,9 @@ package com.covid.qa.utils;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
@@ -11,7 +14,9 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class TestUtil extends com.covid.qa.base.TestBase {
 
@@ -22,6 +27,69 @@ public class TestUtil extends com.covid.qa.base.TestBase {
 	public static long IMPLICIT_WAIT = 20;
 
 	public static Actions action;
+
+	public static WebDriverWait Wait;
+
+	public TestUtil() throws IOException {
+		super();
+
+	}
+	
+	public static String timeStamp() {
+	   	 return new SimpleDateFormat("yyyy-MM-dd HH-mm-ss").format(new Date());
+	   }
+
+	
+	public static String timeStampByDate() {
+	   	 return new SimpleDateFormat("yyyy-MM-dd").format(new Date());
+	   }
+	
+	
+	
+	// To capture screenshot
+	   public static String captureScreenshot() {
+	  	 
+	   	 File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+	   	String timestamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+	   	 String fileWithPath = System.getProperty("user.dir")+"/Screenshots/Failed_scnsht"+timestamp +".png";
+	   	 File DestFile=new File(fileWithPath); 
+	   	 try {
+				FileUtils.copyFile(srcFile,DestFile );
+			} catch (IOException e) {
+				
+				e.printStackTrace();
+			}
+			return fileWithPath;
+
+	   }
+
+
+	public static void implicitWait(long time) {
+		driver.manage().timeouts().implicitlyWait(time, TimeUnit.SECONDS);
+
+	}
+
+	public static void Pause(long millis) throws InterruptedException {
+
+		Thread.sleep(millis);
+	}
+
+	public static void elementClickable(WebDriver driver, long timeout, WebElement element) {
+
+		new WebDriverWait(driver, timeout).until(ExpectedConditions.elementToBeClickable(element));
+
+	}
+
+	public static void visibiltyOfElement(WebDriver driver, long timeout, WebElement element) {
+
+		new WebDriverWait(driver, timeout).until(ExpectedConditions.visibilityOf(element));
+	}
+
+	public static void pageLoad(long time) {
+
+		driver.manage().timeouts().pageLoadTimeout(time, TimeUnit.SECONDS);
+
+	}
 
 	public static void takeScreenshotAtEndOfTest() throws IOException {
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);

@@ -1,1039 +1,648 @@
 package com.covid19.qa.pages;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.covid.qa.base.TestBase;
 import com.covid.qa.utils.TestUtil;
-import com.covid.qa.utils.Wait;
 
 public class AdvanceSearchHomePage extends TestBase {
 
-	public AdvanceSearchHomePage(){
+	public AdvanceSearchHomePage() {
 		PageFactory.initElements(driver, this);
 	}
 
-	
-	
-	//Title and place holder 
-	
-	
-	
-	//paitent ID Title
-	
-	//@FindBy(xpath="//div[@class='form-item js-form-item form-type-select js-form-type-select form-item-field-patient-number-value-op js-form-item-field-patient-number-value-op form-group']//label[@class='control-label'][contains(text(),'Operator')]")
-	
-	@FindBy(xpath="	//label[@class='control-label'][contains(text(),'Operator')]")
-	WebElement VerifypaitentIDTitle ;
+	@FindBy(xpath = "	//label[@class='control-label'][contains(text(),'Operator')]")
+	WebElement VerifypaitentIDTitle;
 
-	
-	
-	
-	
-	//Advance 
-	
-	
-	
-	@FindBy(xpath="//select[@name='field_patient_number_value_op']//option[@selected='selected']")
-WebElement VerifypaitentIDequaltoPlaceholdertext ;
+	@FindBy(xpath = "//select[@name='field_patient_number_value_op']//option[@selected='selected']")
+	WebElement VerifypaitentIDequaltoPlaceholdertext;
 
-	
-	
-//	@FindBy(xpath="//select[@name='field_patient_number_value_op']//option[@selected='selected']")
-//	WebElement VerifyAdavceSerachButtonDefaultPLaceholderText ;
+	@FindBy(xpath = "//input[@placeholder='Patient ID']")
+	WebElement VerifyPaitentIDPLaceholderText;
 
-	
-	
+	@FindBy(xpath = "//input[@placeholder='Patient ID'and @name='field_patient_number_value[min]' ]")
+	WebElement VerifyPaitentIDMinPLaceholderText;
 
-	// Patient ID
-	
-	
-	
-	@FindBy(xpath="//input[@placeholder='Patient ID']")
-	WebElement VerifyPaitentIDPLaceholderText ;
+	@FindBy(xpath = "	//input[@placeholder='Patient ID'and @name='field_patient_number_value[max]' ]")
+	WebElement VerifyPaitentIDMaxPLaceholderText;
 
-	
-	@FindBy(xpath="//input[@placeholder='Patient ID'and @name='field_patient_number_value[min]' ]")
-	WebElement VerifyPaitentIDMinPLaceholderText ;
+	@FindBy(xpath = "//div//label[contains(text(),'State Patient ID ')]")
+	WebElement VerifyStatePatientIDTitle;
 
-	
-	@FindBy(xpath="	//input[@placeholder='Patient ID'and @name='field_patient_number_value[max]' ]")
-	WebElement VerifyPaitentIDMaxPLaceholderText ;
+	@FindBy(xpath = "//input[@placeholder ='State Patient ID']")
+	WebElement VerifyStatePatientIDPlaceHoldertext;
 
-	
-	
-	
-	
-	
-	
-	
-	//StatePatientID
+	@FindBy(xpath = "//label[text()='District']")
+	WebElement DistrictTitle;
 
-	
-	@FindBy(xpath="//div//label[contains(text(),'State Patient ID ')]")
-	WebElement VerifyStatePatientIDTitle ;
+	@FindBy(xpath = "//input[@placeholder='District']")
+	WebElement DistrictPlaceHolderText;
 
+	// city
+	@FindBy(xpath = "//label[contains(text(),'City')]")
+	WebElement VerifyCityTitle;
 
-	@FindBy(xpath="//input[@placeholder ='State Patient ID']")
-	WebElement VerifyStatePatientIDPlaceHoldertext ;
+	@FindBy(xpath = "	//input[@placeholder='City']")
+	WebElement VerifyCityPlaceHolderText;
 
-	
-	
-	
-	
-
-	//district 
-	
-	
-	@FindBy(xpath="//label[text()='District']")
-	WebElement DistrictTitle ;
-
-	
-	
-	@FindBy(xpath="//input[@placeholder='District']")
-	WebElement DistrictPlaceHolderText ;
-	
-	
-	
-	//city
-
-	
-	@FindBy(xpath="//label[contains(text(),'City')]")
-	WebElement VerifyCityTitle ;
-
-	@FindBy(xpath="	//input[@placeholder='City']")
-	WebElement VerifyCityPlaceHolderText ;
-
-	
 //zip code 
-	
-	@FindBy(xpath="//label[@for='edit-field-zip-code-value']")
-	WebElement VerifyZipcodeTitle ;
+	@FindBy(xpath = "//label[@for='edit-field-zip-code-value']")
+	WebElement VerifyZipcodeTitle;
 
-	
-	
-	
-	@FindBy(xpath="//input[@placeholder='Zip Code']")
-	WebElement VerifyZipcodePlaceholderText ;
+	@FindBy(xpath = "//input[@placeholder='Zip Code']")
+	WebElement VerifyZipcodePlaceholderText;
 
-	
-	//Age
-	
-	@FindBy(xpath="//label[@for='edit-field-age-value-op']")
-	WebElement VerifyAgeTitle ;
+	// Age
+	@FindBy(xpath = "//label[@for='edit-field-age-value-op']")
+	WebElement VerifyAgeTitle;
 
-	@FindBy(xpath="	//select[@ name ='field_age_value_op']//option[@selected='selected']")
-	WebElement VerifyAgeEqualToPlaceholderText ;
+	@FindBy(xpath = "	//select[@ name ='field_age_value_op']//option[@selected='selected']")
+	WebElement VerifyAgeEqualToPlaceholderText;
 
-	
-	@FindBy(xpath="	//input[@ placeholder ='Age']")
-	WebElement VerifyInputTextfieldPlaceholderText ;
-	
-	@FindBy(xpath="	//input[@placeholder='Age Min'and @name='field_age_value[min]' ]")
-	WebElement VerifyAgeMinInputFieldPlaceholderText ;
-	
-	@FindBy(xpath="    //input[@placeholder='Age Max'and @name='field_age_value[max]' ]")
-	WebElement VerifyAgeMaxInputFieldPlaceholderText ;
+	@FindBy(xpath = "	//input[@ placeholder ='Age']")
+	WebElement VerifyInputTextfieldPlaceholderText;
 
+	@FindBy(xpath = "	//input[@placeholder='Age Min'and @name='field_age_value[min]' ]")
+	WebElement VerifyAgeMinInputFieldPlaceholderText;
 
+	@FindBy(xpath = "    //input[@placeholder='Age Max'and @name='field_age_value[max]' ]")
+	WebElement VerifyAgeMaxInputFieldPlaceholderText;
 
+//DateAnnouncedequalto text field 
+	@FindBy(xpath = "	//select[@name='field_date_announced_value_op']//option[@selected='selected']")
+	WebElement VerifyDateAnnouncedequaltoPlaceholderText;
 
+	@FindBy(xpath = "//input[@placeholder='Date Announced ']")
+	WebElement VerifyDateAnnouncedInputFieldPlaceholderText;
 
-	
-	//DateAnnouncedequalto text field 
-	
-	@FindBy(xpath="	//select[@name='field_date_announced_value_op']//option[@selected='selected']")
-	WebElement VerifyDateAnnouncedequaltoPlaceholderText ;
+	@FindBy(xpath = "	//input[@placeholder='Date Announced 'and @name='field_date_announced_value[min]' ]")
+	WebElement VerifyDateAnnouncedMinInputFieldPlaceholderText;
 
-	
-	
-	
-	@FindBy(xpath="//input[@placeholder='Date Announced ']")
-	WebElement VerifyDateAnnouncedInputFieldPlaceholderText ;
-	
-	
-	
-	
-	
-	@FindBy(xpath="	//input[@placeholder='Date Announced 'and @name='field_date_announced_value[min]' ]")
-	WebElement VerifyDateAnnouncedMinInputFieldPlaceholderText ;
-	
+	@FindBy(xpath = "	//input[@placeholder='Date Announced 'and @name='field_date_announced_value[max]' ]")
+	WebElement VerifyDateAnnouncedMaxInputFieldPlaceholderText;
 
-	@FindBy(xpath="	//input[@placeholder='Date Announced 'and @name='field_date_announced_value[max]' ]")
-	WebElement VerifyDateAnnouncedMaxInputFieldPlaceholderText ;
-	
-	
-	
-	
+	// StatusChangeDate
 
-    //StatusChangeDate
-	
-	
-	@FindBy(xpath="	//select[@name='field_status_change_date_value_op' ]//option[@selected='selected']")
-	WebElement VerifyStatusChangeDatePlaceholderText ;
+	@FindBy(xpath = "	//select[@name='field_status_change_date_value_op' ]//option[@selected='selected']")
+	WebElement VerifyStatusChangeDatePlaceholderText;
 
-	@FindBy(xpath="//input[@placeholder='Status Change Date' ]")
-	WebElement VerifyStatusChangeDateInputTextFieldPlaceholderText ;
-	
+	@FindBy(xpath = "//input[@placeholder='Status Change Date' ]")
+	WebElement VerifyStatusChangeDateInputTextFieldPlaceholderText;
 
-	//@FindBy(xpath="//select[@name ='field_patient_number_value_op']//option[@value='between']")
-	
-	//@FindBy(xpath="//select[@name='field_status_change_date_value_op'][1]//option[2]")
-	
-	@FindBy(xpath="//select[@name='field_status_change_date_value_op']//option[@value='between']")
+	@FindBy(xpath = "//select[@name='field_status_change_date_value_op']//option[@value='between']")
 
-	WebElement SelectIsBetweenStatusChangeDate ;
-	
-	@FindBy(xpath="(//input[@placeholder='Status Change Date'])[2]")
-	WebElement VerifyStatusChangeDateMinInputtextfieldPlaceholderText ;
-	
-	
-	@FindBy(xpath="(//input[@placeholder='Status Change Date' ])[3]")
-	WebElement VerifyStatusChangeDateMaxInputtextfieldPlaceholderText ;
-	
-	
-	
-	
-	
-	
-	
-	//Advance Search 
+	WebElement SelectIsBetweenStatusChangeDate;
 
-	@FindBy(xpath="//a[@class='panel-title']")
-	WebElement AdavceSerachButton ;
+	@FindBy(xpath = "(//input[@placeholder='Status Change Date'])[2]")
+	WebElement VerifyStatusChangeDateMinInputtextfieldPlaceholderText;
 
-	
+	@FindBy(xpath = "(//input[@placeholder='Status Change Date' ])[3]")
+	WebElement VerifyStatusChangeDateMaxInputtextfieldPlaceholderText;
 
+	// Advance Search
 
+	@FindBy(xpath = "//a[@class='panel-title']")
+	WebElement AdavceSerachButton;
 
-	@FindBy(xpath="//div[@id='edit-secondary--62dv-HCmrKI--content']")
-	WebElement AdavceSectionBody ;
+	@FindBy(xpath = "//div[@id='edit-secondary--62dv-HCmrKI--content']")
+	WebElement AdavceSectionBody;
 
+	@FindBy(xpath = "//input[@id='edit-field-patient-number-value-value']")
+	WebElement InputPaitentID;
 
+	@FindBy(xpath = "	//label[@for='edit-field-patient-number-value-op--clXcJmNYcG0']")
+	WebElement PaitentIDLabel;
 
+	@FindBy(xpath = "//select[@name='field_patient_number_value_op']")
+	WebElement SelectEqualto;
 
-	//@FindBy(xpath="//input[@name='field_patient_number_value[value]']")
-	
-	@FindBy(xpath="//input[@id='edit-field-patient-number-value-value']")
-	WebElement InputPaitentID ;
-	
-	@FindBy(xpath="	//label[@for='edit-field-patient-number-value-op--clXcJmNYcG0']")
-	WebElement PaitentIDLabel ;
-	
-	@FindBy(xpath="//select[@name='field_patient_number_value_op']")
-	WebElement SelectEqualto ;
-	
-	
-	@FindBy(xpath="//input[@name='field_patient_number_value[min]']")
-	WebElement InputMinimumPatientID ;
-	
-	
-	@FindBy(xpath="	//input[@name='field_patient_number_value[max]']")
-	WebElement InputMaximumPatientID ;
-	
-	
+	@FindBy(xpath = "//input[@name='field_patient_number_value[min]']")
+	WebElement InputMinimumPatientID;
 
-   
-	
-	
-	
-	@FindBy(xpath="	//input[@name='field_state_patient_number_value']")
-	WebElement StatePatientNumber ;
+	@FindBy(xpath = "	//input[@name='field_patient_number_value[max]']")
+	WebElement InputMaximumPatientID;
 
-	
-	
-	
-	
+	@FindBy(xpath = "	//input[@name='field_state_patient_number_value']")
+	WebElement StatePatientNumber;
 
-	
-	
-	@FindBy(xpath="//input[@name='field_detected_district_value']")
-	WebElement InputDistrictName ;
+	@FindBy(xpath = "//input[@name='field_detected_district_value']")
+	WebElement InputDistrictName;
 
-	@FindBy(xpath="//input[@name='field_detected_city_value']")
-	WebElement cityName ;
+	@FindBy(xpath = "//input[@name='field_detected_city_value']")
+	WebElement cityName;
 
-	
-	//Search Button
+	// Search Button
 
-	@FindBy(xpath="//button[@class='button js-form-submit form-submit btn-primary btn icon-before']")
+	@FindBy(xpath = "//button[@class='button js-form-submit form-submit btn-primary btn icon-before']")
 
-	WebElement SearchButton ;
-	
-	
-	
-	//Verify Reset Button
+	WebElement SearchButton;
 
-	//@FindBy(xpath="//span[@class='icon glyphicon glyphicon-trash']")
-	
-	@FindBy(xpath="//button[@name='op'and @value='Reset']")
-    WebElement VerifyResetButton ;
+	// Verify Reset Button
 
-	
-	
-	
-	@FindBy(xpath="	//div[@id='edit-actions--4bZ0jkFBh88']")
+	@FindBy(xpath = "//button[@name='op'and @value='Reset']")
+	WebElement VerifyResetButton;
 
-	WebElement RangeSearchButtonSection ;
+	@FindBy(xpath = "	//div[@id='edit-actions--4bZ0jkFBh88']")
 
-	
-	
-	@FindBy(xpath="//button[@id='edit-submit-covid-patient-data--VXN-fYfp-2A']")
+	WebElement RangeSearchButtonSection;
 
-	WebElement RangeSearchButton ;
+	@FindBy(xpath = "//button[@id='edit-submit-covid-patient-data--VXN-fYfp-2A']")
 
-	
-	
-	
-	
-	@FindBy(xpath="//select[@name='field_age_value_op']")
+	WebElement RangeSearchButton;
 
-	WebElement AgeEqualtoOperator ;
+	@FindBy(xpath = "//select[@name='field_age_value_op']")
 
-	
-	
-	
-	
-	@FindBy(xpath="	//input[@name='field_age_value[value]']")
+	WebElement AgeEqualtoOperator;
 
-	WebElement Age  ;
-	
-	
-	@FindBy(xpath="//input[@name='field_age_value[min]']")
+	@FindBy(xpath = "	//input[@name='field_age_value[value]']")
 
-	WebElement InputAgeMinimumValue  ;
+	WebElement Age;
 
-	@FindBy(xpath="//input[@name='field_age_value[max]']")
+	@FindBy(xpath = "//input[@name='field_age_value[min]']")
 
-	WebElement InputAgeMaximumValue  ;
+	WebElement InputAgeMinimumValue;
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	@FindBy(xpath="//input[@name='field_zip_code_value']")
+	@FindBy(xpath = "//input[@name='field_age_value[max]']")
 
-	WebElement ZipCode  ;
+	WebElement InputAgeMaximumValue;
 
-	@FindBy(xpath="//select[@name='field_date_announced_value_op']")
+	@FindBy(xpath = "//input[@name='field_zip_code_value']")
 
-	WebElement DateAnnouncedEqualtoOperator  ;
+	WebElement ZipCode;
 
-	
-	@FindBy(xpath="	//select[@name='field_date_announced_value_op' and //@selected='selected']")
-	WebElement SelectDateAnnouncedIsequaltoOperator ;
+	@FindBy(xpath = "//select[@name='field_date_announced_value_op']")
 
-	
-	
-	@FindBy(xpath="//input[@name='field_date_announced_value[value]']")
+	WebElement DateAnnouncedEqualtoOperator;
 
-	WebElement DateAnnounced  ;
-	
-	
-	@FindBy(xpath="//a[@title='sort by Patient Id']")
+	@FindBy(xpath = "	//select[@name='field_date_announced_value_op' and //@selected='selected']")
+	WebElement SelectDateAnnouncedIsequaltoOperator;
 
-	WebElement PatientID ;
+	@FindBy(xpath = "//input[@name='field_date_announced_value[value]']")
 
+	WebElement DateAnnounced;
 
+	@FindBy(xpath = "//a[@title='sort by Patient Id']")
 
-	@FindBy(xpath="//a[@title='sort by State Patient Id']")
+	WebElement PatientID;
 
-	WebElement StatePatientId ;
+	@FindBy(xpath = "//a[@title='sort by State Patient Id']")
 
+	WebElement StatePatientId;
 
-	//@FindBy(xpath="//a[contains(text(),'Age')]")
+	@FindBy(xpath = "//a[@title='sort by Age']")
+	WebElement AgeHeader;
 
-	@FindBy(xpath="//a[@title='sort by Age']")	
-	WebElement AgeHeader ;
+	@FindBy(xpath = "//a[contains(text(),'Gender')]")
+	WebElement gender;
 
-
-	@FindBy(xpath="//a[contains(text(),'Gender')]")
-	WebElement gender ;
-
-
-
-	@FindBy(xpath="//a[@title='sort by Nationality']")
+	@FindBy(xpath = "//a[@title='sort by Nationality']")
 	WebElement nationality;
 
-	@FindBy(xpath="//a[@title='sort by State']")
+	@FindBy(xpath = "//a[@title='sort by State']")
 	WebElement State;
 
-	@FindBy(xpath="//a[contains(text(),'District')]")
+	@FindBy(xpath = "//a[contains(text(),'District')]")
 	WebElement District;
 
-	@FindBy(xpath="//a[@title='sort by City']")
+	@FindBy(xpath = "//a[@title='sort by City']")
 	WebElement City;
 
-
-
-	@FindBy(xpath="//a[@title='sort by Zip Code']")
+	@FindBy(xpath = "//a[@title='sort by Zip Code']")
 	WebElement Zipcode;
 
-
-	@FindBy(xpath="//a[@title='sort by Transmission Type']")
+	@FindBy(xpath = "//a[@title='sort by Transmission Type']")
 	WebElement TransmissionType;
 
-	@FindBy(xpath="//label[contains(text(),'Clusters')]")
+	@FindBy(xpath = "//label[contains(text(),'Clusters')]")
 	WebElement Clusters;
 
-	@FindBy(xpath="//a[contains(text(),'Current Status')]")
+	@FindBy(xpath = "//a[contains(text(),'Current Status')]")
 	WebElement CurrentStatus;
 
-
-	@FindBy(xpath="//a[@title='sort by Announced Date']")
+	@FindBy(xpath = "//a[@title='sort by Announced Date']")
 	WebElement AnnouncedDate;
 
+	@FindBy(xpath = "//th[@class='views-field views-field-nothing-1']")
+	WebElement ActionsHeading;
 
-	@FindBy(xpath="//th[@class='views-field views-field-nothing-1']")
-	WebElement ActionsHeading ;
-
-
-
-	
-
-	
-	
-	
-	
-	
-	
-	//Advance Search other function 
-	
-	
-	
-
-//	public String  VerifyAdavceSerachButtonDefaultPLaceholderText() 
-//
-//	{
-//		return VerifyAdavceSerachButtonDefaultPLaceholderText.getText();
-//	}
-	
-	
-	
-	
-	
-	
-	//paitent ID Title
-	
-	public String  VerifypaitentIDTitle() 
+	public String VerifypaitentIDTitle()
 
 	{
-		return   VerifypaitentIDTitle.getText();
-			
-		
-		//driver.findElement(By.xpath("//label[@class='control-label'][contains(text(),'Operator')]"))
-				
-				
+		return VerifypaitentIDTitle.getText();
+
 	}
 
-	
-	public String  VerifyPaitentIDMinPLaceholderText() 
+	public String VerifyPaitentIDMinPLaceholderText()
 
 	{
-		return   VerifyPaitentIDMinPLaceholderText.getAttribute("placeholder");
-			
-		
-		//driver.findElement(By.xpath("//label[@class='control-label'][contains(text(),'Operator')]"))
-				
-				
+		return VerifyPaitentIDMinPLaceholderText.getAttribute("placeholder");
+
 	}
 
-	
-	
-	public String  VerifyPaitentIDMaxPLaceholderText() 
+	public String VerifyPaitentIDMaxPLaceholderText()
 
 	{
-		return   VerifyPaitentIDMaxPLaceholderText.getAttribute("placeholder");
-			
-		
-		//driver.findElement(By.xpath("//label[@class='control-label'][contains(text(),'Operator')]"))
-				
-				
+		return VerifyPaitentIDMaxPLaceholderText.getAttribute("placeholder");
+
 	}
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	public String  VerifypaitentIDequaltoPlaceholdertext() 
+	public String VerifypaitentIDequaltoPlaceholdertext()
 
 	{
-		Wait.visibiltyOfElement(driver, 500, VerifypaitentIDequaltoPlaceholdertext);
+		TestUtil.visibiltyOfElement(driver, 500, VerifypaitentIDequaltoPlaceholdertext);
 		return VerifypaitentIDequaltoPlaceholdertext.getText();
 	}
 
-
-	
-	
-	
-	public String  VerifyPaitentIDPLaceholderText() 
+	public String VerifyPaitentIDPLaceholderText()
 
 	{
-		//Wait.visibiltyOfElement(driver, 500, InputPaitentID);
 		return InputPaitentID.getAttribute("placeholder");
 	}
 
-
-	public String  VerifyStatePatientIDTitle() 
+	public String VerifyStatePatientIDTitle()
 
 	{
 		return VerifyStatePatientIDTitle.getText();
 	}
 
-	
-	public String  VerifyStatePatientIDPlaceHoldertext() 
+	public String VerifyStatePatientIDPlaceHoldertext()
 
 	{
-		//return   VerifyStatePatientIDPlaceHoldertext.getText();
-				
-				//VerifyStatePatientIDPlaceHoldertext.getAttribute("State Patient ID");
-		System.out.println(VerifyStatePatientIDPlaceHoldertext.getAttribute("placeholder"));	
-		return	VerifyStatePatientIDPlaceHoldertext.getAttribute("placeholder");
+		System.out.println(VerifyStatePatientIDPlaceHoldertext.getAttribute("placeholder"));
+		return VerifyStatePatientIDPlaceHoldertext.getAttribute("placeholder");
 	}
 
-	
-	
-	
-	
-	
-	public String  VerifyDistrictTitle() 
+	public String VerifyDistrictTitle()
 
 	{
 		return DistrictTitle.getText();
-				
+
 	}
 
-	
-	
-	public String  VerifyDistrictPlaceHolderText() 
+	public String VerifyDistrictPlaceHolderText()
 
 	{
-		
-				
-		 return	DistrictPlaceHolderText.getAttribute("placeholder");
-				
+
+		return DistrictPlaceHolderText.getAttribute("placeholder");
 	}
 
-	
-	//city title and placeholder text
-	
-	
-	public String  VerifyCityTitle() 
+	// city title and placeholder text
+	public String VerifyCityTitle()
 
 	{
-		
-				
-		 return	VerifyCityTitle.getText();
-				
+		return VerifyCityTitle.getText();
 	}
-	
-	
-	public String  VerifyCityPlaceHolderText() 
+
+	public String VerifyCityPlaceHolderText()
 
 	{
-		
-				
-		 return	VerifyCityPlaceHolderText.getAttribute("placeholder");
-				
+		return VerifyCityPlaceHolderText.getAttribute("placeholder");
 	}
 
-
-	//zip code 
-	
-	
-	public String  VerifyZipcodeTitle() 
+	// zip code
+	public String VerifyZipcodeTitle()
 
 	{
-		
-	return	VerifyZipcodeTitle.getText();
-				
+
+		return VerifyZipcodeTitle.getText();
+
 	}
 
-	
-	
-	
-	public String  VerifyZipcodePlaceholderText() 
-
-	{	
-	return	VerifyZipcodePlaceholderText.getAttribute("placeholder");
-				
-	}
-
-	//age
-	public String  VerifyAgeTitle() 
-
-	{	
-	return	VerifyAgeTitle.getText();
-				
-	}
-
-	public String  VerifyAgeEqualToPlaceholderText() 
-	{	
-	return	VerifyAgeEqualToPlaceholderText.getText();
-				
-	}
-
-	public String  VerifyInputTextfieldPlaceholderText() 
-	{	
-	return	VerifyInputTextfieldPlaceholderText.getAttribute("placeholder");
-				
-	}
-	
-	
-	public String  VerifyAgeMinInputFieldPlaceholderText() 
-	
-	{	
-		
-		Wait.visibiltyOfElement(driver, 500, VerifyAgeMinInputFieldPlaceholderText);
-	return	VerifyAgeMinInputFieldPlaceholderText.getAttribute("placeholder");
-				
-	}
-	
-	public String  VerifyAgeMaxInputFieldPlaceholderText() 
-	{	
-		Wait.visibiltyOfElement(driver, 500, VerifyAgeMaxInputFieldPlaceholderText);
-	return	VerifyAgeMaxInputFieldPlaceholderText.getAttribute("placeholder");
-				
-	}
-	
-	
-	
-	
-	
-
-	
-	// date announce 
-	
-	public String  VerifyDateAnnouncedequaltoPlaceholderText() 
-	{	
-	return	VerifyDateAnnouncedequaltoPlaceholderText.getText();
-				
-	}
-
-	
-	public String  VerifyDateAnnouncedInputFieldPlaceholderText() 
-	{	
-	return	VerifyDateAnnouncedInputFieldPlaceholderText.getAttribute("placeholder");
-				
-	}
-	
-	
-	public String  VerifyDateAnnouncedMinInputFieldPlaceholderText() 
-	{	
-	return	VerifyDateAnnouncedMinInputFieldPlaceholderText.getAttribute("placeholder");
-				
-	}
-	
-	public String  VerifyDateAnnouncedMaxInputFieldPlaceholderText() 
-	{	
-		Wait.visibiltyOfElement(driver, 500, VerifyDateAnnouncedMaxInputFieldPlaceholderText);
-	return	VerifyDateAnnouncedMaxInputFieldPlaceholderText.getAttribute("placeholder");
-				
-	}
-	
-	
-	
-	
-	
-	
-
-	//StatusChangeDate
-	
-	public String  VerifyStatusChangeDatePlaceholderText() 
-	{	
-	return	VerifyStatusChangeDatePlaceholderText.getText();
-				
-	}
-
-	public String  VerifyStatusChangeDateInputTextFieldPlaceholderText() 
-	{	
-	return	VerifyStatusChangeDateInputTextFieldPlaceholderText.getAttribute("placeholder");
-				
-	}
-
-	public String  VerifyStatusChangeDateMinInputtextfieldPlaceholderText() 
-	
-	{	
-		//VerifyStatusChangeDateMinInputtextfieldPlaceholderText.click();
-		
-		Wait.visibiltyOfElement(driver, 5000, VerifyStatusChangeDateMinInputtextfieldPlaceholderText);
-	return	VerifyStatusChangeDateMinInputtextfieldPlaceholderText.getAttribute("placeholder");
-				
-	}
-
-	
-public String  VerifyStatusChangeDateMaxInputtextfieldPlaceholderText() 
-	
-	{	
-	
-	Wait.visibiltyOfElement(driver, 5000, VerifyStatusChangeDateMaxInputtextfieldPlaceholderText);
-		//VerifyStatusChangeDateMinInputtextfieldPlaceholderText.click();
-	return	VerifyStatusChangeDateMaxInputtextfieldPlaceholderText.getAttribute("placeholder");
-				
-	}
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-
-
-	////Advance Search Functions or MEthods 
-	
-	
-	
-	
-	public void  PaitentIDSelectEqualtoOperator() 
+	public String VerifyZipcodePlaceholderText()
 
 	{
-		Wait.visibiltyOfElement(driver, 500, SelectEqualto);
+		return VerifyZipcodePlaceholderText.getAttribute("placeholder");
+
+	}
+
+	// age
+	public String VerifyAgeTitle()
+
+	{
+		return VerifyAgeTitle.getText();
+
+	}
+
+	public String VerifyAgeEqualToPlaceholderText() {
+		return VerifyAgeEqualToPlaceholderText.getText();
+
+	}
+
+	public String VerifyInputTextfieldPlaceholderText() {
+		return VerifyInputTextfieldPlaceholderText.getAttribute("placeholder");
+
+	}
+
+	public String VerifyAgeMinInputFieldPlaceholderText()
+
+	{
+
+		TestUtil.visibiltyOfElement(driver, 500, VerifyAgeMinInputFieldPlaceholderText);
+		return VerifyAgeMinInputFieldPlaceholderText.getAttribute("placeholder");
+
+	}
+
+	public String VerifyAgeMaxInputFieldPlaceholderText() {
+		TestUtil.visibiltyOfElement(driver, 500, VerifyAgeMaxInputFieldPlaceholderText);
+		return VerifyAgeMaxInputFieldPlaceholderText.getAttribute("placeholder");
+
+	}
+
+	// date announce
+
+	public String VerifyDateAnnouncedequaltoPlaceholderText() {
+		return VerifyDateAnnouncedequaltoPlaceholderText.getText();
+
+	}
+
+	public String VerifyDateAnnouncedInputFieldPlaceholderText() {
+		return VerifyDateAnnouncedInputFieldPlaceholderText.getAttribute("placeholder");
+
+	}
+
+	public String VerifyDateAnnouncedMinInputFieldPlaceholderText() {
+		return VerifyDateAnnouncedMinInputFieldPlaceholderText.getAttribute("placeholder");
+
+	}
+
+	public String VerifyDateAnnouncedMaxInputFieldPlaceholderText() {
+		TestUtil.visibiltyOfElement(driver, 500, VerifyDateAnnouncedMaxInputFieldPlaceholderText);
+		return VerifyDateAnnouncedMaxInputFieldPlaceholderText.getAttribute("placeholder");
+
+	}
+
+	// StatusChangeDate
+
+	public String VerifyStatusChangeDatePlaceholderText() {
+		return VerifyStatusChangeDatePlaceholderText.getText();
+
+	}
+
+	public String VerifyStatusChangeDateInputTextFieldPlaceholderText() {
+		return VerifyStatusChangeDateInputTextFieldPlaceholderText.getAttribute("placeholder");
+
+	}
+
+	public String VerifyStatusChangeDateMinInputtextfieldPlaceholderText()
+
+	{
+		TestUtil.visibiltyOfElement(driver, 5000, VerifyStatusChangeDateMinInputtextfieldPlaceholderText);
+		return VerifyStatusChangeDateMinInputtextfieldPlaceholderText.getAttribute("placeholder");
+
+	}
+
+	public String VerifyStatusChangeDateMaxInputtextfieldPlaceholderText()
+
+	{
+
+		TestUtil.visibiltyOfElement(driver, 5000, VerifyStatusChangeDateMaxInputtextfieldPlaceholderText);
+		return VerifyStatusChangeDateMaxInputtextfieldPlaceholderText.getAttribute("placeholder");
+
+	}
+
+	// Advance Search Functions or MEthods
+
+	public void PaitentIDSelectEqualtoOperator()
+
+	{
+		TestUtil.visibiltyOfElement(driver, 500, SelectEqualto);
 		SelectEqualto.click();
-		 SelectEqualto.sendKeys("Is equal to");
+		SelectEqualto.sendKeys("Is equal to");
 	}
 
-	public void  PaitentIDIsBetweenOperator() 
+	public void PaitentIDIsBetweenOperator()
 
 	{
 		SelectEqualto.click();
-		 SelectEqualto.sendKeys("Is between");
+		SelectEqualto.sendKeys("Is between");
 	}
 
-	
-	public void  InputPaitentIDMinimumValue() 
+	public void InputPaitentIDMinimumValue()
 
 	{
-		Wait.visibiltyOfElement(driver, 500, InputMinimumPatientID);
+		TestUtil.visibiltyOfElement(driver, 500, InputMinimumPatientID);
 		InputMinimumPatientID.sendKeys("0");
 	}
 
-	
-	public void  InputPaitentIDMaximumValue() 
+	public void InputPaitentIDMaximumValue()
 
 	{
-		Wait.visibiltyOfElement(driver, 500, InputMaximumPatientID);
+		TestUtil.visibiltyOfElement(driver, 500, InputMaximumPatientID);
 
 		InputMaximumPatientID.sendKeys("196");
 	}
 
-	
-	public void  InputAgeMinimumValue() 
+	public void InputAgeMinimumValue()
 
 	{
-		Wait.visibiltyOfElement(driver, 500, InputAgeMinimumValue);
+		TestUtil.visibiltyOfElement(driver, 500, InputAgeMinimumValue);
 
 		InputAgeMinimumValue.sendKeys("10");
 	}
- 
-	public void  InputAgeMaximumValue() 
+
+	public void InputAgeMaximumValue()
 
 	{
-		Wait.visibiltyOfElement(driver, 500, InputAgeMaximumValue);
+		TestUtil.visibiltyOfElement(driver, 500, InputAgeMaximumValue);
 		InputAgeMaximumValue.sendKeys("90");
 	}
 
-	
-	
-	
-	
-	
-	
-	public void  SelectAgeEqualtoOperator() 
+	public void SelectAgeEqualtoOperator()
 
 	{
 		AgeEqualtoOperator.click();
 		AgeEqualtoOperator.sendKeys("Is equal to");
 	}
-	
-	public void  SelectAgeBetweenOperator() 
+
+	public void SelectAgeBetweenOperator()
 
 	{
-		Wait.visibiltyOfElement(driver, 500, AgeEqualtoOperator);
+		TestUtil.visibiltyOfElement(driver, 500, AgeEqualtoOperator);
 		AgeEqualtoOperator.click();
 		AgeEqualtoOperator.sendKeys("Is between");
 	}
 
-
-	public void  DateAnnouncedEqualtoOperator() 
+	public void DateAnnouncedEqualtoOperator()
 
 	{
 		DateAnnouncedEqualtoOperator.click();
 		DateAnnouncedEqualtoOperator.sendKeys("Is equal to");
 	}
 
-	
-	public void  SelectDateAnnouncedIsbetweenOperator() 
+	public void SelectDateAnnouncedIsbetweenOperator()
 
 	{
-		Wait.visibiltyOfElement(driver, 500, DateAnnouncedEqualtoOperator);
+		TestUtil.visibiltyOfElement(driver, 500, DateAnnouncedEqualtoOperator);
 		DateAnnouncedEqualtoOperator.click();
 		DateAnnouncedEqualtoOperator.sendKeys("Is between");
 	}
 
-	
-	
-	public void  SelectIsBetweenStatusChangeDate() 
+	public void SelectIsBetweenStatusChangeDate()
 
 	{
-		Wait.visibiltyOfElement(driver, 500, SelectIsBetweenStatusChangeDate);
+		TestUtil.visibiltyOfElement(driver, 500, SelectIsBetweenStatusChangeDate);
 		SelectIsBetweenStatusChangeDate.click();
 		SelectIsBetweenStatusChangeDate.sendKeys("Is between");
-		
-		//TestUtil.selectFromDropDownList(SelectIsBetweenStatusChangeDate,"Is between");
+
 	}
 
-	
-	
-	
-	
-	
-	
-	public String  AdvnaceSearchButtonTitle() 
+	public String AdvnaceSearchButtonTitle()
 
 	{
 		return AdavceSerachButton.getText();
 	}
 
-	public void   AdvnaceSearchExpandButton() 
+	public void AdvnaceSearchExpandButton()
 
 	{
-		
-		Wait.visibiltyOfElement(driver, 500, AdavceSerachButton);
-		 AdavceSerachButton.click();
+
+		TestUtil.visibiltyOfElement(driver, 500, AdavceSerachButton);
+		AdavceSerachButton.click();
 	}
 
-	public Boolean AdvanceSectionBody()
-	{
-		
+	public Boolean AdvanceSectionBody() {
+
 		return AdavceSectionBody.isDisplayed();
 	}
 
+	public void InputPaitentID() {
 
-	public void InputPaitentID() 
-	{
-		
-		//Wait.visibiltyOfElement(driver, 500, InputPaitentID);
-		InputPaitentID.sendKeys("196");
+		InputPaitentID.sendKeys(prop.getProperty("paitentid"));
 	}
-	
-	
-	
-	public void StatePatientNumberInput() 
-	{
-		StatePatientNumber.sendKeys("AP-P3");
+
+	public void StatePatientNumberInput() {
+
+		StatePatientNumber.sendKeys(prop.getProperty("StatePatientNumber"));
 	}
-	
-	
-	
-	
-	
-	public void   InputDistrictName() 
-	{
-		InputDistrictName.sendKeys("Visakhapatnam");
+
+	public void InputDistrictName() {
+
+		InputDistrictName.sendKeys(prop.getProperty("DistrictName"));
+
 	}
-	
-	public void   InputCityName() 
-	{
-		cityName.sendKeys("Visakapatnam");
+
+	public void InputCityName() {
+
+		cityName.sendKeys(prop.getProperty("cityName"));
+
 	}
-	
-	public void   InputAge() 
-	{
-	  	Age.sendKeys("65");
+
+	public void InputAge() {
+		Age.sendKeys(prop.getProperty("Age"));
 	}
-	
-	public void   InputZipCode() 
-	{
+
+	public void InputZipCode() {
 		ZipCode.sendKeys("201301");
+		ZipCode.sendKeys(prop.getProperty("ZipCodeNumber"));
+
 	}
-	
-	
-	public void   DateAnnounced() 
-	{
-		DateAnnounced.sendKeys("2020-03-19");
+
+	public void DateAnnounced() {
+		DateAnnounced.sendKeys(prop.getProperty("DateAnnouncedValue"));
 	}
-	
-	
-	
-	public String  PaitentIDVisible() {
-		
-		
-		
-		
+
+	public String PaitentIDVisible() {
 		return PatientID.getText();
 
 	}
 
-	public String  StatePaitentIDVisible() {
-
-		
+	public String StatePaitentIDVisible() {
 		return StatePatientId.getText();
 
 	}
 
+	public String AgeVisible() {
 
-	public String  AgeVisible() {
-		
 		return AgeHeader.getText();
 	}
 
-	public String  GenderVisible() {
-		
+	public String GenderVisible() {
+
 		return gender.getText();
 	}
 
+	public String NationalityVisible() {
 
-	public String  NationalityVisible() {
-		
 		return nationality.getText();
 	}
 
-	public String  StateVisible() {
-		
+	public String StateVisible() {
+
 		return State.getText();
 	}
 
+	public String DistrictVisible() {
 
-	public String  DistrictVisible() {
-		
 		return District.getText();
 	}
 
-	public String  CityVisible() {
-		
+	public String CityVisible() {
+
 		return City.getText();
 	}
 
+	public String ZipcodeVisible() {
 
-	public String  ZipcodeVisible() {
-		
 		return Zipcode.getText();
 	}
 
+	public String TransmissionType() {
 
-	public String  TransmissionType() {
-		
 		return TransmissionType.getText();
 	}
 
-	public String  ClusterHeadingVisible() {
-		
+	public String ClusterHeadingVisible() {
+
 		return Clusters.getText();
 	}
 
-	public String  CurrentStatusHeadingVisible() {
-		
+	public String CurrentStatusHeadingVisible() {
+
 		return CurrentStatus.getText();
 	}
 
+	public String AnnouncedDateHeadingVisible() {
 
-	public String  AnnouncedDateHeadingVisible() {
-		
 		return AnnouncedDate.getText();
 	}
 
-	public String  ActionsHeadingVisible() {
-		
+	public String ActionsHeadingVisible() {
+
 		return ActionsHeading.getText();
-		
-		
 	}
-	
-	
-public String  PaitentIDLabelVisible() {
-		
+
+	public String PaitentIDLabelVisible() {
+
 		return PaitentIDLabel.getText();
-		
-		
 	}
-	
-	
 
+	public String VerifyResetButton() {
+		TestUtil.visibiltyOfElement(driver, 5000, VerifyResetButton);
+		return VerifyResetButton.getAttribute("value");
+	}
 
-	
-
-	
-public String VerifyResetButton() 
-{
-	Wait.visibiltyOfElement(driver, 5000, VerifyResetButton);
-	return VerifyResetButton.getAttribute("value");
-	
-	
-}
-
-
-	
-	public void clickSearch() 
+	public void clickSearch()
 
 	{
-		Wait.visibiltyOfElement(driver, 500, SearchButton);
+		TestUtil.visibiltyOfElement(driver, 500, SearchButton);
 		SearchButton.click();
-		
-		
 	}
-	
-	public String VerifySearchButton() 
-	{
-		Wait.visibiltyOfElement(driver, 5000, SearchButton);
+
+	public String VerifySearchButton() {
+		TestUtil.visibiltyOfElement(driver, 5000, SearchButton);
 		return SearchButton.getText();
-		
-}
-	
-	
-	
-	
-	public void clickRangeSearchButton() 
-	
-	{
-		
-		Wait.visibiltyOfElement(driver, 200, RangeSearchButtonSection);
-		RangeSearchButton.click();
-		
+
 	}
 
+	public void clickRangeSearchButton()
 
-	
-	
+	{
 
-	
-	
+		TestUtil.visibiltyOfElement(driver, 200, RangeSearchButtonSection);
+		RangeSearchButton.click();
+
+	}
 
 }
-

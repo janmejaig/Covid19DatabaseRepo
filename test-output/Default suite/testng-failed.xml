@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.covid19.qa.HomePageTestcases.AdvanceSearchFunction">
+      <class name="com.covid19.qa.HomePageTestcases.NoResultFoundPageVerify">
         <methods>
-          <include name="VerifyStatusChangeDateMaxInputtextfieldPlaceholderText"/>
-          <include name="setUp"/>
+          <include name="verifyNoresult"/>
+          <include name="setup"/>
           <include name="tearDown"/>
-          <include name="VerifyStatusChangeDateMinInputtextfieldPlaceholderText1"/>
         </methods>
-      </class> <!-- com.covid19.qa.HomePageTestcases.AdvanceSearchFunction -->
+      </class> <!-- com.covid19.qa.HomePageTestcases.NoResultFoundPageVerify -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

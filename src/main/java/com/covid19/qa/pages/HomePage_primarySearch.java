@@ -1,680 +1,493 @@
 package com.covid19.qa.pages;
 
-import java.awt.List;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 
 import com.covid.qa.base.TestBase;
-import com.covid.qa.utils.Wait;
+import com.covid.qa.utils.TestUtil;
 
 public class HomePage_primarySearch extends TestBase {
 
-	public HomePage_primarySearch(){
+	public HomePage_primarySearch() {
 		PageFactory.initElements(driver, this);
 	}
-	
-	
-	@FindBy(xpath="//a[@class='is-active']")
-		
-		WebElement Homepage_link ;
-		
-	
-	
-	
-	@FindBy(xpath="//select[@id='edit-field-current-status-value']")
-	
-	WebElement Current_Status ;
-	
-@FindBy(xpath="//label[text()='Current Status']")
-	
-	WebElement VerifyCurrentStatusLabel ;
-	
 
-@FindBy(xpath="//select[@id='edit-field-current-status-value']//option[@selected='selected' and text()='- Any -']")
+	@FindBy(xpath = "//a[@class='is-active']")
 
-WebElement VerifyPlaceholdertextCurrentStatus;
+	WebElement Homepage_link;
 
+	@FindBy(xpath = "//select[@id='edit-field-current-status-value']")
 
+	WebElement Current_Status;
 
-@FindBy(xpath="//select[@id='edit-field-current-status-value']")
+	@FindBy(xpath = "//label[text()='Current Status']")
 
-WebElement VerifyAllvaluesCurrentStatus ;
+	WebElement VerifyCurrentStatusLabel;
 
+	@FindBy(xpath = "//select[@id='edit-field-current-status-value']//option[@selected='selected' and text()='- Any -']")
 
+	WebElement VerifyPlaceholdertextCurrentStatus;
 
-	
+	@FindBy(xpath = "//select[@id='edit-field-current-status-value']")
 
+	WebElement VerifyAllvaluesCurrentStatus;
 
-	
+	@FindBy(xpath = "//select[@id='edit-field-state-value']")
 
-	
-@FindBy(xpath="//select[@id='edit-field-state-value']")
-	
-	WebElement State_selction ;
+	WebElement State_selction;
 
+	@FindBy(xpath = "//label[text()='State']")
 
-@FindBy(xpath="//label[text()='State']")
+	WebElement VerifyStateLabel;
 
-WebElement VerifyStateLabel;
+	@FindBy(xpath = "//select[@name='field_state_value']//option[@selected='selected']")
 
+	WebElement VerifyStatePlaceholderText;
 
-@FindBy(xpath="//select[@name='field_state_value']//option[@selected='selected']")
+	@FindBy(xpath = "//select[@name='field_state_value']")
 
-WebElement VerifyStatePlaceholderText;
+	WebElement VerifyStateDropdownvalues;
 
+	@FindBy(xpath = "//select[@id='edit-field-transmission-type-value']")
 
+	WebElement Transmission_Type;
 
-@FindBy(xpath="//select[@name='field_state_value']")
+	@FindBy(xpath = "//label[text()='Transmission Type']")
 
-WebElement VerifyStateDropdownvalues;
+	WebElement VerifylabelTransmission_Type;
 
+	@FindBy(xpath = "//select[@id='edit-field-transmission-type-value']//option[@value='All']")
 
+	WebElement VerifyPlaceholdertextTransmission_Type;
 
-	
-@FindBy(xpath="//select[@id='edit-field-transmission-type-value']")
+	@FindBy(xpath = "//select[@name='field_transmission_type_value']")
 
-WebElement Transmission_Type ;
+	WebElement VerifydropdownvaluesTransmission_Type;
 
+	@FindBy(xpath = "//select[@id='edit-field-clusters-target-id']")
 
+	WebElement clusters;
 
-@FindBy(xpath="//label[text()='Transmission Type']")
+	@FindBy(xpath = "//label[text()='Clusters']")
 
-WebElement VerifylabelTransmission_Type ;
+	WebElement clustersLabelName;
 
+	@FindBy(xpath = "//select[@name='field_clusters_target_id'] //option[@selected='selected']")
 
-@FindBy(xpath="//select[@id='edit-field-transmission-type-value']//option[@value='All']")
+	WebElement VerifyclustersPlaceholderText;
 
-WebElement VerifyPlaceholdertextTransmission_Type ;
+	@FindBy(xpath = "//select[@name='field_clusters_target_id']")
 
-
-@FindBy(xpath="//select[@name='field_transmission_type_value']")
-
-WebElement VerifydropdownvaluesTransmission_Type ;
-
-
-
-	
-@FindBy(xpath="//select[@id='edit-field-clusters-target-id']")
-
-WebElement clusters ;
-
-
-@FindBy(xpath="//label[text()='Clusters']")
-
-WebElement clustersLabelName ;
-
-
-
-@FindBy(xpath="//select[@name='field_clusters_target_id'] //option[@selected='selected']")
-
-WebElement VerifyclustersPlaceholderText ;
-
-
-
-@FindBy(xpath="//select[@name='field_clusters_target_id']")
-
-WebElement VerifyclustersDropdownvalues ;
-
-
-
+	WebElement VerifyclustersDropdownvalues;
 
 //verify nationality
 
+	@FindBy(xpath = "//select[@id='edit-field-nationality-value']")
 
-@FindBy(xpath="//select[@id='edit-field-nationality-value']")
+	WebElement Nationality;
 
-WebElement Nationality ;
+	@FindBy(xpath = "//label[text()='Nationality']")
 
-@FindBy(xpath="//label[text()='Nationality']")
+	WebElement VerifyNationalityLabel;
 
-WebElement VerifyNationalityLabel ;
+	@FindBy(xpath = "//select[@id ='edit-field-nationality-value']//option[@selected='selected']")
 
-@FindBy(xpath="//select[@id ='edit-field-nationality-value']//option[@selected='selected']")
+	WebElement VerifyPlaceholderTextNationalityLabel;
 
-WebElement VerifyPlaceholderTextNationalityLabel ;
+	@FindBy(xpath = "//select[@id ='edit-field-nationality-value']")
 
-
-@FindBy(xpath="//select[@id ='edit-field-nationality-value']")
-
-WebElement VerifyDRopdownvaluesNationalityLabel ;
-
-
-
-
-
-
-
-
-
-
+	WebElement VerifyDRopdownvaluesNationalityLabel;
 
 //verify gender
 
-@FindBy(xpath="//label[text()='Gender']")
+	@FindBy(xpath = "//label[text()='Gender']")
 
-WebElement VerifyGenderLabel ;
+	WebElement VerifyGenderLabel;
 
-@FindBy(xpath="//select[@id ='edit-field-gender-value']//option[@selected='selected']")
+	@FindBy(xpath = "//select[@id ='edit-field-gender-value']//option[@selected='selected']")
 
-WebElement VerifyPlaceholdertextGenderLabel ;
+	WebElement VerifyPlaceholdertextGenderLabel;
 
-@FindBy(xpath="//select[@name ='field_gender_value']")
+	@FindBy(xpath = "//select[@name ='field_gender_value']")
 
-WebElement VerifyDropdownValuesGenderLabel ;
+	WebElement VerifyDropdownValuesGenderLabel;
 
+	@FindBy(xpath = "//select[@id='edit-field-gender-value']")
 
+	WebElement Gender;
 
+	@FindBy(xpath = "//button[@id='edit-submit-covid-patient-data']")
 
+	WebElement SearchButton;
 
+	@FindBy(xpath = "/html/body/div[1]/div/div/section/div[2]/div/div/div/div[3]/div/table/tbody/tr[1]/td[14]/a[1]")
 
+	WebElement ViewLink;
 
+	@FindBy(xpath = "//button[@type='submit' and @name = 'op']")
 
-@FindBy(xpath="//select[@id='edit-field-gender-value']")
+	WebElement ResetButton;
 
-WebElement Gender ;
+	@FindBy(xpath = "//span[@class='icon glyphicon glyphicon-trash']")
 
+	WebElement VerifyResetButton;
 
-@FindBy(xpath="//button[@id='edit-submit-covid-patient-data']")
+	@FindBy(xpath = "//table[@class='table table-hover table-striped']//tbody")
 
-WebElement SearchButton ;
+	WebElement TableBody;
 
+	@FindBy(xpath = "//h1[@class='page-header']")
 
+	WebElement PaitentDeatils;
 
-@FindBy(xpath="/html/body/div[1]/div/div/section/div[2]/div/div/div/div[3]/div/table/tbody/tr[1]/td[14]/a[1]")
+	@FindBy(xpath = "//th[@id='view-field-patient-number-table-column']//a[contains(text(),'Patient Id')]")
 
-WebElement ViewLink ;
+	WebElement PatientID;
 
+	@FindBy(xpath = "//a[contains(text(),'State Patient Id')]")
 
+	WebElement StatePatientId;
 
+	@FindBy(xpath = "//a[contains(text(),'Age')]")
 
-@FindBy(xpath="//button[@type='submit' and @name = 'op']")
+	WebElement Age;
 
-WebElement ResetButton ;
+	@FindBy(xpath = "//a[contains(text(),'Gender')]")
+	WebElement gender;
 
+	@FindBy(xpath = "//a[contains(text(),'Nationality')]")
+	WebElement nationality;
 
-@FindBy(xpath="//span[@class='icon glyphicon glyphicon-trash']")
+	@FindBy(xpath = "//th[@id='view-field-state-table-column']//a[contains(text(),'State')]")
+	WebElement State;
 
-WebElement VerifyResetButton ;
+	@FindBy(xpath = "//a[contains(text(),'District')]")
+	WebElement District;
 
+	@FindBy(xpath = "//th[@id='view-field-detected-city-table-column']")
+	WebElement City;
 
+	@FindBy(xpath = "//a[contains(text(),'Zip Code')]")
+	WebElement Zipcode;
 
-@FindBy(xpath="//table[@class='table table-hover table-striped']//tbody")
+	@FindBy(xpath = "//th[@id='view-field-transmission-type-table-column']")
+	WebElement TransmissionType;
 
-WebElement TableBody ;
+	@FindBy(xpath = "//label[contains(text(),'Clusters')]")
+	WebElement Clusters;
 
+	@FindBy(xpath = "//a[contains(text(),'Current Status')]")
+	WebElement CurrentStatus;
 
-@FindBy(xpath="//h1[@class='page-header']")
+	@FindBy(xpath = "//a[contains(text(),'Announced Date')]")
+	WebElement AnnouncedDate;
 
-WebElement PaitentDeatils  ;
+	@FindBy(xpath = "//th[@id='view-nothing-1-table-column']")
+	WebElement ActionsHeading;
 
+	@FindBy(xpath = "//div[@class='view-empty']")
+	WebElement NoResultFound;
 
-@FindBy(xpath="//th[@id='view-field-patient-number-table-column']//a[contains(text(),'Patient Id')]")
-
-WebElement PatientID ;
-
-
-
-@FindBy(xpath="//a[contains(text(),'State Patient Id')]")
-
-WebElement StatePatientId ;
-
-
-@FindBy(xpath="//a[contains(text(),'Age')]")
-
-WebElement Age ;
-
-
-@FindBy(xpath="//a[contains(text(),'Gender')]")
-WebElement gender ;
-
-
-
-@FindBy(xpath="//a[contains(text(),'Nationality')]")
-WebElement nationality;
-
-@FindBy(xpath="//th[@id='view-field-state-table-column']//a[contains(text(),'State')]")
-WebElement State;
-
-@FindBy(xpath="//a[contains(text(),'District')]")
-WebElement District;
-
-@FindBy(xpath="//th[@id='view-field-detected-city-table-column']")
-WebElement City;
-
-
-
-@FindBy(xpath="//a[contains(text(),'Zip Code')]")
-WebElement Zipcode;
-
-
-@FindBy(xpath="//th[@id='view-field-transmission-type-table-column']")
-WebElement TransmissionType;
-
-@FindBy(xpath="//label[contains(text(),'Clusters')]")
-WebElement Clusters;
-
-@FindBy(xpath="//a[contains(text(),'Current Status')]")
-WebElement CurrentStatus;
-
-
-@FindBy(xpath="//a[contains(text(),'Announced Date')]")
-WebElement AnnouncedDate;
-
-
-@FindBy(xpath="//th[@id='view-nothing-1-table-column']")
-WebElement ActionsHeading ;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	public String NoResultFound() {
+		Assert.assertFalse(NoResultFound.isDisplayed());
+		return NoResultFound.getText();
+	}
 
 //label name --- current status
 
+	public String VerifyCurrentStatusLabel() {
+		TestUtil.visibiltyOfElement(driver, 300, VerifyCurrentStatusLabel);
+		return VerifyCurrentStatusLabel.getText();
+	}
 
-public String VerifyCurrentStatusLabel() 
-{
-	Wait.visibiltyOfElement(driver, 300, VerifyCurrentStatusLabel);
-	return VerifyCurrentStatusLabel.getText();
-}
+	public String VerifyPlaceholdertextCurrentStatus() {
+		return VerifyPlaceholdertextCurrentStatus.getText();
+	}
 
+	public String VerifyAllvaluesCurrentStatus()
 
-public String VerifyPlaceholdertextCurrentStatus() 
-{
-	return VerifyPlaceholdertextCurrentStatus.getText();
-}
+	{
 
+		TestUtil.visibiltyOfElement(driver, 300, VerifyAllvaluesCurrentStatus);
+		VerifyAllvaluesCurrentStatus.getTagName();
 
+		return VerifyAllvaluesCurrentStatus.getText();
 
-
-public String VerifyAllvaluesCurrentStatus() 
-
-{
-	
-	Wait.visibiltyOfElement(driver, 300, VerifyAllvaluesCurrentStatus);
-	VerifyAllvaluesCurrentStatus.getTagName();
-	
-	
-	return VerifyAllvaluesCurrentStatus.getText();
-	
-}
-
-
-
+	}
 
 //transmission type label
 
+	public String VerifylabelTransmission_Type()
 
-public String VerifylabelTransmission_Type() 
+	{
 
-{
-	
-	
-	return VerifylabelTransmission_Type.getText();
-	
-}
+		return VerifylabelTransmission_Type.getText();
 
+	}
 
-public String VerifyPlaceholdertextTransmission_Type() 
+	public String VerifyPlaceholdertextTransmission_Type()
 
-{
-	
-	return VerifyPlaceholdertextTransmission_Type.getText();
-	
-}
+	{
 
-public String VerifydropdownvaluesTransmission_Type() 
+		return VerifyPlaceholdertextTransmission_Type.getText();
 
-{
-	//Select selectValue = new Select(VerifydropdownvaluesTransmission_Type);
-	
-	//java.util.List<WebElement> dropdownvalues = selectValue.getOptions();
-	
-	
-	return VerifydropdownvaluesTransmission_Type.getText();
-	
-}
+	}
 
+	public String VerifydropdownvaluesTransmission_Type()
 
+	{
+
+		return VerifydropdownvaluesTransmission_Type.getText();
+
+	}
 
 //state label 
 
+	public String VerifyStateLabel()
 
+	{
+		return VerifyStateLabel.getText();
+	}
 
-public String VerifyStateLabel() 
+	public String VerifyStatePlaceholderText()
 
-{
-	return VerifyStateLabel.getText();
-}
+	{
+		return VerifyStatePlaceholderText.getText();
+	}
 
+	public String VerifyStateDropdownvalues()
 
-public String VerifyStatePlaceholderText() 
-
-{
-	return VerifyStatePlaceholderText.getText();
-}
-
-public String VerifyStateDropdownvalues() 
-
-{
-	return VerifyStateDropdownvalues.getText();
-}
-
+	{
+		return VerifyStateDropdownvalues.getText();
+	}
 
 //clusters label
 
-public String VerifyclustersLabelName() 
+	public String VerifyclustersLabelName()
 
-{
-	return clustersLabelName.getText();
-}
+	{
+		return clustersLabelName.getText();
+	}
 
+	public String VerifyclustersPlaceholderText()
 
-public String VerifyclustersPlaceholderText() 
+	{
+		return VerifyclustersPlaceholderText.getText();
+	}
 
-{
-	return VerifyclustersPlaceholderText.getText();
-}
+	public String VerifyclustersDropdownvalues()
 
-public String VerifyclustersDropdownvalues() 
-
-{
-	return VerifyclustersDropdownvalues.getText();
-}
-
+	{
+		return VerifyclustersDropdownvalues.getText();
+	}
 
 //nationality label
 
+	public String VerifyNationalityLabel()
 
+	{
+		return VerifyNationalityLabel.getText();
+	}
 
-public String VerifyNationalityLabel() 
+	public String VerifyPlaceholderTextNationalityLabel()
 
-{
-	return VerifyNationalityLabel.getText();
-}
+	{
+		return VerifyPlaceholderTextNationalityLabel.getText();
+	}
 
+	public String VerifyDRopdownvaluesNationalityLabel()
 
-public String VerifyPlaceholderTextNationalityLabel() 
-
-{
-	return VerifyPlaceholderTextNationalityLabel.getText();
-}
-
-
-public String VerifyDRopdownvaluesNationalityLabel() 
-
-{
-	return VerifyDRopdownvaluesNationalityLabel.getText();
-}
-
-
-
-
-
-
-
+	{
+		return VerifyDRopdownvaluesNationalityLabel.getText();
+	}
 
 //Gender
 
+	public String VerifyGenderLabel()
 
-public String VerifyGenderLabel() 
+	{
+		return VerifyGenderLabel.getText();
+	}
 
-{
-	return VerifyGenderLabel.getText();
-}
+	public String VerifyPlaceholdertextGenderLabel()
 
+	{
+		return VerifyPlaceholdertextGenderLabel.getText();
+	}
 
-public String VerifyPlaceholdertextGenderLabel() 
+	public String VerifyDropdownValuesGenderLabel()
 
-{
-	return VerifyPlaceholdertextGenderLabel.getText();
-}
+	{
+		return VerifyDropdownValuesGenderLabel.getText();
+	}
 
-public String VerifyDropdownValuesGenderLabel() 
-
-{
-	return VerifyDropdownValuesGenderLabel.getText();
-}
-
-
-
-
-
-
-
-
-
-	
-	
-	
-	
-	
-	public void  Homepage_link_click(){
-		//return driver.getTitle();
+	public void Homepage_link_click() {
 		Homepage_link.click();
 	}
-	
-	
-	public void  Homepage_heading(){
-		
+
+	public void Homepage_heading() {
+
 		System.out.println(Homepage_link.getText());
-		
+
 	}
-	
-	
-	public void selectCurrentStatus() 
-	
+
+	public void selectCurrentStatus()
+
 	{
 		Current_Status.click();
-		Current_Status.sendKeys("Recovered");
-		//return Current_Status.getText();
-		
-		
+		Current_Status.sendKeys(prop.getProperty("Current_StatusValue"));
+
 	}
-	
-	
-public void SelectState() 
-	
+
+	public void SelectState()
+
 	{
-	   State_selction.click();
-	   State_selction.sendKeys("Andhra Pradesh");
-		
+		State_selction.click();
+		State_selction.sendKeys(prop.getProperty("State_selctionValue"));
+
 	}
-	
 
-public void SelectTransmissionType() 
+	public void SelectTransmissionType()
 
-{
-	Transmission_Type.click();
-	Transmission_Type.sendKeys(prop.getProperty("TransmissionType"));
-	
-}
+	{
+		Transmission_Type.click();
+		Transmission_Type.sendKeys(prop.getProperty("TransmissionType"));
 
+	}
 
-public void ClusterSelection() {
-	clusters.click();
-	clusters.sendKeys("Any");
-}
-	
+	public void ClusterSelection() {
+		clusters.click();
+		clusters.sendKeys("Any");
+	}
 
-public void selectNationality() {
-	
-	Nationality.click();
-	
-	Nationality.sendKeys(prop.getProperty("country"));
-}
+	public void selectNationality() {
 
+		Nationality.click();
 
-public void selectGender() {
-	
-	Gender.click();
-	
-	Gender.sendKeys(prop.getProperty("gender"));
-}
+		Nationality.sendKeys(prop.getProperty("country"));
+	}
 
+	public void selectGender() {
 
-public void clickSearch() 
-{
-	SearchButton.click();
-	
-}
+		Gender.click();
 
+		Gender.sendKeys(prop.getProperty("gender"));
+	}
 
+	public void clickSearch() {
+		SearchButton.click();
 
-public void MoveToTable() 
-{
-	Actions act = new Actions(driver);
-	act.moveToElement(TableBody);
-}
+	}
 
-public void clickView()
-{
-	
-	Actions act = new Actions(driver);
-	
-	act.moveToElement(ViewLink);
+	public void MoveToTable() {
+		Actions act = new Actions(driver);
+		act.moveToElement(TableBody);
+	}
 
-	ViewLink.click();
+	public void clickView() {
 
-}
+		Actions act = new Actions(driver);
 
+		act.moveToElement(ViewLink);
 
-public String PaitentDeatils() {
-	
-	
-	
-	return PaitentDeatils.getText();
-	
-} 
+		ViewLink.click();
 
+	}
 
-public String  PaitentIDVisible() {
-	
-	
-	
-	
-	return PatientID.getText();
+	public String PaitentDeatils() {
 
-}
+		return PaitentDeatils.getText();
 
-public String  StatePaitentIDVisible() {
+	}
 
-	
-	return StatePatientId.getText();
+	public String PaitentIDVisible() {
 
-}
+		return PatientID.getText();
 
+	}
 
-public String  AgeVisible() {
-	
-	return Age.getText();
-}
+	public String StatePaitentIDVisible() {
 
-public String  GenderVisible() {
-	
-	return gender.getText();
-}
+		return StatePatientId.getText();
 
+	}
 
-public String  NationalityVisible() {
-	
-	return nationality.getText();
-}
+	public String AgeVisible() {
 
-public String  StateVisible() {
-	
-	return State.getText();
-}
+		return Age.getText();
+	}
 
+	public String GenderVisible() {
 
-public String  DistrictVisible() {
-	
-	return District.getText();
-}
+		return gender.getText();
+	}
 
-public String  CityVisible() {
-	
-	return City.getText();
-}
+	public String NationalityVisible() {
 
+		return nationality.getText();
+	}
 
-public String  ZipcodeVisible() {
-	
-	return Zipcode.getText();
-}
+	public String StateVisible() {
 
+		return State.getText();
+	}
 
-public String  TransmissionType() {
-	
-	return TransmissionType.getText();
-}
+	public String DistrictVisible() {
 
-public String  ClusterHeadingVisible() {
-	
-	return Clusters.getText();
-}
+		return District.getText();
+	}
 
-public String  CurrentStatusHeadingVisible() {
-	
-	return CurrentStatus.getText();
-}
+	public String CityVisible() {
 
+		return City.getText();
+	}
 
-public String  AnnouncedDateHeadingVisible() {
-	
-	return AnnouncedDate.getText();
-}
+	public String ZipcodeVisible() {
 
-public String  ActionsHeadingVisible() {
-	
-	return ActionsHeading.getText();
-	
-	
-}
+		return Zipcode.getText();
+	}
 
+	public String TransmissionType() {
 
+		return TransmissionType.getText();
+	}
 
+	public String ClusterHeadingVisible() {
 
+		return Clusters.getText();
+	}
 
+	public String CurrentStatusHeadingVisible() {
 
-public String VerifyResetButton() {
-	
-	return VerifyResetButton.getText();
-	
-}
+		return CurrentStatus.getText();
+	}
 
+	public String AnnouncedDateHeadingVisible() {
 
+		return AnnouncedDate.getText();
+	}
 
+	public String ActionsHeadingVisible() {
 
+		return ActionsHeading.getText();
 
+	}
 
-public void Reset_click() {
-	
-	Wait.visibiltyOfElement(driver, 500, ResetButton);
-	
-	ResetButton.click();
-	
-}
+	public String VerifyResetButton() {
+
+		return VerifyResetButton.getText();
+
+	}
+
+	public void Reset_click() {
+
+		TestUtil.visibiltyOfElement(driver, 500, ResetButton);
+
+		ResetButton.click();
+
+	}
 
 }

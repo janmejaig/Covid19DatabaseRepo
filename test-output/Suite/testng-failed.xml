@@ -2,22 +2,84 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <listeners>
-    <listener class-name="com.covid.qa.ExtentReport.ExtentReporterNG"/>
+    <listener class-name="com.covid.qa.ExtentReport.TestNGListener"/>
   </listeners>
-  <test name="Test(failed)">
+  <test name="Test4(failed)">
     <classes>
-      <class name="com.covid19.qa.HomePageTestcases.AdvanceSearchFunction">
+      <class name="com.covid19.qa.HomePageTestcases.AboutUsPageTaseCase">
         <methods>
-          <include name="VerifyStatusChangeDateMaxInputtextfieldPlaceholderText"/>
-          <include name="setUp"/>
-          <include name="VerifyDateAnnouncedMinInputFieldPlaceholderText"/>
+          <include name="Covid19IndiaLinkNavigation"/>
+          <include name="Covid19IndiaLinkNavigation2"/>
+          <include name="VerifyCOVIDPatientDataNavigationUnderAboutUsPAge"/>
+          <include name="VerifyCOVIDPatientDataTitleUnderAboutUsPAge"/>
+          <include name="VerifyApisLink"/>
+          <include name="setup"/>
+          <include name="VerifyApisLinkNavigation"/>
           <include name="tearDown"/>
-          <include name="VerifyStatusChangeDateMinInputtextfieldPlaceholderText"/>
-          <include name="VerifyAgeMaxInputFieldPlaceholderText"/>
-          <include name="VerifyDateAnnouncedMaxInputFieldPlaceholderText"/>
-          <include name="VerifyStatusChangeDateMinInputtextfieldPlaceholderText1"/>
         </methods>
-      </class> <!-- com.covid19.qa.HomePageTestcases.AdvanceSearchFunction -->
+      </class> <!-- com.covid19.qa.HomePageTestcases.AboutUsPageTaseCase -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Test4(failed) -->
+  <test name="Test5(failed)">
+    <classes>
+      <class name="com.covid19.qa.HomePageTestcases.APIsPageTestCases">
+        <methods>
+          <include name="Covid19OauthAPIHeading"/>
+          <include name="setup"/>
+          <include name="Covid19OauthAPIclickViewDocumentation"/>
+          <include name="ClickCOvid19APIViewDocumentastion"/>
+          <include name="APIsPageNavigation"/>
+          <include name="clickviewdocumentationunderCOVID19PatientDatabaseAPI"/>
+          <include name="VerifyCOvid19APIHeading"/>
+          <include name="clickHowToGetStartedbutton"/>
+          <include name="VerifyAPIListingHeading"/>
+          <include name="VerifyREQUESTACCESSTOAPIsHeading"/>
+          <include name="verifyHowToGetStartedHeading"/>
+          <include name="clickREQUESTACCESS"/>
+          <include name="tearDown"/>
+          <include name="VerifyAPIsLinkUrl"/>
+          <include name="VerifyCOVID19PatientDatabaseAPIHeading"/>
+        </methods>
+      </class> <!-- com.covid19.qa.HomePageTestcases.APIsPageTestCases -->
+    </classes>
+  </test> <!-- Test5(failed) -->
+  <test name="Test6(failed)">
+    <classes>
+      <class name="com.covid19.qa.HomePageTestcases.SignUPFormTestCase">
+        <methods>
+          <include name="VerifyHeadingFirstName"/>
+          <include name="VerifyHeadingEmailaddress"/>
+          <include name="EnterEmailaddress"/>
+          <include name="VerifySignUPLinkUrl"/>
+          <include name="tearDown"/>
+          <include name="VerifyHeadingRegistrationForm"/>
+          <include name="CaptureMessage"/>
+          <include name="EnterUsernameaddress"/>
+          <include name="VerifyHeadingUsername"/>
+          <include name="RemoveImage"/>
+          <include name="VerifySignUPLink"/>
+          <include name="setup"/>
+          <include name="SelectImage"/>
+          <include name="EnterLastname"/>
+          <include name="VerifyHeadingLastName"/>
+          <include name="VerifyHeadingOccupation"/>
+          <include name="clickRegisterButton"/>
+          <include name="EnterFirstName"/>
+          <include name="VerifyHeadingVolunteerRegistrationForm"/>
+          <include name="EnterOccupation"/>
+        </methods>
+      </class> <!-- com.covid19.qa.HomePageTestcases.SignUPFormTestCase -->
+    </classes>
+  </test> <!-- Test6(failed) -->
+  <test name="Test7(failed)">
+    <classes>
+      <class name="com.covid19.qa.HomePageTestcases.NoResultFoundPageVerify">
+        <methods>
+          <include name="verifyNoresult"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.covid19.qa.HomePageTestcases.NoResultFoundPageVerify -->
+    </classes>
+  </test> <!-- Test7(failed) -->
 </suite> <!-- Failed suite [Suite] -->
