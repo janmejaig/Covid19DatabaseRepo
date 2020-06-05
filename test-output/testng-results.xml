@@ -1,481 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="97" passed="97">
+<testng-results skipped="0" failed="0" ignored="0" total="11" passed="11">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="199787" started-at="2020-06-02T13:56:22Z" finished-at="2020-06-02T13:59:42Z">
+  <suite name="Default suite" duration-ms="15393" started-at="2020-06-05T09:45:57Z" finished-at="2020-06-05T09:46:13Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="21547" started-at="2020-06-02T13:56:22Z" finished-at="2020-06-02T13:56:44Z">
-      <class name="com.covid19.qa.HomePageTestcases.CovidHomePageTestCase">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.covid19.qa.HomePageTestcases.CovidHomePageTestCase@1f1c7bf6]" name="setup" is-config="true" duration-ms="13584" started-at="2020-06-02T19:26:22Z" finished-at="2020-06-02T19:26:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="ValidateCovidHomePageTitle()[pri:1, instance:com.covid19.qa.HomePageTestcases.CovidHomePageTestCase@1f1c7bf6]" name="ValidateCovidHomePageTitle" duration-ms="72" started-at="2020-06-02T19:26:36Z" finished-at="2020-06-02T19:26:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidateCovidHomePageTitle -->
-        <test-method status="PASS" signature="ValidateCovidHomePageURL()[pri:2, instance:com.covid19.qa.HomePageTestcases.CovidHomePageTestCase@1f1c7bf6]" name="ValidateCovidHomePageURL" duration-ms="1795" started-at="2020-06-02T19:26:36Z" finished-at="2020-06-02T19:26:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidateCovidHomePageURL -->
-        <test-method status="PASS" signature="ValidateCovidPaitenDataHeading()[pri:3, instance:com.covid19.qa.HomePageTestcases.CovidHomePageTestCase@1f1c7bf6]" name="ValidateCovidPaitenDataHeading" duration-ms="27" started-at="2020-06-02T19:26:38Z" finished-at="2020-06-02T19:26:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidateCovidPaitenDataHeading -->
-        <test-method status="PASS" signature="ValidatePatientsHeading()[pri:4, instance:com.covid19.qa.HomePageTestcases.CovidHomePageTestCase@1f1c7bf6]" name="ValidatePatientsHeading" duration-ms="23" started-at="2020-06-02T19:26:38Z" finished-at="2020-06-02T19:26:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidatePatientsHeading -->
-        <test-method status="PASS" signature="ValidateGridView()[pri:5, instance:com.covid19.qa.HomePageTestcases.CovidHomePageTestCase@1f1c7bf6]" name="ValidateGridView" duration-ms="1455" started-at="2020-06-02T19:26:38Z" finished-at="2020-06-02T19:26:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidateGridView -->
-        <test-method status="PASS" signature="ValidateTableView()[pri:6, instance:com.covid19.qa.HomePageTestcases.CovidHomePageTestCase@1f1c7bf6]" name="ValidateTableView" duration-ms="1089" started-at="2020-06-02T19:26:39Z" finished-at="2020-06-02T19:26:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidateTableView -->
-        <test-method status="PASS" signature="ValidateDiplayingText()[pri:7, instance:com.covid19.qa.HomePageTestcases.CovidHomePageTestCase@1f1c7bf6]" name="ValidateDiplayingText" duration-ms="42" started-at="2020-06-02T19:26:40Z" finished-at="2020-06-02T19:26:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidateDiplayingText -->
-        <test-method status="PASS" signature="ValidateLastUpdatedText()[pri:8, instance:com.covid19.qa.HomePageTestcases.CovidHomePageTestCase@1f1c7bf6]" name="ValidateLastUpdatedText" duration-ms="38" started-at="2020-06-02T19:26:40Z" finished-at="2020-06-02T19:26:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidateLastUpdatedText -->
-        <test-method status="PASS" signature="ValidateHowSearchWorks()[pri:9, instance:com.covid19.qa.HomePageTestcases.CovidHomePageTestCase@1f1c7bf6]" name="ValidateHowSearchWorks" duration-ms="709" started-at="2020-06-02T19:26:41Z" finished-at="2020-06-02T19:26:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidateHowSearchWorks -->
-        <test-method status="PASS" signature="ValidateButtonRedirect()[pri:10, instance:com.covid19.qa.HomePageTestcases.CovidHomePageTestCase@1f1c7bf6]" name="ValidateButtonRedirect" duration-ms="2598" started-at="2020-06-02T19:26:41Z" finished-at="2020-06-02T19:26:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidateButtonRedirect -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.covid19.qa.HomePageTestcases.CovidHomePageTestCase@1f1c7bf6]" name="tearDown" is-config="true" duration-ms="92" started-at="2020-06-02T19:26:44Z" finished-at="2020-06-02T19:26:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.covid19.qa.HomePageTestcases.CovidHomePageTestCase -->
-    </test> <!-- Test -->
-    <test name="Test2" duration-ms="23479" started-at="2020-06-02T13:56:44Z" finished-at="2020-06-02T13:57:07Z">
-      <class name="com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase@3ee0fea4]" name="setup" is-config="true" duration-ms="11318" started-at="2020-06-02T19:26:44Z" finished-at="2020-06-02T19:26:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="VerifyPrimarySearchLabel()[pri:1, instance:com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase@3ee0fea4]" name="VerifyPrimarySearchLabel" duration-ms="46" started-at="2020-06-02T19:26:55Z" finished-at="2020-06-02T19:26:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyPrimarySearchLabel -->
-        <test-method status="PASS" signature="VerifyPlaceholdertextCurrentStatus()[pri:2, instance:com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase@3ee0fea4]" name="VerifyPlaceholdertextCurrentStatus" duration-ms="22" started-at="2020-06-02T19:26:55Z" finished-at="2020-06-02T19:26:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyPlaceholdertextCurrentStatus -->
-        <test-method status="PASS" signature="VerifyAllvaluesCurrentStatus()[pri:3, instance:com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase@3ee0fea4]" name="VerifyAllvaluesCurrentStatus" duration-ms="50" started-at="2020-06-02T19:26:55Z" finished-at="2020-06-02T19:26:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyAllvaluesCurrentStatus -->
-        <test-method status="PASS" signature="VerifylabelTransmission_Type()[pri:4, instance:com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase@3ee0fea4]" name="VerifylabelTransmission_Type" duration-ms="23" started-at="2020-06-02T19:26:55Z" finished-at="2020-06-02T19:26:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifylabelTransmission_Type -->
-        <test-method status="PASS" signature="VerifyPlaceholdertextTransmission_Type()[pri:5, instance:com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase@3ee0fea4]" name="VerifyPlaceholdertextTransmission_Type" duration-ms="21" started-at="2020-06-02T19:26:55Z" finished-at="2020-06-02T19:26:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyPlaceholdertextTransmission_Type -->
-        <test-method status="PASS" signature="VerifydropdownvaluesTransmission_Type()[pri:6, instance:com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase@3ee0fea4]" name="VerifydropdownvaluesTransmission_Type" duration-ms="26" started-at="2020-06-02T19:26:55Z" finished-at="2020-06-02T19:26:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifydropdownvaluesTransmission_Type -->
-        <test-method status="PASS" signature="VerifyStateLabel()[pri:7, instance:com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase@3ee0fea4]" name="VerifyStateLabel" duration-ms="23" started-at="2020-06-02T19:26:55Z" finished-at="2020-06-02T19:26:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyStateLabel -->
-        <test-method status="PASS" signature="VerifyStatePlaceholderText()[pri:8, instance:com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase@3ee0fea4]" name="VerifyStatePlaceholderText" duration-ms="22" started-at="2020-06-02T19:26:55Z" finished-at="2020-06-02T19:26:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyStatePlaceholderText -->
-        <test-method status="PASS" signature="VerifyStateDropdownvalues()[pri:9, instance:com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase@3ee0fea4]" name="VerifyStateDropdownvalues" duration-ms="32" started-at="2020-06-02T19:26:56Z" finished-at="2020-06-02T19:26:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyStateDropdownvalues -->
-        <test-method status="PASS" signature="VerifyclustersLabelName()[pri:10, instance:com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase@3ee0fea4]" name="VerifyclustersLabelName" duration-ms="23" started-at="2020-06-02T19:26:56Z" finished-at="2020-06-02T19:26:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyclustersLabelName -->
-        <test-method status="PASS" signature="VerifyclustersPlaceholderText()[pri:11, instance:com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase@3ee0fea4]" name="VerifyclustersPlaceholderText" duration-ms="21" started-at="2020-06-02T19:26:56Z" finished-at="2020-06-02T19:26:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyclustersPlaceholderText -->
-        <test-method status="PASS" signature="VerifyclustersDropdownvalues()[pri:12, instance:com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase@3ee0fea4]" name="VerifyclustersDropdownvalues" duration-ms="21" started-at="2020-06-02T19:26:56Z" finished-at="2020-06-02T19:26:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyclustersDropdownvalues -->
-        <test-method status="PASS" signature="VerifyNationalityLabel()[pri:13, instance:com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase@3ee0fea4]" name="VerifyNationalityLabel" duration-ms="21" started-at="2020-06-02T19:26:56Z" finished-at="2020-06-02T19:26:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyNationalityLabel -->
-        <test-method status="PASS" signature="VerifyPlaceholderTextNationalityLabel()[pri:14, instance:com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase@3ee0fea4]" name="VerifyPlaceholderTextNationalityLabel" duration-ms="22" started-at="2020-06-02T19:26:56Z" finished-at="2020-06-02T19:26:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyPlaceholderTextNationalityLabel -->
-        <test-method status="PASS" signature="VerifyDRopdownvaluesNationalityLabel()[pri:15, instance:com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase@3ee0fea4]" name="VerifyDRopdownvaluesNationalityLabel" duration-ms="72" started-at="2020-06-02T19:26:56Z" finished-at="2020-06-02T19:26:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyDRopdownvaluesNationalityLabel -->
-        <test-method status="PASS" signature="VerifyGenderLabel()[pri:16, instance:com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase@3ee0fea4]" name="VerifyGenderLabel" duration-ms="23" started-at="2020-06-02T19:26:56Z" finished-at="2020-06-02T19:26:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyGenderLabel -->
-        <test-method status="PASS" signature="VerifyPlaceholdertextGenderLabel()[pri:17, instance:com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase@3ee0fea4]" name="VerifyPlaceholdertextGenderLabel" duration-ms="24" started-at="2020-06-02T19:26:56Z" finished-at="2020-06-02T19:26:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyPlaceholdertextGenderLabel -->
-        <test-method status="PASS" signature="VerifyDropdownValuesGenderLabel()[pri:18, instance:com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase@3ee0fea4]" name="VerifyDropdownValuesGenderLabel" duration-ms="22" started-at="2020-06-02T19:26:56Z" finished-at="2020-06-02T19:26:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyDropdownValuesGenderLabel -->
-        <test-method status="PASS" signature="PrimarySearch_function()[pri:20, instance:com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase@3ee0fea4]" name="PrimarySearch_function" duration-ms="11498" started-at="2020-06-02T19:26:56Z" finished-at="2020-06-02T19:27:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PrimarySearch_function -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase@3ee0fea4]" name="tearDown" is-config="true" duration-ms="132" started-at="2020-06-02T19:27:07Z" finished-at="2020-06-02T19:27:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.covid19.qa.HomePageTestcases.PrimarySearchFunctionTestcase -->
-    </test> <!-- Test2 -->
-    <test name="Test3" duration-ms="19382" started-at="2020-06-02T13:57:07Z" finished-at="2020-06-02T13:57:27Z">
-      <class name="com.covid19.qa.HomePageTestcases.AdvanceSearchFunction">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@5906ebcb]" name="setup" is-config="true" duration-ms="5993" started-at="2020-06-02T19:27:07Z" finished-at="2020-06-02T19:27:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="AdvanceSearch_function()[pri:1, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@5906ebcb]" name="AdvanceSearch_function" duration-ms="113" started-at="2020-06-02T19:27:13Z" finished-at="2020-06-02T19:27:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AdvanceSearch_function -->
-        <test-method status="PASS" signature="VerifypaitentIDequaltoPlaceholdertext()[pri:2, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@5906ebcb]" name="VerifypaitentIDequaltoPlaceholdertext" duration-ms="578" started-at="2020-06-02T19:27:14Z" finished-at="2020-06-02T19:27:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifypaitentIDequaltoPlaceholdertext -->
-        <test-method status="PASS" signature="VerifyPaitentIDPLaceholderText_function()[pri:3, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@5906ebcb]" name="VerifyPaitentIDPLaceholderText_function" duration-ms="1027" started-at="2020-06-02T19:27:14Z" finished-at="2020-06-02T19:27:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyPaitentIDPLaceholderText_function -->
-        <test-method status="PASS" signature="VerifyStatePatientIDTitle()[pri:4, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@5906ebcb]" name="VerifyStatePatientIDTitle" duration-ms="22" started-at="2020-06-02T19:27:15Z" finished-at="2020-06-02T19:27:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyStatePatientIDTitle -->
-        <test-method status="PASS" signature="VerifyStatePatientIDPlaceHoldertext()[pri:5, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@5906ebcb]" name="VerifyStatePatientIDPlaceHoldertext" duration-ms="80" started-at="2020-06-02T19:27:15Z" finished-at="2020-06-02T19:27:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyStatePatientIDPlaceHoldertext -->
-        <test-method status="PASS" signature="VerifyDistrictTitle()[pri:6, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@5906ebcb]" name="VerifyDistrictTitle" duration-ms="126" started-at="2020-06-02T19:27:15Z" finished-at="2020-06-02T19:27:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyDistrictTitle -->
-        <test-method status="PASS" signature="VerifyCityTitle()[pri:7, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@5906ebcb]" name="VerifyCityTitle" duration-ms="26" started-at="2020-06-02T19:27:15Z" finished-at="2020-06-02T19:27:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyCityTitle -->
-        <test-method status="PASS" signature="VerifyCityPlaceHolderText()[pri:8, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@5906ebcb]" name="VerifyCityPlaceHolderText" duration-ms="94" started-at="2020-06-02T19:27:15Z" finished-at="2020-06-02T19:27:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyCityPlaceHolderText -->
-        <test-method status="PASS" signature="VerifyZipcodeTitle()[pri:9, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@5906ebcb]" name="VerifyZipcodeTitle" duration-ms="21" started-at="2020-06-02T19:27:16Z" finished-at="2020-06-02T19:27:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyZipcodeTitle -->
-        <test-method status="PASS" signature="VerifyZipcodePlaceholderText()[pri:10, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@5906ebcb]" name="VerifyZipcodePlaceholderText" duration-ms="13" started-at="2020-06-02T19:27:16Z" finished-at="2020-06-02T19:27:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyZipcodePlaceholderText -->
-        <test-method status="PASS" signature="VerifyAgeEqualToPlaceholderText()[pri:11, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@5906ebcb]" name="VerifyAgeEqualToPlaceholderText" duration-ms="647" started-at="2020-06-02T19:27:16Z" finished-at="2020-06-02T19:27:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyAgeEqualToPlaceholderText -->
-        <test-method status="PASS" signature="VerifyInputTextfieldPlaceholderText()[pri:12, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@5906ebcb]" name="VerifyInputTextfieldPlaceholderText" duration-ms="311" started-at="2020-06-02T19:27:16Z" finished-at="2020-06-02T19:27:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyInputTextfieldPlaceholderText -->
-        <test-method status="PASS" signature="VerifyDateAnnouncedequaltoPlaceholderText()[pri:13, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@5906ebcb]" name="VerifyDateAnnouncedequaltoPlaceholderText" duration-ms="705" started-at="2020-06-02T19:27:17Z" finished-at="2020-06-02T19:27:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyDateAnnouncedequaltoPlaceholderText -->
-        <test-method status="PASS" signature="VerifyDateAnnouncedInputFieldPlaceholderText()[pri:14, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@5906ebcb]" name="VerifyDateAnnouncedInputFieldPlaceholderText" duration-ms="343" started-at="2020-06-02T19:27:17Z" finished-at="2020-06-02T19:27:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyDateAnnouncedInputFieldPlaceholderText -->
-        <test-method status="PASS" signature="VerifyStatusChangeDatePlaceholderText()[pri:15, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@5906ebcb]" name="VerifyStatusChangeDatePlaceholderText" duration-ms="24" started-at="2020-06-02T19:27:18Z" finished-at="2020-06-02T19:27:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyStatusChangeDatePlaceholderText -->
-        <test-method status="PASS" signature="VerifyStatusChangeDateInputTextFieldPlaceholderText()[pri:16, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@5906ebcb]" name="VerifyStatusChangeDateInputTextFieldPlaceholderText" duration-ms="6572" started-at="2020-06-02T19:27:18Z" finished-at="2020-06-02T19:27:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyStatusChangeDateInputTextFieldPlaceholderText -->
-        <test-method status="PASS" signature="VerifyPaitentIDMinPLaceholderText()[pri:17, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@5906ebcb]" name="VerifyPaitentIDMinPLaceholderText" duration-ms="24" started-at="2020-06-02T19:27:24Z" finished-at="2020-06-02T19:27:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyPaitentIDMinPLaceholderText -->
-        <test-method status="PASS" signature="VerifyPaitentIDMaxPLaceholderText()[pri:18, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@5906ebcb]" name="VerifyPaitentIDMaxPLaceholderText" duration-ms="828" started-at="2020-06-02T19:27:24Z" finished-at="2020-06-02T19:27:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyPaitentIDMaxPLaceholderText -->
-        <test-method status="PASS" signature="VerifyAgeMinInputFieldPlaceholderText()[pri:19, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@5906ebcb]" name="VerifyAgeMinInputFieldPlaceholderText" duration-ms="32" started-at="2020-06-02T19:27:25Z" finished-at="2020-06-02T19:27:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyAgeMinInputFieldPlaceholderText -->
-        <test-method status="PASS" signature="VerifyAgeMaxInputFieldPlaceholderText()[pri:20, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@5906ebcb]" name="VerifyAgeMaxInputFieldPlaceholderText" duration-ms="401" started-at="2020-06-02T19:27:25Z" finished-at="2020-06-02T19:27:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyAgeMaxInputFieldPlaceholderText -->
-        <test-method status="PASS" signature="VerifyDateAnnouncedMinInputFieldPlaceholderText()[pri:21, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@5906ebcb]" name="VerifyDateAnnouncedMinInputFieldPlaceholderText" duration-ms="434" started-at="2020-06-02T19:27:25Z" finished-at="2020-06-02T19:27:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyDateAnnouncedMinInputFieldPlaceholderText -->
-        <test-method status="PASS" signature="VerifyDateAnnouncedMaxInputFieldPlaceholderText()[pri:22, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@5906ebcb]" name="VerifyDateAnnouncedMaxInputFieldPlaceholderText" duration-ms="29" started-at="2020-06-02T19:27:26Z" finished-at="2020-06-02T19:27:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyDateAnnouncedMaxInputFieldPlaceholderText -->
-        <test-method status="PASS" signature="VerifyStatusChangeDateMinInputtextfieldPlaceholderText()[pri:23, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@5906ebcb]" name="VerifyStatusChangeDateMinInputtextfieldPlaceholderText" duration-ms="324" started-at="2020-06-02T19:27:26Z" finished-at="2020-06-02T19:27:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyStatusChangeDateMinInputtextfieldPlaceholderText -->
-        <test-method status="PASS" signature="VerifyStatusChangeDateMinInputtextfieldPlaceholderText1()[pri:24, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@5906ebcb]" name="VerifyStatusChangeDateMinInputtextfieldPlaceholderText1" duration-ms="44" started-at="2020-06-02T19:27:26Z" finished-at="2020-06-02T19:27:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyStatusChangeDateMinInputtextfieldPlaceholderText1 -->
-        <test-method status="PASS" signature="VerifyStatusChangeDateMaxInputtextfieldPlaceholderText()[pri:25, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@5906ebcb]" name="VerifyStatusChangeDateMaxInputtextfieldPlaceholderText" duration-ms="461" started-at="2020-06-02T19:27:26Z" finished-at="2020-06-02T19:27:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyStatusChangeDateMaxInputtextfieldPlaceholderText -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.covid19.qa.HomePageTestcases.AdvanceSearchFunction@5906ebcb]" name="tearDown" is-config="true" duration-ms="87" started-at="2020-06-02T19:27:27Z" finished-at="2020-06-02T19:27:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.covid19.qa.HomePageTestcases.AdvanceSearchFunction -->
-    </test> <!-- Test3 -->
-    <test name="Test4" duration-ms="18339" started-at="2020-06-02T13:57:30Z" finished-at="2020-06-02T13:57:48Z">
+    <test name="Default test" duration-ms="15393" started-at="2020-06-05T09:45:57Z" finished-at="2020-06-05T09:46:13Z">
       <class name="com.covid19.qa.HomePageTestcases.AboutUsPageTaseCase">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.covid19.qa.HomePageTestcases.AboutUsPageTaseCase@21507a04]" name="setup" is-config="true" duration-ms="5494" started-at="2020-06-02T19:27:30Z" finished-at="2020-06-02T19:27:35Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.covid19.qa.HomePageTestcases.AboutUsPageTaseCase@5b0abc94]" name="setup" is-config="true" duration-ms="5783" started-at="2020-06-05T15:15:57Z" finished-at="2020-06-05T15:16:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="AbouUsPageNavigation()[pri:1, instance:com.covid19.qa.HomePageTestcases.AboutUsPageTaseCase@21507a04]" name="AbouUsPageNavigation" duration-ms="2593" started-at="2020-06-02T19:27:35Z" finished-at="2020-06-02T19:27:38Z">
+        <test-method status="PASS" signature="AbouUsPageNavigation()[pri:1, instance:com.covid19.qa.HomePageTestcases.AboutUsPageTaseCase@5b0abc94]" name="AbouUsPageNavigation" duration-ms="1387" started-at="2020-06-05T15:16:03Z" finished-at="2020-06-05T15:16:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AbouUsPageNavigation -->
-        <test-method status="PASS" signature="ValidateAbouUsPageUrl()[pri:2, instance:com.covid19.qa.HomePageTestcases.AboutUsPageTaseCase@21507a04]" name="ValidateAbouUsPageUrl" duration-ms="1257" started-at="2020-06-02T19:27:38Z" finished-at="2020-06-02T19:27:39Z">
+        <test-method status="PASS" signature="ValidateAbouUsPageUrl()[pri:2, instance:com.covid19.qa.HomePageTestcases.AboutUsPageTaseCase@5b0abc94]" name="ValidateAbouUsPageUrl" duration-ms="847" started-at="2020-06-05T15:16:04Z" finished-at="2020-06-05T15:16:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateAbouUsPageUrl -->
-        <test-method status="PASS" signature="ValidateAbouUsPageLogo()[pri:3, instance:com.covid19.qa.HomePageTestcases.AboutUsPageTaseCase@21507a04]" name="ValidateAbouUsPageLogo" duration-ms="685" started-at="2020-06-02T19:27:39Z" finished-at="2020-06-02T19:27:40Z">
+        <test-method status="PASS" signature="ValidateAbouUsPageLogo()[pri:3, instance:com.covid19.qa.HomePageTestcases.AboutUsPageTaseCase@5b0abc94]" name="ValidateAbouUsPageLogo" duration-ms="816" started-at="2020-06-05T15:16:05Z" finished-at="2020-06-05T15:16:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateAbouUsPageLogo -->
-        <test-method status="PASS" signature="VerifyFirstCovid19IndiaLink()[pri:4, instance:com.covid19.qa.HomePageTestcases.AboutUsPageTaseCase@21507a04]" name="VerifyFirstCovid19IndiaLink" duration-ms="35" started-at="2020-06-02T19:27:40Z" finished-at="2020-06-02T19:27:40Z">
+        <test-method status="PASS" signature="VerifyFirstCovid19IndiaLink()[pri:4, instance:com.covid19.qa.HomePageTestcases.AboutUsPageTaseCase@5b0abc94]" name="VerifyFirstCovid19IndiaLink" duration-ms="39" started-at="2020-06-05T15:16:06Z" finished-at="2020-06-05T15:16:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyFirstCovid19IndiaLink -->
-        <test-method status="PASS" signature="VerifysecondCovid19IndiaLink()[pri:5, instance:com.covid19.qa.HomePageTestcases.AboutUsPageTaseCase@21507a04]" name="VerifysecondCovid19IndiaLink" duration-ms="35" started-at="2020-06-02T19:27:40Z" finished-at="2020-06-02T19:27:40Z">
+        <test-method status="PASS" signature="VerifysecondCovid19IndiaLink()[pri:5, instance:com.covid19.qa.HomePageTestcases.AboutUsPageTaseCase@5b0abc94]" name="VerifysecondCovid19IndiaLink" duration-ms="38" started-at="2020-06-05T15:16:06Z" finished-at="2020-06-05T15:16:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifysecondCovid19IndiaLink -->
-        <test-method status="PASS" signature="Covid19IndiaLinkNavigation()[pri:6, instance:com.covid19.qa.HomePageTestcases.AboutUsPageTaseCase@21507a04]" name="Covid19IndiaLinkNavigation" duration-ms="2408" started-at="2020-06-02T19:27:40Z" finished-at="2020-06-02T19:27:42Z">
+        <test-method status="PASS" signature="Covid19IndiaLinkNavigation()[pri:6, instance:com.covid19.qa.HomePageTestcases.AboutUsPageTaseCase@5b0abc94]" name="Covid19IndiaLinkNavigation" duration-ms="2253" started-at="2020-06-05T15:16:06Z" finished-at="2020-06-05T15:16:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Covid19IndiaLinkNavigation -->
-        <test-method status="PASS" signature="Covid19IndiaLinkNavigation2()[pri:7, instance:com.covid19.qa.HomePageTestcases.AboutUsPageTaseCase@21507a04]" name="Covid19IndiaLinkNavigation2" duration-ms="1463" started-at="2020-06-02T19:27:42Z" finished-at="2020-06-02T19:27:44Z">
+        <test-method status="PASS" signature="Covid19IndiaLinkNavigation2()[pri:7, instance:com.covid19.qa.HomePageTestcases.AboutUsPageTaseCase@5b0abc94]" name="Covid19IndiaLinkNavigation2" duration-ms="1263" started-at="2020-06-05T15:16:08Z" finished-at="2020-06-05T15:16:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Covid19IndiaLinkNavigation2 -->
-        <test-method status="PASS" signature="VerifyApisLink()[pri:8, instance:com.covid19.qa.HomePageTestcases.AboutUsPageTaseCase@21507a04]" name="VerifyApisLink" duration-ms="46" started-at="2020-06-02T19:27:44Z" finished-at="2020-06-02T19:27:44Z">
+        <test-method status="PASS" signature="VerifyApisLink()[pri:8, instance:com.covid19.qa.HomePageTestcases.AboutUsPageTaseCase@5b0abc94]" name="VerifyApisLink" duration-ms="54" started-at="2020-06-05T15:16:10Z" finished-at="2020-06-05T15:16:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyApisLink -->
-        <test-method status="PASS" signature="VerifyApisLinkNavigation()[pri:9, instance:com.covid19.qa.HomePageTestcases.AboutUsPageTaseCase@21507a04]" name="VerifyApisLinkNavigation" duration-ms="2670" started-at="2020-06-02T19:27:44Z" finished-at="2020-06-02T19:27:47Z">
+        <test-method status="PASS" signature="VerifyApisLinkNavigation()[pri:9, instance:com.covid19.qa.HomePageTestcases.AboutUsPageTaseCase@5b0abc94]" name="VerifyApisLinkNavigation" duration-ms="1255" started-at="2020-06-05T15:16:10Z" finished-at="2020-06-05T15:16:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyApisLinkNavigation -->
-        <test-method status="PASS" signature="VerifyCOVIDPatientDataTitleUnderAboutUsPAge()[pri:10, instance:com.covid19.qa.HomePageTestcases.AboutUsPageTaseCase@21507a04]" name="VerifyCOVIDPatientDataTitleUnderAboutUsPAge" duration-ms="38" started-at="2020-06-02T19:27:47Z" finished-at="2020-06-02T19:27:47Z">
+        <test-method status="PASS" signature="VerifyCOVIDPatientDataTitleUnderAboutUsPAge()[pri:10, instance:com.covid19.qa.HomePageTestcases.AboutUsPageTaseCase@5b0abc94]" name="VerifyCOVIDPatientDataTitleUnderAboutUsPAge" duration-ms="42" started-at="2020-06-05T15:16:11Z" finished-at="2020-06-05T15:16:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyCOVIDPatientDataTitleUnderAboutUsPAge -->
-        <test-method status="PASS" signature="VerifyCOVIDPatientDataNavigationUnderAboutUsPAge()[pri:11, instance:com.covid19.qa.HomePageTestcases.AboutUsPageTaseCase@21507a04]" name="VerifyCOVIDPatientDataNavigationUnderAboutUsPAge" duration-ms="1494" started-at="2020-06-02T19:27:47Z" finished-at="2020-06-02T19:27:48Z">
+        <test-method status="PASS" signature="VerifyCOVIDPatientDataNavigationUnderAboutUsPAge()[pri:11, instance:com.covid19.qa.HomePageTestcases.AboutUsPageTaseCase@5b0abc94]" name="VerifyCOVIDPatientDataNavigationUnderAboutUsPAge" duration-ms="1474" started-at="2020-06-05T15:16:11Z" finished-at="2020-06-05T15:16:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyCOVIDPatientDataNavigationUnderAboutUsPAge -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.covid19.qa.HomePageTestcases.AboutUsPageTaseCase@21507a04]" name="tearDown" is-config="true" duration-ms="113" started-at="2020-06-02T19:27:48Z" finished-at="2020-06-02T19:27:48Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.covid19.qa.HomePageTestcases.AboutUsPageTaseCase@5b0abc94]" name="tearDown" is-config="true" duration-ms="116" started-at="2020-06-05T15:16:12Z" finished-at="2020-06-05T15:16:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.covid19.qa.HomePageTestcases.AboutUsPageTaseCase -->
-    </test> <!-- Test4 -->
-    <test name="Test5" duration-ms="30239" started-at="2020-06-02T13:57:48Z" finished-at="2020-06-02T13:58:18Z">
-      <class name="com.covid19.qa.HomePageTestcases.APIsPageTestCases">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.covid19.qa.HomePageTestcases.APIsPageTestCases@3b2cf7ab]" name="setup" is-config="true" duration-ms="6440" started-at="2020-06-02T19:27:48Z" finished-at="2020-06-02T19:27:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="APIsPageNavigation()[pri:1, instance:com.covid19.qa.HomePageTestcases.APIsPageTestCases@3b2cf7ab]" name="APIsPageNavigation" duration-ms="2248" started-at="2020-06-02T19:27:55Z" finished-at="2020-06-02T19:27:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- APIsPageNavigation -->
-        <test-method status="PASS" signature="VerifyAPIsLinkUrl()[pri:2, instance:com.covid19.qa.HomePageTestcases.APIsPageTestCases@3b2cf7ab]" name="VerifyAPIsLinkUrl" duration-ms="1245" started-at="2020-06-02T19:27:57Z" finished-at="2020-06-02T19:27:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyAPIsLinkUrl -->
-        <test-method status="PASS" signature="VerifyAPIListingHeading()[pri:3, instance:com.covid19.qa.HomePageTestcases.APIsPageTestCases@3b2cf7ab]" name="VerifyAPIListingHeading" duration-ms="37" started-at="2020-06-02T19:27:58Z" finished-at="2020-06-02T19:27:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyAPIListingHeading -->
-        <test-method status="PASS" signature="VerifyCOvid19APIHeading()[pri:4, instance:com.covid19.qa.HomePageTestcases.APIsPageTestCases@3b2cf7ab]" name="VerifyCOvid19APIHeading" duration-ms="36" started-at="2020-06-02T19:27:58Z" finished-at="2020-06-02T19:27:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyCOvid19APIHeading -->
-        <test-method status="PASS" signature="ClickCOvid19APIViewDocumentastion()[pri:5, instance:com.covid19.qa.HomePageTestcases.APIsPageTestCases@3b2cf7ab]" name="ClickCOvid19APIViewDocumentastion" duration-ms="7187" started-at="2020-06-02T19:27:58Z" finished-at="2020-06-02T19:28:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ClickCOvid19APIViewDocumentastion -->
-        <test-method status="PASS" signature="Covid19OauthAPIHeading()[pri:6, instance:com.covid19.qa.HomePageTestcases.APIsPageTestCases@3b2cf7ab]" name="Covid19OauthAPIHeading" duration-ms="38" started-at="2020-06-02T19:28:05Z" finished-at="2020-06-02T19:28:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Covid19OauthAPIHeading -->
-        <test-method status="PASS" signature="Covid19OauthAPIclickViewDocumentation()[pri:7, instance:com.covid19.qa.HomePageTestcases.APIsPageTestCases@3b2cf7ab]" name="Covid19OauthAPIclickViewDocumentation" duration-ms="3166" started-at="2020-06-02T19:28:05Z" finished-at="2020-06-02T19:28:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Covid19OauthAPIclickViewDocumentation -->
-        <test-method status="PASS" signature="VerifyCOVID19PatientDatabaseAPIHeading()[pri:8, instance:com.covid19.qa.HomePageTestcases.APIsPageTestCases@3b2cf7ab]" name="VerifyCOVID19PatientDatabaseAPIHeading" duration-ms="27" started-at="2020-06-02T19:28:09Z" finished-at="2020-06-02T19:28:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyCOVID19PatientDatabaseAPIHeading -->
-        <test-method status="PASS" signature="clickviewdocumentationunderCOVID19PatientDatabaseAPI()[pri:9, instance:com.covid19.qa.HomePageTestcases.APIsPageTestCases@3b2cf7ab]" name="clickviewdocumentationunderCOVID19PatientDatabaseAPI" duration-ms="2413" started-at="2020-06-02T19:28:09Z" finished-at="2020-06-02T19:28:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickviewdocumentationunderCOVID19PatientDatabaseAPI -->
-        <test-method status="PASS" signature="VerifyREQUESTACCESSTOAPIsHeading()[pri:10, instance:com.covid19.qa.HomePageTestcases.APIsPageTestCases@3b2cf7ab]" name="VerifyREQUESTACCESSTOAPIsHeading" duration-ms="25" started-at="2020-06-02T19:28:11Z" finished-at="2020-06-02T19:28:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyREQUESTACCESSTOAPIsHeading -->
-        <test-method status="PASS" signature="clickREQUESTACCESS()[pri:11, instance:com.covid19.qa.HomePageTestcases.APIsPageTestCases@3b2cf7ab]" name="clickREQUESTACCESS" duration-ms="5894" started-at="2020-06-02T19:28:11Z" finished-at="2020-06-02T19:28:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickREQUESTACCESS -->
-        <test-method status="PASS" signature="verifyHowToGetStartedHeading()[pri:12, instance:com.covid19.qa.HomePageTestcases.APIsPageTestCases@3b2cf7ab]" name="verifyHowToGetStartedHeading" duration-ms="27" started-at="2020-06-02T19:28:17Z" finished-at="2020-06-02T19:28:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyHowToGetStartedHeading -->
-        <test-method status="PASS" signature="clickHowToGetStartedbutton()[pri:13, instance:com.covid19.qa.HomePageTestcases.APIsPageTestCases@3b2cf7ab]" name="clickHowToGetStartedbutton" duration-ms="1344" started-at="2020-06-02T19:28:17Z" finished-at="2020-06-02T19:28:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickHowToGetStartedbutton -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.covid19.qa.HomePageTestcases.APIsPageTestCases@3b2cf7ab]" name="tearDown" is-config="true" duration-ms="105" started-at="2020-06-02T19:28:18Z" finished-at="2020-06-02T19:28:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.covid19.qa.HomePageTestcases.APIsPageTestCases -->
-    </test> <!-- Test5 -->
-    <test name="Test6" duration-ms="16705" started-at="2020-06-02T13:58:18Z" finished-at="2020-06-02T13:58:35Z">
-      <class name="com.covid19.qa.HomePageTestcases.SignUPFormTestCase">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.covid19.qa.HomePageTestcases.SignUPFormTestCase@3e3047e6]" name="setup" is-config="true" duration-ms="7055" started-at="2020-06-02T19:28:18Z" finished-at="2020-06-02T19:28:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="VerifySignUPLink()[pri:1, instance:com.covid19.qa.HomePageTestcases.SignUPFormTestCase@3e3047e6]" name="VerifySignUPLink" duration-ms="3489" started-at="2020-06-02T19:28:26Z" finished-at="2020-06-02T19:28:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifySignUPLink -->
-        <test-method status="PASS" signature="VerifySignUPLinkUrl()[pri:2, instance:com.covid19.qa.HomePageTestcases.SignUPFormTestCase@3e3047e6]" name="VerifySignUPLinkUrl" duration-ms="5" started-at="2020-06-02T19:28:29Z" finished-at="2020-06-02T19:28:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifySignUPLinkUrl -->
-        <test-method status="PASS" signature="VerifyHeadingRegistrationForm()[pri:3, instance:com.covid19.qa.HomePageTestcases.SignUPFormTestCase@3e3047e6]" name="VerifyHeadingRegistrationForm" duration-ms="19" started-at="2020-06-02T19:28:29Z" finished-at="2020-06-02T19:28:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyHeadingRegistrationForm -->
-        <test-method status="PASS" signature="VerifyHeadingVolunteerRegistrationForm()[pri:4, instance:com.covid19.qa.HomePageTestcases.SignUPFormTestCase@3e3047e6]" name="VerifyHeadingVolunteerRegistrationForm" duration-ms="35" started-at="2020-06-02T19:28:29Z" finished-at="2020-06-02T19:28:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyHeadingVolunteerRegistrationForm -->
-        <test-method status="PASS" signature="VerifyHeadingEmailaddress()[pri:5, instance:com.covid19.qa.HomePageTestcases.SignUPFormTestCase@3e3047e6]" name="VerifyHeadingEmailaddress" duration-ms="37" started-at="2020-06-02T19:28:29Z" finished-at="2020-06-02T19:28:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyHeadingEmailaddress -->
-        <test-method status="PASS" signature="EnterEmailaddress()[pri:6, instance:com.covid19.qa.HomePageTestcases.SignUPFormTestCase@3e3047e6]" name="EnterEmailaddress" duration-ms="145" started-at="2020-06-02T19:28:29Z" finished-at="2020-06-02T19:28:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EnterEmailaddress -->
-        <test-method status="PASS" signature="VerifyHeadingUsername()[pri:7, instance:com.covid19.qa.HomePageTestcases.SignUPFormTestCase@3e3047e6]" name="VerifyHeadingUsername" duration-ms="21" started-at="2020-06-02T19:28:29Z" finished-at="2020-06-02T19:28:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyHeadingUsername -->
-        <test-method status="PASS" signature="EnterUsernameaddress()[pri:8, instance:com.covid19.qa.HomePageTestcases.SignUPFormTestCase@3e3047e6]" name="EnterUsernameaddress" duration-ms="90" started-at="2020-06-02T19:28:29Z" finished-at="2020-06-02T19:28:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EnterUsernameaddress -->
-        <test-method status="PASS" signature="VerifyHeadingFirstName()[pri:9, instance:com.covid19.qa.HomePageTestcases.SignUPFormTestCase@3e3047e6]" name="VerifyHeadingFirstName" duration-ms="39" started-at="2020-06-02T19:28:29Z" finished-at="2020-06-02T19:28:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyHeadingFirstName -->
-        <test-method status="PASS" signature="EnterFirstName()[pri:10, instance:com.covid19.qa.HomePageTestcases.SignUPFormTestCase@3e3047e6]" name="EnterFirstName" duration-ms="88" started-at="2020-06-02T19:28:29Z" finished-at="2020-06-02T19:28:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EnterFirstName -->
-        <test-method status="PASS" signature="VerifyHeadingLastName()[pri:11, instance:com.covid19.qa.HomePageTestcases.SignUPFormTestCase@3e3047e6]" name="VerifyHeadingLastName" duration-ms="25" started-at="2020-06-02T19:28:29Z" finished-at="2020-06-02T19:28:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyHeadingLastName -->
-        <test-method status="PASS" signature="EnterLastname()[pri:12, instance:com.covid19.qa.HomePageTestcases.SignUPFormTestCase@3e3047e6]" name="EnterLastname" duration-ms="86" started-at="2020-06-02T19:28:30Z" finished-at="2020-06-02T19:28:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EnterLastname -->
-        <test-method status="PASS" signature="EnterOccupation()[pri:13, instance:com.covid19.qa.HomePageTestcases.SignUPFormTestCase@3e3047e6]" name="EnterOccupation" duration-ms="78" started-at="2020-06-02T19:28:30Z" finished-at="2020-06-02T19:28:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EnterOccupation -->
-        <test-method status="PASS" signature="VerifyHeadingOccupation()[pri:13, instance:com.covid19.qa.HomePageTestcases.SignUPFormTestCase@3e3047e6]" name="VerifyHeadingOccupation" duration-ms="19" started-at="2020-06-02T19:28:30Z" finished-at="2020-06-02T19:28:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyHeadingOccupation -->
-        <test-method status="PASS" signature="SelectImage()[pri:14, instance:com.covid19.qa.HomePageTestcases.SignUPFormTestCase@3e3047e6]" name="SelectImage" duration-ms="1606" started-at="2020-06-02T19:28:30Z" finished-at="2020-06-02T19:28:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SelectImage -->
-        <test-method status="PASS" signature="RemoveImage()[pri:20, instance:com.covid19.qa.HomePageTestcases.SignUPFormTestCase@3e3047e6]" name="RemoveImage" duration-ms="2049" started-at="2020-06-02T19:28:31Z" finished-at="2020-06-02T19:28:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- RemoveImage -->
-        <test-method status="PASS" signature="clickRegisterButton()[pri:21, instance:com.covid19.qa.HomePageTestcases.SignUPFormTestCase@3e3047e6]" name="clickRegisterButton" duration-ms="1654" started-at="2020-06-02T19:28:33Z" finished-at="2020-06-02T19:28:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickRegisterButton -->
-        <test-method status="PASS" signature="CaptureMessage()[pri:22, instance:com.covid19.qa.HomePageTestcases.SignUPFormTestCase@3e3047e6]" name="CaptureMessage" duration-ms="45" started-at="2020-06-02T19:28:35Z" finished-at="2020-06-02T19:28:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CaptureMessage -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.covid19.qa.HomePageTestcases.SignUPFormTestCase@3e3047e6]" name="tearDown" is-config="true" duration-ms="110" started-at="2020-06-02T19:28:35Z" finished-at="2020-06-02T19:28:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.covid19.qa.HomePageTestcases.SignUPFormTestCase -->
-    </test> <!-- Test6 -->
-    <test name="Test7" duration-ms="63998" started-at="2020-06-02T13:58:38Z" finished-at="2020-06-02T13:59:42Z">
-      <class name="com.covid19.qa.HomePageTestcases.NoResultFoundPageVerify">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.covid19.qa.HomePageTestcases.NoResultFoundPageVerify@327b636c]" name="setup" is-config="true" duration-ms="8134" started-at="2020-06-02T19:28:38Z" finished-at="2020-06-02T19:28:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifyNoresult()[pri:0, instance:com.covid19.qa.HomePageTestcases.NoResultFoundPageVerify@327b636c]" name="verifyNoresult" duration-ms="55765" started-at="2020-06-02T19:28:46Z" finished-at="2020-06-02T19:29:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNoresult -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.covid19.qa.HomePageTestcases.NoResultFoundPageVerify@327b636c]" name="tearDown" is-config="true" duration-ms="97" started-at="2020-06-02T19:29:42Z" finished-at="2020-06-02T19:29:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.covid19.qa.HomePageTestcases.NoResultFoundPageVerify -->
-    </test> <!-- Test7 -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

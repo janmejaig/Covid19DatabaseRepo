@@ -3,7 +3,6 @@ package com.covid19.qa.HomePageTestcases;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.covid.qa.base.TestBase;
@@ -14,26 +13,25 @@ import com.covid19.qa.pages.AboutUsPage;
 
 public class AboutUsPageTaseCase extends TestBase {
 
-	AboutUsPage AboutUsPageObject; 
-	
-	public AboutUsPageTaseCase(){
-		super();
-		
-}
+	AboutUsPage AboutUsPageObject;
 
-	
+	public AboutUsPageTaseCase() {
+		super();
+
+	}
+
 	@BeforeClass
 	public void setup() {
-		
+
 		initialization();
-		
+
 		AboutUsPageObject = new AboutUsPage();
 	}
 
 	@Test(priority = 1)
 	public void AbouUsPageNavigation() throws InterruptedException {
 
-		//logger=extent.createTest("AbouUsPageNavigation");
+		// logger=extent.createTest("AbouUsPageNavigation");
 		String TitleAboutUsPage = AboutUsPageObject.AboutUsLinkClick();
 
 		Assert.assertEquals(TitleAboutUsPage, "About Us");
@@ -141,10 +139,9 @@ public class AboutUsPageTaseCase extends TestBase {
 	}
 
 	@AfterClass
-	public void tearDown(){
-		
+	public void tearDown() {
+
 		driver.quit();
 	}
-	
-	
+
 }

@@ -20,10 +20,9 @@ import com.relevantcodes.extentreports.LogStatus;
 
 public class ExtentReporterNG implements IReporter {
 	private ExtentReports extent;
-	public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites,
-			String outputDirectory) {
-		extent = new ExtentReports(outputDirectory + File.separator
-				+ "Extent.html", true);
+
+	public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites, String outputDirectory) {
+		extent = new ExtentReports(outputDirectory + File.separator + "Extent.html", true);
 		for (ISuite suite : suites) {
 			Map<String, ISuiteResult> result = suite.getResults();
 			for (ISuiteResult r : result.values()) {
@@ -36,6 +35,7 @@ public class ExtentReporterNG implements IReporter {
 		extent.flush();
 		extent.close();
 	}
+
 	private void buildTestNodes(IResultMap tests, LogStatus status) {
 		ExtentTest test;
 		if (tests.size() > 0) {
@@ -48,13 +48,13 @@ public class ExtentReporterNG implements IReporter {
 				if (result.getThrowable() != null) {
 					test.log(status, result.getThrowable());
 				} else {
-					test.log(status, "Test " + status.toString().toLowerCase()
-							+ "ed");
+					test.log(status, "Test " + status.toString().toLowerCase() + "ed");
 				}
 				extent.endTest(test);
 			}
 		}
 	}
+
 	private Date getTime(long millis) {
 		Calendar calendar = Calendar.getInstance();
 		calendar.setTimeInMillis(millis);

@@ -11,28 +11,25 @@ import com.covid19.qa.pages.APIsPage;
 
 public class APIsPageTestCases extends TestBase {
 
-	APIsPage APIsPageObject; 
-	
-	public APIsPageTestCases(){
-		super();
-		
-}
+	APIsPage APIsPageObject;
 
-	
+	public APIsPageTestCases() {
+		super();
+
+	}
+
 	@BeforeClass
 	public void setup() {
-		
+
 		initialization();
-		
+
 		APIsPageObject = new APIsPage();
 	}
 
-
 	@Test(priority = 1)
 	public void APIsPageNavigation() throws InterruptedException {
-		
-		//logger=extent.createTest("APIsPageNavigation");
 
+		// logger=extent.createTest("APIsPageNavigation");
 
 		String APIsPageTitle = APIsPageObject.VerifyAPIsLinkClick();
 
@@ -191,10 +188,10 @@ public class APIsPageTestCases extends TestBase {
 		TestUtil.ClickbackButtonOnBrowser();
 
 	}
+
 	@AfterClass
-	public void tearDown(){
+	public void tearDown() {
 		driver.quit();
 	}
-	
 
 }

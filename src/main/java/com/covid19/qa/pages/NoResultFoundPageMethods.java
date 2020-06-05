@@ -1,13 +1,10 @@
 package com.covid19.qa.pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
 
 import com.covid.qa.base.TestBase;
-import com.covid.qa.utils.TestUtil;
 
 public class NoResultFoundPageMethods extends TestBase {
 
@@ -32,6 +29,12 @@ public class NoResultFoundPageMethods extends TestBase {
 		SearchButton.click();
 
 	}
+	
+	@FindBy(className ="table-responsive")
+	WebElement Grid ;
+	
+	
+//	class="table-responsive"
 
 	@FindBy(xpath = "//div[@class='view-empty']")
 	WebElement NoResultFound;
@@ -75,32 +78,54 @@ public class NoResultFoundPageMethods extends TestBase {
 		//Boolean dd = City.isDisplayed();
 		//System.out.println(dd);
 		
-		TestUtil.Pause(5000);
+		//TestUtil.Pause(5000l);
 
 		
 		//if(( City.isDisplayed() || Zipcode.isDisplayed() || TransmissionType.isDisplayed() ))
 		
-		if(driver.findElements(By.xpath("//a[@title='sort by City']")).size()>0)
- 
+	//	if(driver.findElements(By.xpath("//a[@title='sort by City']")).size()>0)
+		
+		//if(driver.findElement(By.xpath("//a[@title='sort by City']")).isDisplayed())
 
+		//WebElement element = driver.findElement(locator);
+
+
+ 
+//if(Assert.assertnu)
 
 //	//	if(( TestUtil.visibiltyOfElement(driver, 500, City) || TestUtil.visibiltyOfElement(driver, 500, Zipcode) ))
 //
-//		//if(dd==true)
-		{
-            System.out.println("Verification Successful - The correct title is displayed on the web page.");
-		}
-		else {
-			System.out.println("No result is visible upon filtering");
-			
-		}
-		
+//		if(Grid.isDisplayed()==false)
+//		{
+//            System.out.println("Verification Successful - The correct title is displayed on the web page.");
+//		}
+//		else {
+//			System.out.println("No result is visible upon filtering");
+//			
+//		}
+//		
 //		TestUtil.visibiltyOfElement(driver, 500, NoResultFound);
 //		Assert.assertTrue(NoResultFound.isDisplayed()); 
 //	
 //			return NoResultFound.getText();
 //        
 	}
+
+//	public void verifyNoresult() {
+//		Assert.assertNull(City);
+//	}
+//	
+	public boolean isElementPresent() {
+	    try {
+	       // driver.findElement((By) Grid);
+	    	Grid.isDisplayed();
+	        return true;
+	    } catch (org.openqa.selenium.NoSuchElementException e) {
+	        return false;
+	    }
+	}
+
+
 
 	
 }

@@ -10,27 +10,21 @@ import com.covid19.qa.pages.SignUPForm;
 
 public class SignUPFormTestCase extends TestBase {
 
-	
-	
-	
-	SignUPForm SignUPFormObject; 
-	
-	public SignUPFormTestCase(){
-		super();
-		
-}
+	SignUPForm SignUPFormObject;
 
-	
+	public SignUPFormTestCase() {
+		super();
+
+	}
+
 	@BeforeClass
 	public void setup() {
-		
+
 		initialization();
-		
+
 		SignUPFormObject = new SignUPForm();
 	}
 
-
-	
 	@Test(priority = 1)
 	public void VerifySignUPLink() throws InterruptedException {
 
@@ -216,8 +210,8 @@ public class SignUPFormTestCase extends TestBase {
 	}
 
 	@AfterClass
-	public void tearDown(){
+	public void tearDown() {
 		driver.quit();
 	}
-	
+
 }

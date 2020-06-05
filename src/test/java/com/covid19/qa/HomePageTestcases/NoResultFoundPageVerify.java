@@ -1,12 +1,12 @@
 package com.covid19.qa.HomePageTestcases;
 
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.covid.qa.base.TestBase;
 import com.covid.qa.utils.TestUtil;
-import com.covid19.qa.pages.HomePageCovidDatabase;
 import com.covid19.qa.pages.NoResultFoundPageMethods;
 
 public class NoResultFoundPageVerify extends TestBase {
@@ -33,7 +33,13 @@ public class NoResultFoundPageVerify extends TestBase {
 
 		NoResultFoundPageMethodsObject.clickSearch();
 
-		NoResultFoundPageMethodsObject.NoResultFound();
+		TestUtil.Pause(1000);
+
+		// NoResultFoundPageMethodsObject.NoResultFound();
+
+		// System.out.println( NoResultFoundPageMethodsObject.isElementPresent());
+
+		Assert.assertFalse(NoResultFoundPageMethodsObject.isElementPresent());
 
 	}
 

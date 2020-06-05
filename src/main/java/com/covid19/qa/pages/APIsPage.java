@@ -127,7 +127,6 @@ public class APIsPage extends TestBase {
 
 		ClickCOvid19APIViewDocumentastion.click();
 
-
 		TestUtil.implicitWait(100);
 		driver.navigate().back();
 

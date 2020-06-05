@@ -10,26 +10,21 @@ import com.covid.qa.utils.TestUtil;
 import com.covid19.qa.pages.HomePageCovidDatabase;
 
 public class CovidHomePageTestCase extends TestBase {
-	
-	
-	
-	HomePageCovidDatabase HomePageCovidDatabaseobject; 
-	
-	public CovidHomePageTestCase(){
-		super();
-		
-}
 
-	
-	@BeforeClass
-	public void setup() {
-		
-		initialization();
-		
-		HomePageCovidDatabaseobject = new HomePageCovidDatabase();
+	HomePageCovidDatabase HomePageCovidDatabaseobject;
+
+	public CovidHomePageTestCase() {
+		super();
+
 	}
 
+	@BeforeClass
+	public void setup() {
 
+		initialization();
+
+		HomePageCovidDatabaseobject = new HomePageCovidDatabase();
+	}
 
 	@Test(priority = 1)
 	public void ValidateCovidHomePageTitle() throws InterruptedException {
@@ -126,11 +121,11 @@ public class CovidHomePageTestCase extends TestBase {
 		HomePageCovidDatabaseobject.navigateback();
 
 	}
+
 	@AfterClass
-	public void tearDown(){
-		
+	public void tearDown() {
+
 		driver.quit();
 	}
-	
 
 }
